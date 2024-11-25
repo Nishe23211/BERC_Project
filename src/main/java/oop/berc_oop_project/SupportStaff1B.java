@@ -4,19 +4,17 @@ import javafx.event.ActionEvent;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
 
-public class SupportStaff2 {
+public class SupportStaff1B {
     @javafx.fxml.FXML
-    private Label casedetails;
+    private Label incidentresolution;
     @javafx.fxml.FXML
-    private TextArea detailsarea;
-    @javafx.fxml.FXML
-    private TextArea solutionarea;
+    private TextArea textarea;
 
     @javafx.fxml.FXML
     public void onResolve(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML
-    public void onEscalate(ActionEvent actionEvent) {
+    public void onUpdateLog(ActionEvent actionEvent) {
     }
 }

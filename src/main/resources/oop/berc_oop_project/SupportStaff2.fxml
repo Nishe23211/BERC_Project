@@ -1,14 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="oop.berc_oop_project.SupportStaff2"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="341.0" prefWidth="562.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.berc_oop_project.SupportStaff2">
+   <children>
+      <Button layoutX="441.0" layoutY="284.0" mnemonicParsing="false" onAction="#onEscalate" text="Escalate" />
+      <Label fx:id="casedetails" layoutX="60.0" layoutY="42.0" text="Case Details">
+         <font>
+            <Font name="Cambria Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="203.0" layoutY="284.0" mnemonicParsing="false" onAction="#onResolve" text="Resolve" />
+      <TextArea fx:id="solutionarea" layoutX="300.0" layoutY="75.0" prefHeight="200.0" prefWidth="200.0" promptText="Solution" />
+      <TextArea fx:id="detailsarea" layoutX="60.0" layoutY="75.0" prefHeight="200.0" prefWidth="200.0" promptText="Details" />
+   </children>
 </AnchorPane>
