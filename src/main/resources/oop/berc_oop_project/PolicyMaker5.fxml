@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="365.0" prefWidth="522.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.berc_oop_project.PolicyMaker5">
+   <children>
+      <Button layoutX="31.0" layoutY="33.0" mnemonicParsing="false" onAction="#onGuideButtonClick" text="Guide" />
+      <Label layoutX="31.0" layoutY="92.0" text="Guides File" />
+      <ComboBox fx:id="guidesfileButtonClick" layoutX="117.0" layoutY="88.0" prefWidth="150.0" />
+      <Label fx:id="DisplayText" layoutX="292.0" layoutY="165.0" prefHeight="70.0" prefWidth="164.0" text="Label" />
+   </children>
+</AnchorPane>

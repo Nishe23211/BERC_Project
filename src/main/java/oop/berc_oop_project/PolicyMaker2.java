@@ -1,28 +1,31 @@
 package oop.berc_oop_project;
 
 import javafx.event.ActionEvent;
-import javafx.scene.control.ComboBox;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 
-public class SystemAdministrator2 {
+public class PolicyMaker2 {
     @javafx.fxml.FXML
-    private TextField usernameField;
+    private TextField newpasswordField;
     @javafx.fxml.FXML
-    private TableColumn usernameCol;
+    private TextField resetpasswordField;
     @javafx.fxml.FXML
-    private ComboBox roleComboBox;
+    private TableColumn otpcodeCol;
     @javafx.fxml.FXML
-    private TextField passwordField;
+    private TextField entercodeField;
     @javafx.fxml.FXML
-    private TableColumn roleCol;
+    private TableView otpcodeTable;
+
     @javafx.fxml.FXML
-    private TableView userroleTable;
-    @javafx.fxml.FXML
-    private TableColumn passwordCol;
+    public void onSentOtpCodeButtonClick(ActionEvent actionEvent) {
+    }
 
     @javafx.fxml.FXML
     public void onAddButtonClick(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void onForgetPasswordButtonClick(ActionEvent actionEvent) {
     }
 }

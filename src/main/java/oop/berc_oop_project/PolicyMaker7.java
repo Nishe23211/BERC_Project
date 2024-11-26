@@ -6,23 +6,27 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 
-public class SystemAdministrator2 {
+public class PolicyMaker7 {
     @javafx.fxml.FXML
-    private TextField usernameField;
+    private TextField policyidField;
     @javafx.fxml.FXML
-    private TableColumn usernameCol;
+    private TableColumn applicationCol;
     @javafx.fxml.FXML
-    private ComboBox roleComboBox;
+    private ComboBox policyreformationfilenameComboBox;
     @javafx.fxml.FXML
-    private TextField passwordField;
+    private TableView policyapplicationTable;
     @javafx.fxml.FXML
-    private TableColumn roleCol;
+    private TableColumn policyreformationfilenameCol;
     @javafx.fxml.FXML
-    private TableView userroleTable;
+    private TableColumn policyidCol;
     @javafx.fxml.FXML
-    private TableColumn passwordCol;
+    private TextField applicationField;
 
     @javafx.fxml.FXML
     public void onAddButtonClick(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void onPolicyButtonClick(ActionEvent actionEvent) {
     }
 }

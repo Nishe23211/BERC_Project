@@ -6,19 +6,19 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 
-public class SystemAdministrator8 {
+public class PolicyMaker3 {
     @javafx.fxml.FXML
-    private ComboBox informationComboBox;
+    private TableColumn feedbackCol;
     @javafx.fxml.FXML
-    private TextField updateComboBox;
+    private TextField feedbackFiled;
     @javafx.fxml.FXML
-    private TableColumn informationCol;
+    private ComboBox reportComboBox;
     @javafx.fxml.FXML
-    private TableColumn updateinformationCol;
+    private TableColumn reportCol;
     @javafx.fxml.FXML
-    private TableView informationTable;
+    private TableView feedbackTable;
 
     @javafx.fxml.FXML
-    public void onupdateButtonClick(ActionEvent actionEvent) {
+    public void onSubmitButtonClick(ActionEvent actionEvent) {
     }
 }

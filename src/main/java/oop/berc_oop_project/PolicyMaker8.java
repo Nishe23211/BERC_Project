@@ -2,26 +2,24 @@ package oop.berc_oop_project;
 
 import javafx.event.ActionEvent;
 import javafx.scene.control.ComboBox;
-import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.TextField;
 
-public class SystemAdministrator7 {
+public class PolicyMaker8 {
     @javafx.fxml.FXML
-    private ComboBox useraccountComboBox;
+    private TableView consultationTable;
     @javafx.fxml.FXML
-    private TableColumn taskCol;
+    private TableColumn newpolicyCol;
     @javafx.fxml.FXML
-    private Label DisplayText;
+    private TableColumn consultationCol;
     @javafx.fxml.FXML
-    private ComboBox taskComboBox;
+    private TextField newpolicyField;
     @javafx.fxml.FXML
-    private TableColumn useraccountCol;
-    @javafx.fxml.FXML
-    private TableView taskTable;
+    private ComboBox consultationComboBox;
 
     @javafx.fxml.FXML
-    public void ontaskdetailsButtonClick(ActionEvent actionEvent) {
+    public void onPublicConsultationButtonClick(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML
