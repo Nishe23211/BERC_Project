@@ -5,23 +5,21 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 
-public class BERCOfficials6 {
+public class BERCOfficials4A {
     @javafx.fxml.FXML
-    private Label postdraftofregulatory;
+    private Label filesreview;
     @javafx.fxml.FXML
-    private TextArea descriptionarea;
+    private TextArea contentarea;
     @javafx.fxml.FXML
-    private TextField titlefield;
+    private TextArea notesarea;
+    @javafx.fxml.FXML
+    private TextField namefield;
 
     @javafx.fxml.FXML
-    public void onSave(ActionEvent actionEvent) {
+    public void onSaveNotes(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML
-    public void onCancel(ActionEvent actionEvent) {
-    }
-
-    @javafx.fxml.FXML
-    public void onUploadDraft(ActionEvent actionEvent) {
+    public void onCloseFiles(ActionEvent actionEvent) {
     }
 }
