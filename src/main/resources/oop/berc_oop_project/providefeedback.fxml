@@ -1,14 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="oop.berc_oop_project.ProvidefeedbackController"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="665.0" prefWidth="884.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.berc_oop_project.ProvidefeedbackController">
+   <children>
+      <Label layoutX="33.0" layoutY="24.0" />
+      <Label layoutX="24.0" layoutY="24.0" text="Complain &amp; Feedback">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="43.0" layoutY="85.0" text="Issue Description" />
+      <Label layoutX="50.0" layoutY="268.0" text="Category" />
+      <Button layoutX="141.0" layoutY="431.0" mnemonicParsing="false" onAction="#onprovideButtonClick" text="Provide Feedback" />
+      <Button layoutX="790.0" layoutY="418.0" mnemonicParsing="false" onAction="#onsubmitButtonClick" text="Submit" />
+      <TextField fx:id="issueTF" layoutX="148.0" layoutY="78.0" prefHeight="151.0" prefWidth="268.0" />
+      <ComboBox fx:id="categoryCB" layoutX="155.0" layoutY="264.0" prefWidth="150.0" />
+      <Line endX="44.399993896484375" endY="385.79998779296875" layoutX="394.0" layoutY="267.0" startX="38.399993896484375" startY="-262.20001220703125" />
+      <TextField fx:id="feedbackTF1" layoutX="530.0" layoutY="78.0" prefHeight="294.0" prefWidth="339.0" />
+   </children>
 </AnchorPane>
