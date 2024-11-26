@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.berc_oop_project.TariffinfoController">
+   <children>
+      <Label layoutX="26.0" layoutY="35.0" prefHeight="26.0" prefWidth="137.0" text="Tariff Information">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tariffTV" layoutX="185.0" layoutY="79.0" prefHeight="274.0" prefWidth="385.0">
+        <columns>
+          <TableColumn fx:id="tariffCol" prefWidth="75.0" text="Tariff Type" />
+          <TableColumn fx:id="rateCol" prefWidth="100.800048828125" text="Currrent Rate" />
+            <TableColumn fx:id="prevrateCol" prefWidth="106.39996337890625" text="Previous Rate" />
+            <TableColumn fx:id="edateCol" prefWidth="103.199951171875" text="Effective Date" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

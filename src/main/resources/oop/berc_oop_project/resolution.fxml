@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.berc_oop_project.Resolution">
+   <children>
+      <TableView fx:id="resolutionTV" layoutX="14.0" layoutY="7.0" prefHeight="309.0" prefWidth="461.0">
+        <columns>
+          <TableColumn fx:id="disputeCOL" prefWidth="75.0" text="Dispute ID" />
+          <TableColumn fx:id="companyCol" prefWidth="132.00006103515625" text="Company" />
+            <TableColumn fx:id="ConsCol" prefWidth="108.79998779296875" text="Consumer" />
+            <TableColumn fx:id="statusCol" prefWidth="144.00002441406252" text="Status" />
+        </columns>
+      </TableView>
+      <Button layoutX="469.0" layoutY="347.0" mnemonicParsing="false" onAction="#OnviewButtonClick" text="View Details" />
+   </children>
+</AnchorPane>
