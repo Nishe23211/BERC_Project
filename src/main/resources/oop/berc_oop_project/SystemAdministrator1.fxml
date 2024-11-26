@@ -13,12 +13,12 @@
    <children>
       <AnchorPane prefHeight="398.0" prefWidth="600.0">
          <children>
-            <Label layoutX="14.0" layoutY="26.0" text="User Type" />
-            <Label layoutX="14.0" layoutY="67.0" text="User Name" />
-            <Label layoutX="14.0" layoutY="104.0" text="Password" />
-            <ComboBox fx:id="usertypeComboBox" layoutX="96.0" layoutY="22.0" prefWidth="150.0" />
-            <TextField fx:id="usernameField" layoutX="96.0" layoutY="63.0" />
-            <TextField fx:id="passwordField" layoutX="96.0" layoutY="100.0" />
+            <Label layoutX="13.0" layoutY="65.0" text="User Type" />
+            <Label layoutX="10.0" layoutY="107.0" text="User Name" />
+            <Label layoutX="15.0" layoutY="151.0" text="Password" />
+            <ComboBox fx:id="usertypeComboBox" layoutX="95.0" layoutY="65.0" prefWidth="150.0" />
+            <TextField fx:id="usernameField" layoutX="96.0" layoutY="107.0" />
+            <TextField fx:id="passwordField" layoutX="96.0" layoutY="147.0" />
             <TableView fx:id="userTable" layoutX="300.0" layoutY="26.0" prefHeight="200.0" prefWidth="225.0">
               <columns>
                 <TableColumn fx:id="usertypeCol" prefWidth="75.0" text="User Type" />
@@ -27,6 +27,7 @@
               </columns>
             </TableView>
             <Button layoutX="312.0" layoutY="261.0" mnemonicParsing="false" onAction="#onConfirmButtonClick" text="Confirm" />
+            <Button layoutX="15.0" layoutY="14.0" mnemonicParsing="false" onAction="#onCreateAccountButton" text="Create Account" />
          </children>
       </AnchorPane>
    </children>
