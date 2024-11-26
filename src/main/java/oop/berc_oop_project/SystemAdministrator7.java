@@ -10,8 +10,6 @@ public class SystemAdministrator7 {
     @javafx.fxml.FXML
     private ComboBox useraccountComboBox;
     @javafx.fxml.FXML
-    private TableColumn taskCol;
-    @javafx.fxml.FXML
     private Label DisplayText;
     @javafx.fxml.FXML
     private ComboBox taskComboBox;
@@ -19,6 +17,8 @@ public class SystemAdministrator7 {
     private TableColumn useraccountCol;
     @javafx.fxml.FXML
     private TableView taskTable;
+    @javafx.fxml.FXML
+    private TableColumn typeoftaskCol;
 
     @javafx.fxml.FXML
     public void ontaskdetailsButtonClick(ActionEvent actionEvent) {
@@ -26,5 +26,9 @@ public class SystemAdministrator7 {
 
     @javafx.fxml.FXML
     public void onAddButtonClick(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void onTaskButtonClick(ActionEvent actionEvent) {
     }
 }
