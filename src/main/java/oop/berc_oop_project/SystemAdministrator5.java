@@ -15,4 +15,8 @@ public class SystemAdministrator5 {
     @javafx.fxml.FXML
     public void onUploadButtonClick(ActionEvent actionEvent) {
     }
+
+    @javafx.fxml.FXML
+    public void onFileButtonClick(ActionEvent actionEvent) {
+    }
 }

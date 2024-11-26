@@ -58,16 +58,17 @@
                         <Font size="20.0" />
                      </font>
                   </Text>
-                  <ComboBox layoutX="22.0" layoutY="236.0" prefHeight="25.0" prefWidth="200.0" promptText="Filter" />
-                  <Button layoutX="233.0" layoutY="236.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="96.0" text="View" />
+                  <ComboBox layoutX="22.0" layoutY="236.0" prefHeight="25.0" prefWidth="135.0" promptText="Filter" />
+                  <Button layoutX="170.0" layoutY="236.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="62.0" text="View" />
                   <TableView layoutX="22.0" layoutY="50.0" prefHeight="169.0" prefWidth="307.0">
                      <columns>
-                        <TableColumn prefWidth="75.0" text="C1" />
-                        <TableColumn prefWidth="75.0" text="C2" />
-                        <TableColumn prefWidth="79.5" text="C2" />
-                        <TableColumn prefWidth="76.5" text="C2" />
+                        <TableColumn prefWidth="75.0" text="Name" />
+                        <TableColumn prefWidth="75.0" text="Company" />
+                        <TableColumn prefWidth="79.5" text="Individual" />
+                        <TableColumn prefWidth="76.5" text="Duration" />
                      </columns>
                   </TableView>
+                  <Button layoutX="243.0" layoutY="236.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="87.0" text="Reset Filter" />
                </children>
             </AnchorPane>
          </items>
