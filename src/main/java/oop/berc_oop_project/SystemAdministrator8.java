@@ -8,8 +8,6 @@ import javafx.scene.control.TextField;
 
 public class SystemAdministrator8 {
     @javafx.fxml.FXML
-    private ComboBox informationComboBox;
-    @javafx.fxml.FXML
     private TextField updateComboBox;
     @javafx.fxml.FXML
     private TableColumn informationCol;
@@ -17,8 +15,14 @@ public class SystemAdministrator8 {
     private TableColumn updateinformationCol;
     @javafx.fxml.FXML
     private TableView informationTable;
+    @javafx.fxml.FXML
+    private ComboBox typeofinformationComboBox;
 
     @javafx.fxml.FXML
     public void onupdateButtonClick(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void onInformationButtonClick(ActionEvent actionEvent) {
     }
 }
