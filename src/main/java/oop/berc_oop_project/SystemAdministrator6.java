@@ -15,4 +15,8 @@ public class SystemAdministrator6 {
     @javafx.fxml.FXML
     public void onAddButtonClick(ActionEvent actionEvent) {
     }
+
+    @javafx.fxml.FXML
+    public void onSecurityButtonClick(ActionEvent actionEvent) {
+    }
 }
