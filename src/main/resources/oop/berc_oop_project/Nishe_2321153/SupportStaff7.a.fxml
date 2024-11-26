@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="268.0" prefWidth="490.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.berc_oop_project.Nishe_2321153.SupportStaff7A">
+   <children>
+      <Label layoutX="55.0" layoutY="71.0" text="File Name" />
+      <Label layoutX="58.0" layoutY="110.0" text="File Type" />
+      <Label fx:id="permissions" layoutX="320.0" layoutY="58.0" text="Permissions">
+         <font>
+            <Font name="Cambria" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="filepermissions" layoutX="200.0" layoutY="14.0" text="File Permissions">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <CheckBox layoutX="320.0" layoutY="83.0" mnemonicParsing="false" text="View Only" />
+      <CheckBox layoutX="320.0" layoutY="140.0" mnemonicParsing="false" text="Edit" />
+      <CheckBox layoutX="320.0" layoutY="110.0" mnemonicParsing="false" text="Download" />
+      <TextField fx:id="filenamefield" layoutX="136.0" layoutY="67.0" />
+      <TextField layoutX="136.0" layoutY="106.0" />
+      <Button layoutX="383.0" layoutY="203.0" mnemonicParsing="false" onAction="#onSave" text="Save" />
+      <Button layoutX="55.0" layoutY="203.0" mnemonicParsing="false" onAction="#onCancel" text="Cancel" />
+   </children>
+</AnchorPane>

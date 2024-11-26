@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.berc_oop_project.PolicyMaker6">
+   <children>
+      <Label layoutX="22.0" layoutY="84.0" text="User Name" />
+      <Label layoutX="22.0" layoutY="121.0" text="Password" />
+      <Label layoutX="22.0" layoutY="156.0" text="Devive Name" />
+      <TableView fx:id="deviceTable" layoutX="365.0" layoutY="43.0" prefHeight="200.0" prefWidth="226.0">
+        <columns>
+          <TableColumn fx:id="usernameCol" prefWidth="75.0" text="User Name" />
+          <TableColumn fx:id="passwordCol" prefWidth="75.0" text="Password" />
+            <TableColumn fx:id="deviceCol" prefWidth="75.0" text="Device" />
+        </columns>
+      </TableView>
+      <Button layoutX="14.0" layoutY="24.0" mnemonicParsing="false" onAction="#onDeviceButtonClick" text="Device" />
+      <Button layoutX="498.0" layoutY="264.0" mnemonicParsing="false" onAction="#onAddButtonClick" text="Add" />
+      <TextField fx:id="usernameField" layoutX="106.0" layoutY="80.0" />
+      <TextField fx:id="passwordField" layoutX="107.0" layoutY="117.0" />
+      <ComboBox fx:id="devicenameComboBox" layoutX="106.0" layoutY="152.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>
