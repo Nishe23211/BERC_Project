@@ -7,6 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
+
 <AnchorPane prefHeight="333.0" prefWidth="404.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.berc_oop_project.Nishe_2321153.SupportStaff8A">
    <children>
       <Label fx:id="managepermissions" layoutX="115.0" layoutY="27.0" text="Manage Permissions">

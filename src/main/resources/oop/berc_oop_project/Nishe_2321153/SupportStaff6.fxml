@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="356.0" prefWidth="517.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.berc_oop_project.Nishe_2321153.SupportStaff6">
+   <children>
+      <Label fx:id="calendarorevent" layoutX="80.0" layoutY="40.0" text="Calendar or Events">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TableView fx:id="eventtableview" layoutX="80.0" layoutY="69.0" prefHeight="200.0" prefWidth="351.0">
+        <columns>
+          <TableColumn fx:id="titlecolumn" prefWidth="100.00003814697266" text="Title" />
+          <TableColumn fx:id="typecolumn" prefWidth="122.66661071777344" text="Type" />
+            <TableColumn fx:id="datecolumn" prefWidth="128.0" text="Date" />
+        </columns>
+      </TableView>
+      <Button layoutX="334.0" layoutY="283.0" mnemonicParsing="false" onAction="#onScheduleEvent" text="Schedule Event" />
+   </children>
+</AnchorPane>
