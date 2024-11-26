@@ -12,8 +12,6 @@ public class SystemAdministrator2 {
     @javafx.fxml.FXML
     private TableColumn usernameCol;
     @javafx.fxml.FXML
-    private ComboBox roleComboBox;
-    @javafx.fxml.FXML
     private TextField passwordField;
     @javafx.fxml.FXML
     private TableColumn roleCol;
@@ -21,8 +19,14 @@ public class SystemAdministrator2 {
     private TableView userroleTable;
     @javafx.fxml.FXML
     private TableColumn passwordCol;
+    @javafx.fxml.FXML
+    private ComboBox roletypeComboBox;
 
     @javafx.fxml.FXML
     public void onAddButtonClick(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void onRoleButtonClick(ActionEvent actionEvent) {
     }
 }
