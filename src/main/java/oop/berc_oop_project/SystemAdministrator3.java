@@ -15,4 +15,8 @@ public class SystemAdministrator3 {
     @javafx.fxml.FXML
     public void onReportButtonClick(ActionEvent actionEvent) {
     }
+
+    @javafx.fxml.FXML
+    public void onPerformanceButtonClick(ActionEvent actionEvent) {
+    }
 }
