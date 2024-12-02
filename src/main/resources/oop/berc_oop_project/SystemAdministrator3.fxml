@@ -5,14 +5,14 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="570.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.berc_oop_project.SystemAdministrator3">
    <children>
-      <Label layoutX="14.0" layoutY="29.0" text="User Performance" />
-      <Label layoutX="14.0" layoutY="67.0" text="Performance Metrics" />
+      <Label layoutX="13.0" layoutY="63.0" text="User Performance" />
+      <Label layoutX="6.0" layoutY="114.0" text="Performance Metrics" />
       <Label fx:id="DisplayText" layoutX="265.0" layoutY="186.0" prefHeight="150.0" prefWidth="211.0" text="Label" />
-      <ComboBox fx:id="userperformanceComboBox" layoutX="134.0" layoutY="25.0" prefWidth="150.0" />
-      <ComboBox fx:id="performancemetricsComboBox" layoutX="134.0" layoutY="63.0" prefWidth="150.0" />
-      <Button layoutX="29.0" layoutY="141.0" mnemonicParsing="false" onAction="#onReportButtonClick" text="Report" />
+      <ComboBox fx:id="userperformanceComboBox" layoutX="134.0" layoutY="63.0" prefWidth="150.0" />
+      <ComboBox fx:id="performancemetricsComboBox" layoutX="134.0" layoutY="110.0" prefWidth="150.0" />
+      <Button layoutX="17.0" layoutY="186.0" mnemonicParsing="false" onAction="#onReportButtonClick" text="Report" />
+      <Button layoutX="17.0" layoutY="22.0" mnemonicParsing="false" onAction="#onPerformanceButtonClick" text="Performance" />
    </children>
 </AnchorPane>

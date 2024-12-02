@@ -1,14 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="oop.berc_oop_project.Nishe_2321153.BERCOfficials3"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="424.0" prefWidth="632.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.berc_oop_project.Nishe_2321153.BERCOfficials3">
+   <children>
+      <Label fx:id="disputeresolutionandcases" layoutX="44.0" layoutY="20.0" text="Dispute Resolution and Cases">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="casedetails" layoutX="420.0" layoutY="20.0" text="Case Details">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TableView fx:id="casetable" layoutX="26.0" layoutY="59.0" prefHeight="200.0" prefWidth="229.0">
+        <columns>
+          <TableColumn fx:id="caseidcolumn" prefWidth="75.0" text="Case Id" />
+          <TableColumn fx:id="casenamecolumn" prefWidth="75.0" text="Case Name" />
+            <TableColumn fx:id="statuscolumn" prefWidth="77.3333485921224" text="Status" />
+        </columns>
+      </TableView>
+      <Line fx:id="line" endX="-99.99996948242188" endY="313.0000305175781" layoutX="390.0" layoutY="59.0" startX="-100.0" />
+      <Button layoutX="28.0" layoutY="272.0" mnemonicParsing="false" onAction="#onViewCase" text="View Case" />
+      <Label layoutX="308.0" layoutY="79.0" text="Case Name" />
+      <Label layoutX="307.0" layoutY="111.0" text="Case ID" />
+      <Label layoutX="308.0" layoutY="150.0" text="Background Information" />
+      <Label layoutX="311.0" layoutY="310.0" text="Notes" />
+      <Label layoutX="307.0" layoutY="207.0" text="Evidence Submitted" />
+      <Label layoutX="307.0" layoutY="263.0" text="Previous Decisions/Actions" />
+      <TextField fx:id="casenamefield" layoutX="452.0" layoutY="75.0" />
+      <TextField fx:id="caseidfield" layoutX="452.0" layoutY="107.0" />
+      <TextArea fx:id="backgroundinfoarea" layoutX="452.0" layoutY="144.0" prefHeight="45.0" prefWidth="149.0" />
+      <TextArea fx:id="actionsarea" layoutX="452.0" layoutY="249.0" prefHeight="45.0" prefWidth="149.0" />
+      <TextArea fx:id="evidancesubmittedarea" layoutX="452.0" layoutY="199.0" prefHeight="45.0" prefWidth="149.0" />
+      <TextArea fx:id="notesarea" layoutX="452.0" layoutY="304.0" prefHeight="45.0" prefWidth="149.0" />
+      <Button layoutX="420.0" layoutY="372.0" mnemonicParsing="false" onAction="#onProvideDecision" prefHeight="25.0" prefWidth="105.0" text="Provide Decision" />
+      <Button layoutX="549.0" layoutY="372.0" mnemonicParsing="false" onAction="#onParticipate" text="Participate" />
+   </children>
 </AnchorPane>
