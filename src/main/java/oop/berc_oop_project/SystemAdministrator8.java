@@ -22,7 +22,4 @@ public class SystemAdministrator8 {
     public void onupdateButtonClick(ActionEvent actionEvent) {
     }
 
-    @javafx.fxml.FXML
-    public void onInformationButtonClick(ActionEvent actionEvent) {
-    }
 }

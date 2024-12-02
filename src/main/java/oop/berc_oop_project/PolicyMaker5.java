@@ -10,7 +10,4 @@ public class PolicyMaker5 {
     @javafx.fxml.FXML
     private ComboBox guidesfileButtonClick;
 
-    @javafx.fxml.FXML
-    public void onGuideButtonClick(ActionEvent actionEvent) {
-    }
 }

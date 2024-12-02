@@ -13,6 +13,5 @@
       <ComboBox fx:id="documentsComboBox" layoutX="102.0" layoutY="48.0" prefWidth="150.0" />
       <ComboBox fx:id="categoryComboBox" layoutX="102.0" layoutY="94.0" prefWidth="150.0" />
       <Button layoutX="321.0" layoutY="61.0" mnemonicParsing="false" onAction="#onUploadButtonClick" text="Upload" />
-      <Button layoutX="22.0" layoutY="14.0" mnemonicParsing="false" onAction="#onFileButtonClick" text="File" />
    </children>
 </AnchorPane>

@@ -8,8 +8,7 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane prefHeight="314.0" prefWidth="544.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.berc_oop_project.PolicyMaker3">
+<AnchorPane prefHeight="314.0" prefWidth="519.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.berc_oop_project.PolicyMaker3">
    <children>
       <Label layoutX="14.0" layoutY="33.0" text="Report" />
       <Label layoutX="14.0" layoutY="80.0" text="Feedback" />

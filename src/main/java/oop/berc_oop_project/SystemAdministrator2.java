@@ -26,7 +26,4 @@ public class SystemAdministrator2 {
     public void onAddButtonClick(ActionEvent actionEvent) {
     }
 
-    @javafx.fxml.FXML
-    public void onRoleButtonClick(ActionEvent actionEvent) {
-    }
 }

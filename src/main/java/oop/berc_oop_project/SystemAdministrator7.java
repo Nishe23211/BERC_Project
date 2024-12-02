@@ -28,7 +28,4 @@ public class SystemAdministrator7 {
     public void onAddButtonClick(ActionEvent actionEvent) {
     }
 
-    @javafx.fxml.FXML
-    public void onTaskButtonClick(ActionEvent actionEvent) {
-    }
 }

@@ -35,8 +35,5 @@ public class SystemAdministrator1 {
 
     }
 
-    @FXML
-    public void onCreateAccountButton(ActionEvent actionEvent) {
-    }
 }
 

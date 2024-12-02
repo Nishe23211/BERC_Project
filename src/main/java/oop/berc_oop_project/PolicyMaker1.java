@@ -11,15 +11,12 @@ public class PolicyMaker1 {
     @javafx.fxml.FXML
     private TextField passwordField;
     @javafx.fxml.FXML
-    private ComboBox credentialComboBox;
-    @javafx.fxml.FXML
     private TextField governmentidField;
+    @javafx.fxml.FXML
+    private ComboBox typeofcredentialComboBox;
 
     @javafx.fxml.FXML
     public void onLogInButtonClick(ActionEvent actionEvent) {
     }
 
-    @javafx.fxml.FXML
-    public void onGovernmentCredentialButtonClick(ActionEvent actionEvent) {
-    }
 }

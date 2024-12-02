@@ -9,12 +9,12 @@
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.berc_oop_project.SystemAdministrator4">
    <children>
-      <Label layoutX="20.0" layoutY="62.0" text="Type of Data" />
-      <Label layoutX="13.0" layoutY="103.0" text="Type of Backup" />
-      <Label layoutX="19.0" layoutY="147.0" text="Store Backup" />
-      <ComboBox fx:id="typeofdataComboBox" layoutX="106.0" layoutY="58.0" prefWidth="150.0" />
-      <ComboBox fx:id="typeofbackupComboBox" layoutX="106.0" layoutY="99.0" prefWidth="150.0" />
-      <ComboBox fx:id="storebackupComboBox" layoutX="106.0" layoutY="143.0" prefWidth="150.0" />
+      <Label layoutX="20.0" layoutY="40.0" text="Type of Data" />
+      <Label layoutX="13.0" layoutY="90.0" text="Type of Backup" />
+      <Label layoutX="19.0" layoutY="134.0" text="Store Backup" />
+      <ComboBox fx:id="typeofdataComboBox" layoutX="106.0" layoutY="36.0" prefWidth="150.0" />
+      <ComboBox fx:id="typeofbackupComboBox" layoutX="106.0" layoutY="86.0" prefWidth="150.0" />
+      <ComboBox fx:id="storebackupComboBox" layoutX="106.0" layoutY="130.0" prefWidth="150.0" />
       <TableView fx:id="databackupTable" layoutX="54.0" layoutY="186.0" prefHeight="200.0" prefWidth="361.0">
         <columns>
           <TableColumn fx:id="typeofdataCol" prefWidth="93.60003662109375" text="Type of Data" />
@@ -23,6 +23,5 @@
         </columns>
       </TableView>
       <Button layoutX="462.0" layoutY="334.0" mnemonicParsing="false" onAction="#onConfirmSetupButtonClick" text="Confirm Setup" />
-      <Button layoutX="20.0" layoutY="22.0" mnemonicParsing="false" onAction="#onDataButtonClick" text="Data" />
    </children>
 </AnchorPane>

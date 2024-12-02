@@ -25,7 +25,4 @@ public class SystemAdministrator4 {
     public void onConfirmSetupButtonClick(ActionEvent actionEvent) {
     }
 
-    @javafx.fxml.FXML
-    public void onDataButtonClick(ActionEvent actionEvent) {
-    }
 }

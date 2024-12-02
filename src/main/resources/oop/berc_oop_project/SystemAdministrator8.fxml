@@ -8,11 +8,11 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.berc_oop_project.SystemAdministrator8">
+<AnchorPane prefHeight="400.0" prefWidth="538.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.berc_oop_project.SystemAdministrator8">
    <children>
-      <Label layoutX="31.0" layoutY="60.0" text="Type of Information" />
+      <Label layoutX="31.0" layoutY="38.0" text="Type of Information" />
       <Label layoutX="25.0" layoutY="99.0" text="Update Information" />
-      <ComboBox fx:id="typeofinformationComboBox" layoutX="181.0" layoutY="56.0" prefWidth="150.0" />
+      <ComboBox fx:id="typeofinformationComboBox" layoutX="181.0" layoutY="34.0" prefWidth="150.0" />
       <TextField fx:id="updateComboBox" layoutX="182.0" layoutY="95.0" />
       <TableView fx:id="informationTable" layoutX="39.0" layoutY="143.0" prefHeight="200.0" prefWidth="285.0">
         <columns>
@@ -21,6 +21,5 @@
         </columns>
       </TableView>
       <Button layoutX="365.0" layoutY="292.0" mnemonicParsing="false" onAction="#onupdateButtonClick" text="Update" />
-      <Button layoutX="31.0" layoutY="20.0" mnemonicParsing="false" onAction="#onInformationButtonClick" text="Information" />
    </children>
 </AnchorPane>

@@ -16,9 +16,9 @@ public class PolicyMaker8 {
     @javafx.fxml.FXML
     private TextField newpolicyField;
     @javafx.fxml.FXML
-    private ComboBox consultationComboBox;
+    private ComboBox typeofconsultationComboBox;
 
-    @javafx.fxml.FXML
+    @Deprecated
     public void onPublicConsultationButtonClick(ActionEvent actionEvent) {
     }
 

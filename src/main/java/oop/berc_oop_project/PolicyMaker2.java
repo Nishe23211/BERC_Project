@@ -25,7 +25,4 @@ public class PolicyMaker2 {
     public void onAddButtonClick(ActionEvent actionEvent) {
     }
 
-    @javafx.fxml.FXML
-    public void onForgetPasswordButtonClick(ActionEvent actionEvent) {
-    }
 }

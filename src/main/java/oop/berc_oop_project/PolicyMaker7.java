@@ -26,7 +26,4 @@ public class PolicyMaker7 {
     public void onAddButtonClick(ActionEvent actionEvent) {
     }
 
-    @javafx.fxml.FXML
-    public void onPolicyButtonClick(ActionEvent actionEvent) {
-    }
 }

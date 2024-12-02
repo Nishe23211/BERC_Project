@@ -7,7 +7,4 @@ public class PolicyMaker4 {
     @javafx.fxml.FXML
     private ComboBox languagetypeComboBox;
 
-    @javafx.fxml.FXML
-    public void onlanguageButtonClick(ActionEvent actionEvent) {
-    }
 }
