@@ -1,5 +1,8 @@
 package oop.berc_oop_project;
 
+import javafx.scene.control.ComboBox;
+import javafx.scene.control.Label;
+
 public class FaqController
 {
 

@@ -1,5 +1,9 @@
 package oop.berc_oop_project;
 
+import javafx.event.ActionEvent;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
+
 public class EvidenceController
 {
     @javafx.fxml.FXML

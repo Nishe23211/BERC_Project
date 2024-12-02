@@ -1,5 +1,8 @@
 package oop.berc_oop_project;
 
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
+
 public class DisputeController
 {
     @javafx.fxml.FXML
