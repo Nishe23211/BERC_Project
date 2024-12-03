@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="287.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Sayma_2320543.PolicyMaker5">
+   <children>
+      <Label layoutX="24.0" layoutY="36.0" text="Guides File" />
+      <ComboBox fx:id="guidesfileButtonClick" layoutX="110.0" layoutY="32.0" prefWidth="150.0" />
+      <Label fx:id="DisplayText" layoutX="260.0" layoutY="144.0" prefHeight="70.0" prefWidth="164.0" />
+      <Button layoutX="53.0" layoutY="154.0" mnemonicParsing="false" onAction="#onShowFileButtonClick" text="Show File" />
+   </children>
+</AnchorPane>

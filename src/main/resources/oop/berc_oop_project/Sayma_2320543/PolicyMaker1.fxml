@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="372.0" prefWidth="590.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Sayma_2320543.PolicyMaker1">
+   <children>
+      <Button layoutX="101.0" layoutY="249.0" mnemonicParsing="false" onAction="#onLogInButtonClick" text="Log In" />
+      <Label layoutX="37.0" layoutY="50.0" text="Government ID" />
+      <Label layoutX="37.0" layoutY="101.0" text="Password" />
+      <Label layoutX="29.0" layoutY="157.0" text="Type of Credential" />
+      <Label fx:id="DisplayText" layoutX="407.0" layoutY="123.0" prefHeight="126.0" prefWidth="139.0" text="Label" />
+      <TextField fx:id="governmentidField" layoutX="152.0" layoutY="46.0" />
+      <TextField fx:id="passwordField" layoutX="152.0" layoutY="97.0" />
+      <ComboBox fx:id="typeofcredentialComboBox" layoutX="151.0" layoutY="153.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>
