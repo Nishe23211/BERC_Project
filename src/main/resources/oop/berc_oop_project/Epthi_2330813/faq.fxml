@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="465.0" prefWidth="671.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.berc_oop_project.Epthi_2330813.FaqController">
+   <children>
+      <ComboBox fx:id="typeCB" layoutX="150.0" layoutY="56.0" prefHeight="35.0" prefWidth="241.0" />
+      <Label layoutX="60.0" layoutY="65.0" text="type" />
+      <Label layoutX="23.0" layoutY="23.0" text="FAQ" />
+      <Label fx:id="settext" layoutX="223.0" layoutY="172.0" prefHeight="202.0" prefWidth="354.0" text="Label" />
+   </children>
+</AnchorPane>

@@ -10,4 +10,6 @@ module oop.berc_oop_project {
     opens oop.berc_oop_project.Nishe_2321153 to javafx.fxml;
     exports oop.berc_oop_project.Sayma_2320543;
     opens oop.berc_oop_project.Sayma_2320543 to javafx.fxml;
+    exports oop.berc_oop_project.Epthi_2330813;
+    opens oop.berc_oop_project.Epthi_2330813 to javafx.fxml;
 }

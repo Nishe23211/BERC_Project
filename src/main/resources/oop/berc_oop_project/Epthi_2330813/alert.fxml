@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.berc_oop_project.Epthi_2330813.AlertController">
+   <children>
+      <TableView fx:id="alertTV" layoutX="18.0" layoutY="33.0" prefHeight="351.0" prefWidth="570.0">
+        <columns>
+          <TableColumn fx:id="nameCol" prefWidth="178.4000244140625" text="Company Name" />
+          <TableColumn fx:id="issueCol" prefWidth="390.4" text="Issue Type" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
