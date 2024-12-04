@@ -24,22 +24,22 @@
             <Font name="Cambria Math" size="18.0" />
          </font>
       </Label>
-      <Button layoutX="91.0" layoutY="131.0" mnemonicParsing="false" onAction="#onSystemLogs" text="System Logs">
+      <Button layoutX="22.0" layoutY="131.0" mnemonicParsing="false" onAction="#onSystemLogs" prefHeight="25.0" prefWidth="219.0" text="System Logs">
          <font>
             <Font name="Cambria Bold" size="13.0" />
          </font>
       </Button>
-      <Button layoutX="55.0" layoutY="184.0" mnemonicParsing="false" onAction="#onEmployeeManagement" text=" Employee Management">
+      <Button layoutX="21.0" layoutY="184.0" mnemonicParsing="false" onAction="#onEmployeeManagement" prefHeight="25.0" prefWidth="219.0" text=" Employee Management">
          <font>
             <Font name="Cambria Bold" size="13.0" />
          </font>
       </Button>
-      <Button layoutX="70.0" layoutY="288.0" mnemonicParsing="false" onAction="#onEvents" text="Calendar or Events">
+      <Button layoutX="26.0" layoutY="288.0" mnemonicParsing="false" onAction="#onEvents" prefHeight="25.0" prefWidth="219.0" text="Calendar or Events">
          <font>
             <Font name="Cambria Bold" size="13.0" />
          </font>
       </Button>
-      <Button layoutX="116.0" layoutY="344.0" mnemonicParsing="false" onAction="#onFiles" text=" Files ">
+      <Button layoutX="28.0" layoutY="344.0" mnemonicParsing="false" onAction="#onFiles" prefHeight="25.0" prefWidth="219.0" text=" Files ">
          <font>
             <Font name="Cambria Bold" size="13.0" />
          </font>
@@ -49,7 +49,7 @@
             <Font name="Cambria Bold" size="13.0" />
          </font>
       </Button>
-      <Button layoutX="104.0" layoutY="237.0" mnemonicParsing="false" onAction="#onTickets" text="Tickets ">
+      <Button layoutX="24.0" layoutY="237.0" mnemonicParsing="false" onAction="#onTickets" prefHeight="25.0" prefWidth="219.0" text="Tickets ">
          <font>
             <Font name="Cambria Bold" size="13.0" />
          </font>
