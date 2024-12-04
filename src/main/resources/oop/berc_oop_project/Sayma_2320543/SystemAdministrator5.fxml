@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="525.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.berc_oop_project.Sayma_2320543.SystemAdministrator5">
+   <children>
+      <Label layoutX="17.0" layoutY="48.0" text="Documents" />
+      <Label layoutX="24.0" layoutY="94.0" text="Category" />
+      <Label fx:id="DisplayText" layoutX="80.0" layoutY="239.0" text="Label" />
+      <ComboBox fx:id="documentsComboBox" layoutX="102.0" layoutY="48.0" prefWidth="150.0" />
+      <ComboBox fx:id="categoryComboBox" layoutX="102.0" layoutY="94.0" prefWidth="150.0" />
+      <Button layoutX="321.0" layoutY="61.0" mnemonicParsing="false" onAction="#onUploadButtonClick" text="Upload" />
+   </children>
+</AnchorPane>

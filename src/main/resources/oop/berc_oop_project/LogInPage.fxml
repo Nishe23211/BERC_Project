@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="462.0" prefWidth="735.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.berc_oop_project.LogInPage">
+   <children>
+      <Text layoutX="26.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome To Bangladesh Energy Regulatory Commission(BERC)">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Label layoutX="197.0" layoutY="111.0" text="User Name">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="197.0" layoutY="168.0" text="Password">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="usernameField" layoutX="344.0" layoutY="112.0" />
+      <PasswordField fx:id="passwordFiled" layoutX="344.0" layoutY="169.0" />
+      <Button layoutX="313.0" layoutY="324.0" mnemonicParsing="false" onAction="#onLogInButtonClick" text="Log In">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="settext" layoutX="184.0" layoutY="396.0" prefHeight="18.0" prefWidth="319.0" />
+      <ComboBox fx:id="typeCB" layoutX="343.0" layoutY="232.0" prefWidth="150.0" />
+      <Label layoutX="195.0" layoutY="231.0" text="User Type">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
