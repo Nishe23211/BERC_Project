@@ -1,17 +1,18 @@
 package oop.berc_oop_project;
 
+import javafx.fxml.FXML;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 
-public class AlertController
-{
-    @javafx.fxml.FXML
-    private TableView alertTV;
-    @javafx.fxml.FXML
-    private TableColumn issueCol;
-    @javafx.fxml.FXML
-    private TableColumn nameCol;
+public class AlertController {
 
-    @javafx.fxml.FXML
-    public void initialize() {
-    }}
+    @FXML
+    private TableView<?> alertTV;
+
+    @FXML
+    private TableColumn<?, ?> issueCol;
+
+    @FXML
+    private TableColumn<?, ?> nameCol;
+
+}
