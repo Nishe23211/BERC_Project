@@ -5,7 +5,7 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="356.0" prefWidth="543.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Sayma_2320543.SystemAdministrator3">
+<AnchorPane prefHeight="356.0" prefWidth="543.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.berc_oop_project.Sayma_2320543.SystemAdministrator3">
    <children>
       <Label layoutX="13.0" layoutY="45.0" text="User Performance" />
       <Label layoutX="6.0" layoutY="114.0" text="Performance Metrics" />

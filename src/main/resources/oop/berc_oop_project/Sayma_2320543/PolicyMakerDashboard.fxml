@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="438.0" prefWidth="541.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Sayma_2320543.PolicyMakerDashboard">
+<AnchorPane prefHeight="438.0" prefWidth="541.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.berc_oop_project.Sayma_2320543.PolicyMakerDashboard">
    <children>
       <Label layoutX="180.0" layoutY="23.0" text="Policy Maker">
          <font>

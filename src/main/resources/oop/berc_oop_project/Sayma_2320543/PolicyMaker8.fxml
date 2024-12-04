@@ -8,7 +8,7 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="377.0" prefWidth="467.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Sayma_2320543.PolicyMaker8">
+<AnchorPane prefHeight="377.0" prefWidth="467.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.berc_oop_project.Sayma_2320543.PolicyMaker8">
    <children>
       <Button layoutX="319.0" layoutY="257.0" mnemonicParsing="false" onAction="#onAddButtonClick" text="Add" />
       <Label layoutX="28.0" layoutY="39.0" prefHeight="0.0" prefWidth="58.0" text="New Policy" />
