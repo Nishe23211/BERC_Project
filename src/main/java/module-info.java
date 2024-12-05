@@ -12,4 +12,8 @@ module oop.berc_oop_project {
     opens oop.berc_oop_project.Sayma_2320543 to javafx.fxml;
     exports oop.berc_oop_project.Epthi_2330813;
     opens oop.berc_oop_project.Epthi_2330813 to javafx.fxml;
+    exports oop.berc_oop_project.Epthi_2330813.Auditor;
+    opens oop.berc_oop_project.Epthi_2330813.Auditor to javafx.fxml;
+    exports oop.berc_oop_project.Epthi_2330813.Consumer;
+    opens oop.berc_oop_project.Epthi_2330813.Consumer to javafx.fxml;
 }

@@ -1,21 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="365.0" prefWidth="571.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.berc_oop_project.Nishe_2321153.SupportStaff3">
+<AnchorPane prefHeight="533.0" prefWidth="571.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.berc_oop_project.Nishe_2321153.SupportStaff3">
    <children>
-      <Label fx:id="employeemanagement" layoutX="202.0" layoutY="33.0" prefHeight="25.0" prefWidth="184.0" text="Employee Management">
+      <Label fx:id="employeemanagement" layoutX="202.0" layoutY="22.0" prefHeight="25.0" prefWidth="184.0" text="Employee Management">
          <font>
             <Font name="Cambria Bold" size="14.0" />
          </font>
       </Label>
-      <TableView fx:id="tableview" layoutX="34.0" layoutY="89.0" prefHeight="200.0" prefWidth="501.0">
+      <TableView fx:id="tableview" layoutX="35.0" layoutY="70.0" prefHeight="179.0" prefWidth="501.0">
         <columns>
           <TableColumn fx:id="idcolumn" prefWidth="123.99996948242188" text="Employee Id" />
           <TableColumn fx:id="namecolumn" prefWidth="122.0" text="Employee Name" />
@@ -23,6 +25,12 @@
             <TableColumn fx:id="jobtitlecolumn" prefWidth="132.6666259765625" text="Job Title" />
         </columns>
       </TableView>
-      <Button layoutX="35.0" layoutY="303.0" mnemonicParsing="false" onAction="#onAddEmployee" text="Add Employee" />
+      <Button layoutX="442.0" layoutY="267.0" mnemonicParsing="false" onAction="#onAddEmployee" text="Add Employee" />
+      <TextField fx:id="namefield" layoutX="34.0" layoutY="304.0" promptText="Name" />
+      <TextField fx:id="jobtitledield" layoutX="34.0" layoutY="337.0" promptText="Job Title" />
+      <TextField fx:id="departmentfield" layoutX="34.0" layoutY="370.0" promptText="Department" />
+      <TextField fx:id="contactinfofield" layoutX="34.0" layoutY="403.0" promptText="Contact Information" />
+      <DatePicker fx:id="startdate" layoutX="211.0" layoutY="403.0" promptText="Start Date" />
+      <TextArea fx:id="additionalinfoarea" layoutX="33.0" layoutY="443.0" prefHeight="75.0" prefWidth="501.0" promptText="Additional Information" />
    </children>
 </AnchorPane>
