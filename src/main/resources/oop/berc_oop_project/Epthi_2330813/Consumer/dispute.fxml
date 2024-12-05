@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.berc_oop_project.Epthi_2330813.Consumer.DisputeController">
+   <children>
+      <TableView fx:id="DisputeTB" layoutX="79.0" layoutY="22.0" prefHeight="314.0" prefWidth="506.0">
+        <columns>
+          <TableColumn fx:id="complainidTC" prefWidth="150.4000244140625" text="Complain ID" />
+          <TableColumn fx:id="datefieldTC" prefWidth="152.0" text="Date Field" />
+            <TableColumn fx:id="currentstatusTC" minWidth="5.5999755859375" prefWidth="202.39999999999998" text="Current Status" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
