@@ -1,25 +1,27 @@
 package oop.berc_oop_project.Epthi_2330813.Auditor;
 
 import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 
-public class Compliance
-{
-    @javafx.fxml.FXML
-    private TableColumn dateCol;
-    @javafx.fxml.FXML
-    private TableColumn compliCol;
-    @javafx.fxml.FXML
-    private TableColumn companyCOL;
-    @javafx.fxml.FXML
-    private TableView reportTV;
+public class Compliance {
 
-    @javafx.fxml.FXML
-    public void initialize() {
+    @FXML
+    private TableColumn<Compliance, String> companyCOL;
+
+    @FXML
+    private TableColumn<Compliance, String> compliCol;
+
+    @FXML
+    private TableColumn<Compliance, String> dateCol;
+
+    @FXML
+    private TableView<Compliance> reportTV;
+
+    @FXML
+    void FilterButtonClick(ActionEvent event) {
+
     }
 
-    @javafx.fxml.FXML
-    public void OnfilterButtonClick(ActionEvent actionEvent) {
-    }
 }

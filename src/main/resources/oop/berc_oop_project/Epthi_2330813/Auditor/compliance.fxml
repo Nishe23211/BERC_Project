@@ -17,7 +17,7 @@
                   <TableColumn fx:id="dateCol" prefWidth="152.7999267578125" text="Submission Date" />
                </columns>
             </TableView>
-            <Button layoutX="469.0" layoutY="347.0" mnemonicParsing="false" onAction="#OnfilterButtonClick" text="Filter" />
+            <Button layoutX="469.0" layoutY="347.0" mnemonicParsing="false" onAction="#FilterButtonClick" text="Filter" />
          </children>
       </AnchorPane>
    </children>

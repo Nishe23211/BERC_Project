@@ -1,48 +1,55 @@
 package oop.berc_oop_project.Epthi_2330813.Auditor;
 
 import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 
-public class AuditdboardController
-{
-    @javafx.fxml.FXML
+public class AuditdboardController {
+
+    @FXML
     private Label setlabeltext;
-    @javafx.fxml.FXML
+
+    @FXML
     private Label settext;
 
-    @javafx.fxml.FXML
-    public void initialize() {
+    @FXML
+    void onDisputeButtonClick(ActionEvent event) {
+
     }
 
-    @javafx.fxml.FXML
-    public void onlogoutButtonClick(ActionEvent actionEvent) {
+    @FXML
+    void alertButtonClick(ActionEvent event) {
+
     }
 
-    @javafx.fxml.FXML
-    public void onregulatoryButtonClick(ActionEvent actionEvent) {
+    @FXML
+    void complianceButtonClick(ActionEvent event) {
+
     }
 
-    @javafx.fxml.FXML
-    public void onevidenceButtonClick(ActionEvent actionEvent) {
+    @FXML
+    void evidenceButtonClick(ActionEvent event) {
+
     }
 
-    @javafx.fxml.FXML
-    public void ontrainingButtonClick(ActionEvent actionEvent) {
+    @FXML
+    void logoutButtonClick(ActionEvent event) {
+
     }
 
-    @javafx.fxml.FXML
-    public void oncomplianceButtonClick(ActionEvent actionEvent) {
+    @FXML
+    void performanceButtonClick(ActionEvent event) {
+
     }
 
-    @javafx.fxml.FXML
-    public void onperfomanceButtonClick(ActionEvent actionEvent) {
+    @FXML
+    void regulatoryButtonClick(ActionEvent event) {
+
     }
 
-    @javafx.fxml.FXML
-    public void onDisputetButtonClick(ActionEvent actionEvent) {
+    @FXML
+    void trainingButtonClick(ActionEvent event) {
+
     }
 
-    @javafx.fxml.FXML
-    public void onalertButtonClick(ActionEvent actionEvent) {
-    }
 }

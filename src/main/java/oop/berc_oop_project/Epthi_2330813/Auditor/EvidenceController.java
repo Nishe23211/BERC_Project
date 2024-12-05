@@ -1,27 +1,29 @@
 package oop.berc_oop_project.Epthi_2330813.Auditor;
 
 import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 
-public class EvidenceController
-{
-    @javafx.fxml.FXML
-    private TableColumn nameCol;
-    @javafx.fxml.FXML
-    private TableColumn description;
-    @javafx.fxml.FXML
-    private TableView evidenceTV;
+public class EvidenceController {
 
-    @javafx.fxml.FXML
-    public void initialize() {
+    @FXML
+    private TableColumn<EvidenceController, String> description;
+
+    @FXML
+    private TableView<EvidenceController> evidenceTV;
+
+    @FXML
+    private TableColumn<EvidenceController, String> nameCol;
+
+    @FXML
+    void addButtonClick(ActionEvent event) {
+
     }
 
-    @javafx.fxml.FXML
-    public void onaddButtonClick(ActionEvent actionEvent) {
+    @FXML
+    void deleteButtonClick(ActionEvent event) {
+
     }
 
-    @javafx.fxml.FXML
-    public void ondeleteButtonClick(ActionEvent actionEvent) {
-    }
 }
