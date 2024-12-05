@@ -6,6 +6,7 @@ import javafx.scene.control.ComboBox;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
+import javafx.scene.control.cell.PropertyValueFactory;
 
 public class SystemAdministrator1 {
 
@@ -31,7 +32,16 @@ public class SystemAdministrator1 {
     private ComboBox<String> usertypeComboBox;
 
     @FXML
-    void onConfirmButtonClick(ActionEvent event) {
+    public void initialize() {
+        usertypeComboBox.getItems().addAll("Expert Representative","Policy Maker","Auditor");
+
+        usertypeCol.setCellValueFactory(new PropertyValueFactory<>("usertype"));
+        usernameCol.setCellValueFactory(new PropertyValueFactory<>("username"));
+        passwordCol.setCellValueFactory(new PropertyValueFactory<>("password"));
+    }
+
+    @FXML
+    public void onConfirmButtonClick(ActionEvent event) {
 
     }
 
