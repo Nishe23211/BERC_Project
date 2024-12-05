@@ -8,22 +8,28 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="547.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.berc_oop_project.Nishe_2321153.BERCOfficials7">
+<AnchorPane prefHeight="516.0" prefWidth="651.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.berc_oop_project.Nishe_2321153.BERCOfficials7">
    <children>
-      <Label layoutX="167.0" layoutY="14.0" text="Compliance Report Details">
+      <Label layoutX="205.0" layoutY="14.0" text="Compliance Report Details">
          <font>
-            <Font name="System Bold" size="18.0" />
+            <Font name="Cambria Bold" size="18.0" />
          </font>
       </Label>
-      <TableView fx:id="reporttable" layoutX="60.0" layoutY="50.0" prefHeight="200.0" prefWidth="416.0">
+      <TableView fx:id="reporttable" layoutX="60.0" layoutY="50.0" prefHeight="140.0" prefWidth="535.0">
         <columns>
-          <TableColumn fx:id="reportidcolumn" prefWidth="124.66668319702148" text="Report ID" />
-          <TableColumn fx:id="reporttypecolumn" prefWidth="146.00001525878906" text="Report Type" />
-            <TableColumn fx:id="reportdatacolumn" prefWidth="146.0" text="Report Data" />
+          <TableColumn fx:id="reportidcolumn" prefWidth="168.66668319702148" text="Report ID" />
+          <TableColumn fx:id="reporttypecolumn" prefWidth="186.66664123535156" text="Report Type" />
+            <TableColumn fx:id="reportdatacolumn" prefWidth="178.66665649414062" text="Report Data" />
         </columns>
       </TableView>
-      <TextArea fx:id="detailsarea" layoutX="60.0" layoutY="258.0" prefHeight="69.0" prefWidth="416.0" promptText="Report Details" />
-      <Button layoutX="311.0" layoutY="347.0" mnemonicParsing="false" onAction="#onDocumentNonCompliance" text="Document Non-Compliance" />
+      <TextArea fx:id="detailsarea" layoutX="60.0" layoutY="209.0" prefHeight="69.0" prefWidth="535.0" promptText="Report Details" />
+      <Button layoutX="426.0" layoutY="290.0" mnemonicParsing="false" onAction="#onDocumentNonCompliance" text="Document Non-Compliance" />
+      <Label fx:id="documentnoncompliance" layoutX="60.0" layoutY="340.0" text="Document Non-Compliance">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="noncompliancedetailsarea" layoutX="60.0" layoutY="372.0" prefHeight="97.0" prefWidth="535.0" promptText="Non Compliance Details" />
+      <Button layoutX="554.0" layoutY="476.0" mnemonicParsing="false" onAction="#onSave" text="Save" />
    </children>
 </AnchorPane>

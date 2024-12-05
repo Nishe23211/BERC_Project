@@ -94,6 +94,10 @@ public class SupportStaffDashboard
     }
 
     @FXML
-    public void onLogOut(ActionEvent actionEvent) {
+    public void onLogOut(ActionEvent actionEvent) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("LogInPage.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage stage = (Stage)(((Node) actionEvent.getSource()).getScene().getWindow());
+        stage.setScene(scene);
     }
 }

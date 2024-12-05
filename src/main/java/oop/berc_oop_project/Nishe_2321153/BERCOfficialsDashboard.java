@@ -1,7 +1,14 @@
 package oop.berc_oop_project.Nishe_2321153;
 
 import javafx.event.ActionEvent;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Scene;
 import javafx.scene.control.*;
+import javafx.stage.Stage;
+import oop.berc_oop_project.HelloApplication;
+
+import java.io.IOException;
 
 public class BERCOfficialsDashboard {
     @javafx.fxml.FXML
@@ -28,11 +35,19 @@ public class BERCOfficialsDashboard {
     private TextField idfield;
 
     @javafx.fxml.FXML
-    public void onPendingList(ActionEvent actionEvent) {
+    public void onPendingList(ActionEvent actionEvent) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("BERCOfficials2.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage stage = (Stage)(((Node) actionEvent.getSource()).getScene().getWindow());
+        stage.setScene(scene);
     }
 
     @javafx.fxml.FXML
-    public void onSecureSystem(ActionEvent actionEvent) {
+    public void onSecureSystem(ActionEvent actionEvent) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("BERCOfficials1.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage stage = (Stage)(((Node) actionEvent.getSource()).getScene().getWindow());
+        stage.setScene(scene);
     }
 
     @javafx.fxml.FXML
@@ -40,7 +55,11 @@ public class BERCOfficialsDashboard {
     }
 
     @javafx.fxml.FXML
-    public void onDisputeResolution(ActionEvent actionEvent) {
+    public void onDisputeResolution(ActionEvent actionEvent) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("BERCOfficials3.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage stage = (Stage)(((Node) actionEvent.getSource()).getScene().getWindow());
+        stage.setScene(scene);
     }
 
     @javafx.fxml.FXML
