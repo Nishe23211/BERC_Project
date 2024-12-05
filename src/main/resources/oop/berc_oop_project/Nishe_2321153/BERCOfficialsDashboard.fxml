@@ -10,23 +10,23 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="547.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.berc_oop_project.Nishe_2321153.BERCOfficialsDashboard">
+<AnchorPane prefHeight="547.0" prefWidth="648.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.berc_oop_project.Nishe_2321153.BERCOfficialsDashboard">
    <children>
-      <Label fx:id="BERC" layoutX="76.0" layoutY="23.0" text="BERC Officials (Regulators/Commission Members)">
+      <Label fx:id="BERC" layoutX="125.0" layoutY="24.0" text="BERC Officials (Regulators/Commission Members)">
          <font>
             <Font name="Cambria Bold" size="18.0" />
          </font>
       </Label>
-      <Label fx:id="dash" layoutX="223.0" layoutY="56.0" text="Dashboard">
+      <Label fx:id="dash" layoutX="285.0" layoutY="55.0" text="Dashboard">
          <font>
             <Font name="Cambria" size="21.0" />
          </font>
       </Label>
-      <Button layoutX="39.0" layoutY="203.0" mnemonicParsing="false" onAction="#onSecureSystem" prefHeight="25.0" prefWidth="116.0" text="Secure system" />
-      <Button layoutX="41.0" layoutY="268.0" mnemonicParsing="false" onAction="#onPendingList" prefHeight="45.0" prefWidth="121.0" text="The list of pending applications and proposals" />
-      <Button layoutX="44.0" layoutY="350.0" mnemonicParsing="false" onAction="#onDisputeResolution" text="Dispute Resolution" />
-      <Line endX="-100.0" endY="309.9999694824219" layoutX="279.0" layoutY="136.0" startX="-100.0" />
-      <TableView fx:id="dashtable" layoutX="216.0" layoutY="281.0" prefHeight="163.0" prefWidth="371.0">
+      <Button layoutX="14.0" layoutY="206.0" mnemonicParsing="false" onAction="#onSecureSystem" prefHeight="25.0" prefWidth="206.0" text="Secure system" />
+      <Button layoutX="14.0" layoutY="270.0" mnemonicParsing="false" onAction="#onPendingList" prefHeight="45.0" prefWidth="206.0" text="pending applications and proposals" />
+      <Button layoutX="14.0" layoutY="355.0" mnemonicParsing="false" onAction="#onDisputeResolution" prefHeight="25.0" prefWidth="206.0" text="Dispute Resolution" />
+      <Line endX="-100.0" endY="309.9999694824219" layoutX="332.0" layoutY="138.0" startX="-100.0" />
+      <TableView fx:id="dashtable" layoutX="253.0" layoutY="293.0" prefHeight="163.0" prefWidth="371.0">
         <columns>
           <TableColumn fx:id="namecolumn" prefWidth="87.3333740234375" text="Name" />
           <TableColumn fx:id="idcolumn" prefWidth="85.3333740234375" text="ID" />
@@ -34,15 +34,15 @@
             <TableColumn fx:id="datecolumn" prefWidth="103.33331298828125" text="Date" />
         </columns>
       </TableView>
-      <TextField fx:id="namefield" layoutX="261.0" layoutY="130.0" />
-      <TextField fx:id="statusfield" layoutX="261.0" layoutY="212.0" />
-      <TextField fx:id="idfield" layoutX="261.0" layoutY="168.0" />
-      <DatePicker fx:id="date" layoutX="476.0" layoutY="212.0" prefHeight="25.0" prefWidth="109.0" />
-      <Label layoutX="216.0" layoutY="134.0" text="Name" />
-      <Label layoutX="226.0" layoutY="172.0" text="ID" />
-      <Label layoutX="216.0" layoutY="216.0" text="Status" />
-      <Label layoutX="426.0" layoutY="216.0" text="Date" />
-      <Button layoutX="524.0" layoutY="249.0" mnemonicParsing="false" onAction="#onAdd" text="Add User" />
-      <Button layoutX="212.0" layoutY="461.0" mnemonicParsing="false" onAction="#onview" text="View" />
+      <TextField fx:id="namefield" layoutX="301.0" layoutY="130.0" />
+      <TextField fx:id="statusfield" layoutX="301.0" layoutY="212.0" />
+      <TextField fx:id="idfield" layoutX="301.0" layoutY="168.0" />
+      <DatePicker fx:id="date" layoutX="502.0" layoutY="215.0" prefHeight="25.0" prefWidth="109.0" />
+      <Label layoutX="256.0" layoutY="134.0" text="Name" />
+      <Label layoutX="256.0" layoutY="172.0" text="ID" />
+      <Label layoutX="255.0" layoutY="216.0" text="Status" />
+      <Label layoutX="467.0" layoutY="219.0" text="Date" />
+      <Button layoutX="545.0" layoutY="255.0" mnemonicParsing="false" onAction="#onAdd" text="Add User" />
+      <Button layoutX="232.0" layoutY="482.0" mnemonicParsing="false" onAction="#onview" text="View" />
    </children>
 </AnchorPane>

@@ -7,12 +7,11 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="534.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.berc_oop_project.Nishe_2321153.BERCOfficials2">
    <children>
       <Label fx:id="pendingapplicationsandproposals" layoutX="119.0" layoutY="21.0" text="Pending Applications and Proposals">
          <font>
-            <Font name="System Bold" size="18.0" />
+            <Font name="Cambria Bold" size="18.0" />
          </font>
       </Label>
       <TableView fx:id="applicationTable" layoutX="54.0" layoutY="66.0" prefHeight="242.0" prefWidth="415.0">

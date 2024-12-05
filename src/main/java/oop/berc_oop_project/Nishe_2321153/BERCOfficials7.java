@@ -1,6 +1,7 @@
 package oop.berc_oop_project.Nishe_2321153;
 
 import javafx.event.ActionEvent;
+import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextArea;
@@ -16,8 +17,16 @@ public class BERCOfficials7 {
     private TableView<BERCOfficials7> reporttable;
     @javafx.fxml.FXML
     private TableColumn<BERCOfficials7,Integer> reportdatacolumn;
+    @javafx.fxml.FXML
+    private Label documentnoncompliance;
+    @javafx.fxml.FXML
+    private TextArea noncompliancedetailsarea;
 
     @javafx.fxml.FXML
     public void onDocumentNonCompliance(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void onSave(ActionEvent actionEvent) {
     }
 }
