@@ -1,30 +1,34 @@
 package oop.berc_oop_project.Epthi_2330813.Consumer;
 
 import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 
-public class Billpay
-{
-    @javafx.fxml.FXML
-    private TableColumn amountTC;
-    @javafx.fxml.FXML
-    private TableColumn paymentstatusTC;
-    @javafx.fxml.FXML
+public class Billpay {
+
+    @FXML
+    private TableColumn<Billpay,String > amountTC;
+
+    @FXML
     private TextField bankaccountTF;
-    @javafx.fxml.FXML
-    private TableColumn duedateTC;
-    @javafx.fxml.FXML
+
+    @FXML
     private TextField cardnoTF;
-    @javafx.fxml.FXML
-    private TableView consumerTV;
 
-    @javafx.fxml.FXML
-    public void initialize() {
-    }
+    @FXML
+    private TableView<Billpay> consumerTV;
 
-    @javafx.fxml.FXML
-    public void OnActionmakepaymentButtonClick(ActionEvent actionEvent) {
+    @FXML
+    private TableColumn<Billpay,String> duedateTC;
+
+    @FXML
+    private TableColumn<Billpay,String> paymentstatusTC;
+
+
+
+    @FXML
+    public void NonpaymentButtonClick(ActionEvent actionEvent) {
     }
 }

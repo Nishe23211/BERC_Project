@@ -8,18 +8,19 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="400.0" prefWidth="538.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.berc_oop_project.Sayma_2320543.SystemAdministrator8">
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="534.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.berc_oop_project.Sayma_2320543.SystemAdministrator8">
    <children>
-      <Label layoutX="31.0" layoutY="38.0" text="Type of Information" />
-      <Label layoutX="25.0" layoutY="99.0" text="Update Information" />
-      <ComboBox fx:id="typeofinformationComboBox" layoutX="181.0" layoutY="34.0" prefWidth="150.0" />
-      <TextField fx:id="updateComboBox" layoutX="182.0" layoutY="95.0" />
-      <TableView fx:id="informationTable" layoutX="39.0" layoutY="143.0" prefHeight="200.0" prefWidth="285.0">
+      <Label layoutX="28.0" layoutY="28.0" text="Type of Information" />
+      <Label layoutX="28.0" layoutY="76.0" text="Update Information" />
+      <TableView fx:id="informationTable" layoutX="56.0" layoutY="140.0" prefHeight="200.0" prefWidth="254.0">
         <columns>
-          <TableColumn fx:id="informationCol" prefWidth="143.20001220703125" text="Information" />
-          <TableColumn fx:id="updateinformationCol" prefWidth="141.5999755859375" text="Update Information" />
+          <TableColumn fx:id="typeofinformationCol" prefWidth="119.20001220703125" text="Type of Information" />
+          <TableColumn fx:id="updateinformationCol" prefWidth="133.60001220703126" text="Update Information" />
         </columns>
       </TableView>
-      <Button layoutX="365.0" layoutY="292.0" mnemonicParsing="false" onAction="#onupdateButtonClick" text="Update" />
+      <Button layoutX="356.0" layoutY="314.0" mnemonicParsing="false" onAction="#onUpdateButtonClick" text="Update" />
+      <ComboBox fx:id="typeofinformationComboBox" layoutX="181.0" layoutY="24.0" prefWidth="150.0" />
+      <TextField fx:id="updateinformationField" layoutX="182.0" layoutY="81.0" />
    </children>
 </AnchorPane>

@@ -7,19 +7,21 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 
 public class SystemAdministrator8 {
+
+
     @javafx.fxml.FXML
-    private TextField updateComboBox;
-    @javafx.fxml.FXML
-    private TableColumn<SystemAdministrator8,String> informationCol;
+    private ComboBox<String> typeofinformationComboBox;
     @javafx.fxml.FXML
     private TableColumn<SystemAdministrator8,String> updateinformationCol;
     @javafx.fxml.FXML
     private TableView<SystemAdministrator8> informationTable;
     @javafx.fxml.FXML
-    private ComboBox<String> typeofinformationComboBox;
+    private TableColumn<SystemAdministrator8,String> typeofinformationCol;
+    @javafx.fxml.FXML
+    private TextField updateinformationField;
+
 
     @javafx.fxml.FXML
-    public void onupdateButtonClick(ActionEvent actionEvent) {
+    public void onUpdateButtonClick(ActionEvent actionEvent) {
     }
-
 }
