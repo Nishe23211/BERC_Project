@@ -1,11 +1,10 @@
-package oop.berc_oop_project.Sayma_2320543;
+package oop.berc_oop_project;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import oop.berc_oop_project.HelloApplication;
 
 import java.io.IOException;
 
