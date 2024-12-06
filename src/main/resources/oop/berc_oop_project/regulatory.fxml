@@ -12,14 +12,14 @@
    <children>
       <Label layoutX="14.0" layoutY="27.0" text="Descion Type" />
       <Label layoutX="272.0" layoutY="27.0" text="Date" />
-      <ComboBox fx:id="descionCB" layoutX="98.0" layoutY="23.0" prefWidth="150.0" />
+      <ComboBox fx:id="decisionCB" layoutX="98.0" layoutY="23.0" prefWidth="150.0" />
       <DatePicker fx:id="dateDB" layoutX="322.0" layoutY="23.0" />
       <TableView fx:id="regulatoryTV" layoutX="172.0" layoutY="113.0" prefHeight="315.0" prefWidth="566.0">
         <columns>
           <TableColumn fx:id="recordTC" prefWidth="87.20001220703125" text="Record ID" />
-          <TableColumn fx:id="descionTC" prefWidth="143.99993896484375" text="Descion Type" />
+          <TableColumn fx:id="decisionTC" prefWidth="143.99993896484375" text=" Decision Type" />
             <TableColumn fx:id="dateTC" prefWidth="130.39999389648438" text="Date Approved" />
-            <TableColumn fx:id="datailsTC" prefWidth="204.79998779296875" text="Details" />
+            <TableColumn fx:id="detailsTC" prefWidth="204.79998779296875" text="Details" />
         </columns>
       </TableView>
       <Button layoutX="223.0" layoutY="74.0" mnemonicParsing="false" onAction="#applyfilterButtonClick" text="Apply filter" />

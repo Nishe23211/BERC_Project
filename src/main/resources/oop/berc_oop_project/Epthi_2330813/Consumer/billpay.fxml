@@ -7,7 +7,6 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.berc_oop_project.Epthi_2330813.Consumer.Billpay">
    <children>
       <TableView fx:id="consumerTV" layoutX="283.0" layoutY="49.0" prefHeight="218.0" prefWidth="311.0">
@@ -17,7 +16,7 @@
             <TableColumn fx:id="paymentstatusTC" prefWidth="114.40001220703124" text="Payment Status" />
         </columns>
       </TableView>
-      <Button layoutX="463.0" layoutY="298.0" mnemonicParsing="false" onAction="#OnActionmakepaymentButtonClick" text="make Payment" />
+      <Button layoutX="463.0" layoutY="298.0" mnemonicParsing="false" onAction="#NonpaymentButtonClick" text="make Payment" />
       <Label layoutX="14.0" layoutY="31.0" text="Enter Payment Details" />
       <Label layoutX="14.0" layoutY="77.0" text="Card no." />
       <Label layoutX="14.0" layoutY="133.0" text="Bank Account ." />

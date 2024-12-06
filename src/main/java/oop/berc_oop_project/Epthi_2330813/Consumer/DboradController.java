@@ -1,50 +1,57 @@
 package oop.berc_oop_project.Epthi_2330813.Consumer;
 
 import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 
-public class DboradController
-{
-    @javafx.fxml.FXML
+public class DboradController {
+
+    @FXML
     private Label setlabeltext;
 
-    @javafx.fxml.FXML
-    public void initialize() {
+    @FXML
+    void onBillPaymentButtonClick(ActionEvent event) {
+
     }
 
-    @javafx.fxml.FXML
-    public void onBillPaymentButtonClick(ActionEvent actionEvent) {
+    @FXML
+    void onComplainButtonClick(ActionEvent event) {
+
     }
 
-    @javafx.fxml.FXML
-    public void onTariffButtonClick(ActionEvent actionEvent) {
+    @FXML
+    void onDisputestatustButtonClick(ActionEvent event) {
+
     }
 
-    @javafx.fxml.FXML
-    public void onlogoutButtonClick(ActionEvent actionEvent) {
+    @FXML
+    void onEnergyButtonClick(ActionEvent event) {
+
     }
 
-    @javafx.fxml.FXML
-    public void onEnergysubsidyApplicationButtonClick(ActionEvent actionEvent) {
+    @FXML
+    void onEnergysubsidyApplicationButtonClick(ActionEvent event) {
+
     }
 
-    @javafx.fxml.FXML
-    public void onFaqSectionButtonClick(ActionEvent actionEvent) {
+    @FXML
+    void onFaqSectionButtonClick(ActionEvent event) {
+
     }
 
-    @javafx.fxml.FXML
-    public void onEnergyButtonClick(ActionEvent actionEvent) {
+    @FXML
+    void onPublicinformationButtonClick(ActionEvent event) {
+
     }
 
-    @javafx.fxml.FXML
-    public void onPublicinformationButtonClick(ActionEvent actionEvent) {
+    @FXML
+    void onTariffButtonClick(ActionEvent event) {
+
     }
 
-    @javafx.fxml.FXML
-    public void onComplainButtonClick(ActionEvent actionEvent) {
+    @FXML
+    void onlogoutButtonClick(ActionEvent event) {
+
     }
 
-    @javafx.fxml.FXML
-    public void onDisputestatustButtonClick(ActionEvent actionEvent) {
-    }
 }
