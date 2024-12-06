@@ -1,4 +1,4 @@
-package oop.berc_oop_project;
+package oop.berc_oop_project.Sayma_2320543;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -7,12 +7,11 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
-import oop.berc_oop_project.Sayma_2320543.User1;
 
 public class SystemAdministrator1 {
 
     @FXML
-    private TableColumn<SystemAdministrator1,String> passwordCol;
+    private TableColumn<User1,String> passwordCol;
 
     @FXML
     private TextField passwordField;
