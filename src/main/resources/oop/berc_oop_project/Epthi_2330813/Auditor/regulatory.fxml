@@ -8,7 +8,7 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="490.0" prefWidth="749.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.berc_oop_project.RegulatoryController">
+<AnchorPane prefHeight="490.0" prefWidth="749.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.berc_oop_project.Epthi_2330813.Auditor.RegulatoryController">
    <children>
       <Label layoutX="14.0" layoutY="27.0" text="Descion Type" />
       <Label layoutX="272.0" layoutY="27.0" text="Date" />
