@@ -1,4 +1,4 @@
-package oop.berc_oop_project.Epthi_2330813.Auditor;
+package oop.berc_oop_project;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
