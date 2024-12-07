@@ -29,27 +29,37 @@ public class AuditdboardController {
     }
 
     @FXML
-    void complianceButtonClick(ActionEvent event) {
+    void complianceButtonClick(ActionEvent actionEvent)throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("compliance.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage stage = (Stage)(((Node) actionEvent.getSource()).getScene().getWindow());
+        stage.setScene(scene);
 
     }
 
     @FXML
-    void evidenceButtonClick(ActionEvent event) {
+    void evidenceButtonClick(ActionEvent actionEvent)throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("evidence.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage stage = (Stage)(((Node) actionEvent.getSource()).getScene().getWindow());
+        stage.setScene(scene);
+    }
+
+    @FXML
+    void onDisputeButtonClick(ActionEvent actionEvent)throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("resolution.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage stage = (Stage)(((Node) actionEvent.getSource()).getScene().getWindow());
+        stage.setScene(scene);
 
     }
 
     @FXML
-    void logoutButtonClick(ActionEvent event) {
-
-    }
-
-    @FXML
-    void onDisputeButtonClick(ActionEvent event) {
-
-    }
-
-    @FXML
-    void performanceButtonClick(ActionEvent event) {
+    void performanceButtonClick(ActionEvent actionEvent)throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("perfomance.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage stage = (Stage)(((Node) actionEvent.getSource()).getScene().getWindow());
+        stage.setScene(scene);
 
     }
 
@@ -63,8 +73,26 @@ public class AuditdboardController {
     }
 
     @FXML
-    void trainingButtonClick(ActionEvent event) {
+    void trainingButtonClick(ActionEvent actionEvent)throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("training.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage stage = (Stage)(((Node) actionEvent.getSource()).getScene().getWindow());
+        stage.setScene(scene);
+    }
+    @FXML
+    void logoutButtonClick(ActionEvent event) {
 
+        }
+
+    @FXML
+    public void initialize() {
+        setlabeltext.setText("Welcome to the Audit Dashboard!");
+        settext.setText("View the Alert some companies has some issue ");
     }
 
+
 }
+
+
+
+
