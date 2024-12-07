@@ -1,4 +1,4 @@
-package oop.berc_oop_project.Epthi_2330813.Auditor;
+package oop.berc_oop_project;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;

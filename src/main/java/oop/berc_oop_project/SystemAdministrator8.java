@@ -1,4 +1,4 @@
-package oop.berc_oop_project.Sayma_2320543;
+package oop.berc_oop_project;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -7,6 +7,7 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
+import oop.berc_oop_project.Sayma_2320543.SystemAdministratorU8;
 
 public class SystemAdministrator8 {
 
