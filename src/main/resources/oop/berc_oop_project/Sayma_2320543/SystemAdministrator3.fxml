@@ -9,7 +9,7 @@
    <children>
       <Label layoutX="13.0" layoutY="45.0" text="User Performance" />
       <Label layoutX="6.0" layoutY="114.0" text="Performance Metrics" />
-      <Label fx:id="DisplayText" layoutX="265.0" layoutY="186.0" prefHeight="150.0" prefWidth="211.0" text="Label" />
+      <Label fx:id="DisplayText" layoutX="43.0" layoutY="270.0" prefHeight="66.0" prefWidth="454.0" text="Label" />
       <ComboBox fx:id="userperformanceComboBox" layoutX="134.0" layoutY="41.0" prefWidth="150.0" />
       <ComboBox fx:id="performancemetricsComboBox" layoutX="134.0" layoutY="110.0" prefWidth="150.0" />
       <Button layoutX="17.0" layoutY="186.0" mnemonicParsing="false" onAction="#onReportButtonClick" text="Report" />
