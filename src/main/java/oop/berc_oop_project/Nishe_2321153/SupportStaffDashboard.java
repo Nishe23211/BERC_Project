@@ -7,8 +7,10 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 import oop.berc_oop_project.HelloApplication;
+import oop.berc_oop_project.Sayma_2320543.User1;
 
 import java.io.IOException;
 
@@ -35,6 +37,11 @@ public class SupportStaffDashboard
 
     @FXML
     public void initialize() {
+        statusbox.getItems().addAll("Open","In Progress","Resolved", "Closed");
+
+        caseidcolumn.setCellValueFactory(new PropertyValueFactory<>("Case Id"));
+        descriptioncolumn.setCellValueFactory(new PropertyValueFactory<>("Issue Description"));
+        statuscolumn.setCellValueFactory(new PropertyValueFactory<>("Status"));
     }
 
     @FXML
@@ -87,10 +94,19 @@ public class SupportStaffDashboard
 
     @FXML
     public void onAdd(ActionEvent actionEvent) {
+        int caseid  = Integer.parseInt(casefield.getText());
+        String issuedescription = descriptionfield.getText();
+        String status = statusbox.getSelectionModel().getSelectedItem();
+        SSDashboard b = new SSDashboard(caseid, issuedescription, status);
+        casetableview.getItems().add(b);
     }
 
     @FXML
-    public void onViewCase(ActionEvent actionEvent) {
+    public void onViewCase(ActionEvent actionEvent) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("SupportStaff2.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage stage = (Stage)(((Node) actionEvent.getSource()).getScene().getWindow());
+        stage.setScene(scene);
     }
 
     @FXML

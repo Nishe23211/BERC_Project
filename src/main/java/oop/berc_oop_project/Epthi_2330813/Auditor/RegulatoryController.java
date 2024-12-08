@@ -1,4 +1,4 @@
-package oop.berc_oop_project;
+package oop.berc_oop_project.Epthi_2330813.Auditor;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -13,22 +13,22 @@ public class RegulatoryController {
     private ComboBox<String> decisionCB;
 
     @FXML
-    private TableColumn<Record, String> detailsTC;
+    private TableColumn<AlertController.Record, String> detailsTC;
 
     @FXML
     private DatePicker dateDB;
 
     @FXML
-    private TableColumn<Record, String> dateTC;
+    private TableColumn<AlertController.Record, String> dateTC;
 
     @FXML
-    private TableColumn<Record, String> decisionTC;
+    private TableColumn<AlertController.Record, String> decisionTC;
 
     @FXML
-    private TableColumn<Record, String> recordTC;
+    private TableColumn<AlertController.Record, String> recordTC;
 
     @FXML
-    private TableView<Record> regulatoryTV;
+    private TableView<AlertController.Record> regulatoryTV;
 
     @FXML
     private Label settext;
@@ -62,7 +62,7 @@ public class RegulatoryController {
         String selectedDecision = decisionCB.getValue();
         String selectedDate = dateDB.getValue() != null ? dateDB.getValue().toString() : "";
 
-        ObservableList<Record> filteredRecords = fetchFilteredRecords(selectedDecision, selectedDate);
+        ObservableList<AlertController.Record> filteredRecords = fetchFilteredRecords(selectedDecision, selectedDate);
 
         if (filteredRecords.isEmpty()) {
             settext.setText("No records found.");
@@ -72,20 +72,20 @@ public class RegulatoryController {
         }
     }
 
-    private ObservableList<Record> fetchFilteredRecords(String decisionType, String date) {
+    private ObservableList<AlertController.Record> fetchFilteredRecords(String decisionType, String date) {
 
-        ObservableList<Record> records = FXCollections.observableArrayList();
+        ObservableList<AlertController.Record> records = FXCollections.observableArrayList();
 
         //  records
-        records.add(new Record("R001", "Tariff", "2024-10-01", " Got Tariff Approval "));
-        records.add(new Record("R002", "License", "2024-09-15", "Got License Issuance "));
-        records.add(new Record("R004", "Approval", "2024-08-01", "Approval pending."));
-        records.add(new Record("R005", "Approval", "2024-08-01", "Approval pending for increase tariff rate(gas)"));
-        records.add(new Record("R006", "Approval", "2024-08-01", "Approval Rejected for License "));
-        records.add(new Record("R007", "Approval", "2024-08-01", "Approval Rejected for increase tariff rate"));
-        records.add(new Record("R008", "Approval", "2024-08-01", "Approval pending"));
-        records.add(new Record("R009", "Approval", "2024-08-01", "Approval Rejected"));
-        records.add(new Record("R0010", "Approval", "2024-08-01", "Approval pending"));
+        records.add(new AlertController.Record("R001", "Tariff", "2024-10-01", " Got Tariff Approval "));
+        records.add(new AlertController.Record("R002", "License", "2024-09-15", "Got License Issuance "));
+        records.add(new AlertController.Record("R004", "Approval", "2024-08-01", "Approval pending."));
+        records.add(new AlertController.Record("R005", "Approval", "2024-08-01", "Approval pending for increase tariff rate(gas)"));
+        records.add(new AlertController.Record("R006", "Approval", "2024-08-01", "Approval Rejected for License "));
+        records.add(new AlertController.Record("R007", "Approval", "2024-08-01", "Approval Rejected for increase tariff rate"));
+        records.add(new AlertController.Record("R008", "Approval", "2024-08-01", "Approval pending"));
+        records.add(new AlertController.Record("R009", "Approval", "2024-08-01", "Approval Rejected"));
+        records.add(new AlertController.Record("R0010", "Approval", "2024-08-01", "Approval pending"));
 
 
         return records.filtered(record -> record.getDecisionType().equals(decisionType)

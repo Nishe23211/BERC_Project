@@ -2,6 +2,7 @@ module oop.berc_oop_project {
     requires javafx.controls;
     requires javafx.fxml;
     requires java.desktop;
+    requires jdk.internal.le;
 
 
     opens oop.berc_oop_project to javafx.fxml;

@@ -1,36 +1,50 @@
 package oop.berc_oop_project.Nishe_2321153;
 
 import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Scene;
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.Label;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
+import javafx.scene.control.*;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 import oop.berc_oop_project.HelloApplication;
-
 import java.io.IOException;
-import java.time.LocalDate;
+import java.lang.reflect.Type;
 
 public class SupportStaff1 {
 
     @javafx.fxml.FXML
-    private Label systemlogs;
-    @javafx.fxml.FXML
-    private TableColumn<SupportStaff1, LocalDate> timestampcolumn;
-    @javafx.fxml.FXML
     private ComboBox<String> filterCB;
     @javafx.fxml.FXML
-    private TableView<SupportStaff1> tableview;
+    private TableView<SupportStaffU1> tableview;
     @javafx.fxml.FXML
-    private TableColumn<SupportStaff1, String> logcolumn;
+    private TableColumn<SupportStaffU1, Integer> logcolumn;
     @javafx.fxml.FXML
-    private TableColumn<SupportStaff1, String> incidentcolumn;
+    private TableColumn<SupportStaffU1, String> incidentcolumn;
+    @FXML
+    private Label systemlogs;
+    @FXML
+    private TextField logidfield;
 
-    @javafx.fxml.FXML
+    @FXML
+    public void initialize() {
+        filterCB.getItems().addAll("Server Errors","Network issue");
+
+        logcolumn.setCellValueFactory(new PropertyValueFactory<>("Log ID"));
+        incidentcolumn.setCellValueFactory(new PropertyValueFactory<>("Incident Type"));
+    }
+
+    @FXML
     public void onFilter(ActionEvent actionEvent) {
+        int LogId = Integer.parseInt(logidfield.getText());
+        String IncidentType = filterCB.getValue();
+        SupportStaffU1 s = new SupportStaffU1(LogId, IncidentType);
+        tableview.getItems().add(s);
+
+        logidfield.clear();
+        filterCB.setValue("");
+
     }
 
     @javafx.fxml.FXML
@@ -39,9 +53,5 @@ public class SupportStaff1 {
         Scene scene = new Scene(fxmlLoader.load());
         Stage stage = (Stage)(((Node) actionEvent.getSource()).getScene().getWindow());
         stage.setScene(scene);
-    }
-
-    @Deprecated
-    public void onViewReport(ActionEvent actionEvent) {
     }
 }
