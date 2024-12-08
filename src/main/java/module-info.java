@@ -7,6 +7,8 @@ module oop.berc_oop_project {
 
     opens oop.berc_oop_project to javafx.fxml;
     exports oop.berc_oop_project;
+    opens oop.berc_oop_project.Ikhtara_1910374 to javafx.fxml;
+    exports oop.berc_oop_project.Ikhtara_1910374;
     exports oop.berc_oop_project.Nishe_2321153;
     opens oop.berc_oop_project.Nishe_2321153 to javafx.fxml;
     exports oop.berc_oop_project.Sayma_2320543;
