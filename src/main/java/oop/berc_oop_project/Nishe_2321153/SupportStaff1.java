@@ -11,6 +11,7 @@ import javafx.stage.Stage;
 import oop.berc_oop_project.HelloApplication;
 import java.io.IOException;
 import java.lang.reflect.Type;
+import java.util.ArrayList;
 
 public class SupportStaff1 {
 
@@ -27,12 +28,14 @@ public class SupportStaff1 {
     @FXML
     private TextField logidfield;
 
+    private ArrayList<SupportStaffU1> userList = new ArrayList<>();
+
     @FXML
     public void initialize() {
         filterCB.getItems().addAll("Server Errors","Network issue");
 
-        logcolumn.setCellValueFactory(new PropertyValueFactory<>("Log ID"));
-        incidentcolumn.setCellValueFactory(new PropertyValueFactory<>("Incident Type"));
+        logcolumn.setCellValueFactory(new PropertyValueFactory<>("LogId"));
+        incidentcolumn.setCellValueFactory(new PropertyValueFactory<>("IncidentType"));
     }
 
     @FXML
@@ -53,5 +56,13 @@ public class SupportStaff1 {
         Scene scene = new Scene(fxmlLoader.load());
         Stage stage = (Stage)(((Node) actionEvent.getSource()).getScene().getWindow());
         stage.setScene(scene);
+    }
+
+    public ArrayList<SupportStaffU1> getUserList() {
+        return userList;
+    }
+
+    public void setUserList(ArrayList<SupportStaffU1> userList) {
+        this.userList = userList;
     }
 }

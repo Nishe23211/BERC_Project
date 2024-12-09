@@ -23,13 +23,17 @@ public class SupportStaff3 {
     @javafx.fxml.FXML
     private TextField departmentfield;
     @javafx.fxml.FXML
-    private TextField contactinfofield;
-    @javafx.fxml.FXML
     private TextField jobtitledield;
     @javafx.fxml.FXML
     private DatePicker startdate;
+    @javafx.fxml.FXML
+    private TextField employeeidfield;
 
     @javafx.fxml.FXML
     public void onAddEmployee(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void onSubmit(ActionEvent actionEvent) {
     }
 }

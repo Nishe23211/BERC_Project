@@ -16,18 +16,15 @@ public class SupportStaff2 {
     private Label casedetails;
     @javafx.fxml.FXML
     private TextArea detailsarea;
-    @javafx.fxml.FXML
-    private TextArea solutionarea;
 
     @javafx.fxml.FXML
-    public void onResolve(ActionEvent actionEvent) {
-    }
-
-    @javafx.fxml.FXML
-    public void onEscalate(ActionEvent actionEvent) throws IOException {
+    public void onResolve(ActionEvent actionEvent) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("SupportStaff2.a.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         Stage stage = (Stage)(((Node) actionEvent.getSource()).getScene().getWindow());
         stage.setScene(scene);
     }
+
+
+
 }

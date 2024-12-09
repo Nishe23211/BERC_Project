@@ -20,8 +20,8 @@
       <Button layoutX="401.0" layoutY="399.0" mnemonicParsing="false" onAction="#onViewLogDetails" prefHeight="25.0" prefWidth="101.0" text="View log details" />
       <TableView fx:id="tableview" layoutX="52.0" layoutY="188.0" prefHeight="200.0" prefWidth="449.0">
         <columns>
-          <TableColumn fx:id="logcolumn" prefWidth="139.3333396911621" text="Log ID" />
-          <TableColumn fx:id="incidentcolumn" prefWidth="167.3333282470703" text="Incident Type" />
+          <TableColumn fx:id="logcolumn" prefWidth="221.33332443237305" text="Log ID" />
+          <TableColumn fx:id="incidentcolumn" prefWidth="227.3333740234375" text="Incident Type" />
         </columns>
       </TableView>
       <Label layoutX="52.0" layoutY="89.0" text="Log ID" />
