@@ -7,21 +7,22 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.berc_oop_project.Sayma_2320543.SystemAdministrator4">
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="547.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.berc_oop_project.Sayma_2320543.SystemAdministrator4">
    <children>
-      <Label layoutX="20.0" layoutY="40.0" text="Type of Data" />
-      <Label layoutX="13.0" layoutY="90.0" text="Type of Backup" />
-      <Label layoutX="19.0" layoutY="134.0" text="Store Backup" />
-      <ComboBox fx:id="typeofdataComboBox" layoutX="106.0" layoutY="36.0" prefWidth="150.0" />
-      <ComboBox fx:id="typeofbackupComboBox" layoutX="106.0" layoutY="86.0" prefWidth="150.0" />
-      <ComboBox fx:id="storebackupComboBox" layoutX="106.0" layoutY="130.0" prefWidth="150.0" />
-      <TableView fx:id="databackupTable" layoutX="54.0" layoutY="186.0" prefHeight="200.0" prefWidth="361.0">
+      <Label layoutX="23.0" layoutY="27.0" text="Type of Data" />
+      <Label layoutX="23.0" layoutY="71.0" text="Type of Backup" />
+      <Label layoutX="23.0" layoutY="111.0" text="Store Backup" />
+      <TableView fx:id="databackupTable" layoutX="23.0" layoutY="168.0" prefHeight="200.0" prefWidth="366.0">
         <columns>
-          <TableColumn fx:id="typeofdataCol" prefWidth="93.60003662109375" text="Type of Data" />
-          <TableColumn fx:id="typeodbackupCol" prefWidth="111.199951171875" text="Type of Backup" />
-            <TableColumn fx:id="storebackupCol" prefWidth="156.7999267578125" text="Store Backup" />
+          <TableColumn fx:id="typeofdataCol" prefWidth="98.39996337890625" text="Type of Data" />
+          <TableColumn fx:id="typeofbackupCol" prefWidth="124.0" text="Type of Backup" />
+            <TableColumn fx:id="storebackupCol" prefWidth="166.39996337890625" text="Store Backup" />
         </columns>
       </TableView>
-      <Button layoutX="462.0" layoutY="334.0" mnemonicParsing="false" onAction="#onConfirmSetupButtonClick" text="Confirm Setup" />
+      <Button layoutX="423.0" layoutY="327.0" mnemonicParsing="false" onAction="#onConfirmSetupButtonClick" text="Confirm Setup" />
+      <ComboBox fx:id="typeofdataComboBox" layoutX="142.0" layoutY="23.0" prefWidth="150.0" />
+      <ComboBox fx:id="typeofbackupComboBox" layoutX="142.0" layoutY="67.0" prefWidth="150.0" />
+      <ComboBox fx:id="StorebackupComboBox" layoutX="142.0" layoutY="107.0" prefWidth="150.0" />
    </children>
 </AnchorPane>
