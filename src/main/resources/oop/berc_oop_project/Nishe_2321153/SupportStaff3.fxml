@@ -23,7 +23,7 @@
           <TableColumn fx:id="namecolumn" prefWidth="122.0" text="Employee Name" />
             <TableColumn fx:id="departmentcolumn" prefWidth="124.00006103515625" text="Department" />
             <TableColumn fx:id="jobtitlecolumn" prefWidth="132.6666259765625" text="Job Title" />
-            <TableColumn prefWidth="89.3333740234375" text="Start Date" />
+            <TableColumn fx:id="startdatecolumn" prefWidth="89.3333740234375" text="Start Date" />
         </columns>
       </TableView>
       <Button layoutX="522.0" layoutY="400.0" mnemonicParsing="false" onAction="#onAddEmployee" text="Add Employee" />

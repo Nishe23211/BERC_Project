@@ -7,8 +7,6 @@ import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 
-import java.util.ArrayList;
-
 public class SupportStaff4 {
     @FXML
     private TableColumn<Ticket, String> statuscolumn;
