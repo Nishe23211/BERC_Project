@@ -11,7 +11,7 @@
    <children>
       <Label layoutX="26.0" layoutY="54.0" text="User Account" />
       <Label layoutX="26.0" layoutY="101.0" text="Type of Task" />
-      <Label fx:id="DisplayText" layoutX="26.0" layoutY="186.0" prefHeight="166.0" prefWidth="138.0" text="Label" />
+      <Label fx:id="DisplayText" layoutX="7.0" layoutY="260.0" prefHeight="92.0" prefWidth="474.0" text="Label" />
       <ComboBox fx:id="useraccountComboBox" layoutX="108.0" layoutY="54.0" prefWidth="150.0" />
       <ComboBox fx:id="taskComboBox" layoutX="108.0" layoutY="97.0" prefWidth="150.0" />
       <TableView fx:id="taskTable" layoutX="282.0" layoutY="23.0" prefHeight="200.0" prefWidth="200.0">
@@ -21,6 +21,6 @@
         </columns>
       </TableView>
       <Button layoutX="511.0" layoutY="28.0" mnemonicParsing="false" onAction="#onAddButtonClick" text="Add" />
-      <Button layoutX="320.0" layoutY="279.0" mnemonicParsing="false" onAction="#ontaskdetailsButtonClick" text="Task Details" />
+      <Button layoutX="490.0" layoutY="277.0" mnemonicParsing="false" onAction="#ontaskdetailsButtonClick" text="Task Details" />
    </children>
 </AnchorPane>
