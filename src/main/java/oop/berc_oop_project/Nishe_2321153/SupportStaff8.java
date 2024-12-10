@@ -36,8 +36,4 @@ public class SupportStaff8 {
     @javafx.fxml.FXML
     public void onSave(ActionEvent actionEvent) {
     }
-
-    @javafx.fxml.FXML
-    public void onCancel(ActionEvent actionEvent) {
-    }
 }
