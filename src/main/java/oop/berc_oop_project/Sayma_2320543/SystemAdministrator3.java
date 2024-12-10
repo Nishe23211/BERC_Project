@@ -22,7 +22,16 @@ public class SystemAdministrator3 {
 
     @javafx.fxml.FXML
     public void onReportButtonClick(ActionEvent actionEvent) {
-        DisplayText.setText("Energy production,efficiency,product feasibality details");
+        String selectedUser = userperformanceComboBox.getValue();
+        String selectedMetric = performancemetricsComboBox.getValue();
+
+        if (selectedUser != null && selectedMetric != null) {
+            DisplayText.setText("Generating report for " + selectedUser + " with metric: " + selectedMetric);
+        } else if (selectedUser == null) {
+            DisplayText.setText("Please select a user.");
+        } else {
+            DisplayText.setText("Please select a performance metric.");
+        }
 
 
     }
