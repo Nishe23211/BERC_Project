@@ -3,28 +3,30 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="477.0" prefWidth="562.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.berc_oop_project.Sayma_2320543.SystemAdministratorDashboard">
+<AnchorPane prefHeight="477.0" prefWidth="554.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.berc_oop_project.Sayma_2320543.SystemAdministratorDashboard">
    <children>
       <Label layoutX="97.0" layoutY="14.0" text="System Administrator">
          <font>
             <Font size="36.0" />
          </font>
       </Label>
-      <Button layoutX="30.0" layoutY="144.0" mnemonicParsing="false" onAction="#onCreateAccountButtonClick" text="Create Account" />
-      <Button layoutX="393.0" layoutY="144.0" mnemonicParsing="false" onAction="#onRoleButtonClick" text="Role" />
-      <Button layoutX="28.0" layoutY="214.0" mnemonicParsing="false" onAction="#onPerformanceButtonClick" text="Performance" />
-      <Button layoutX="399.0" layoutY="214.0" mnemonicParsing="false" onAction="#onDataButtonClick" text="Data" />
-      <Button layoutX="33.0" layoutY="288.0" mnemonicParsing="false" onAction="#onFileButtonClick" text="File" />
-      <Button layoutX="399.0" layoutY="288.0" mnemonicParsing="false" onAction="#onSecurityButtonClick" text="Security" />
-      <Button layoutX="30.0" layoutY="349.0" mnemonicParsing="false" onAction="#onTaskButtonClick" text="Task" />
-      <Button layoutX="399.0" layoutY="355.0" mnemonicParsing="false" onAction="#onInformationButtonClick" text="Information" />
+      <Button layoutX="77.0" layoutY="157.0" mnemonicParsing="false" onAction="#onCreateAccountButtonClick" prefHeight="26.0" prefWidth="132.0" text="Create Account" />
+      <Button layoutX="337.0" layoutY="157.0" mnemonicParsing="false" onAction="#onRoleButtonClick" prefHeight="26.0" prefWidth="132.0" text="Role" />
+      <Button layoutX="77.0" layoutY="213.0" mnemonicParsing="false" onAction="#onPerformanceButtonClick" prefHeight="26.0" prefWidth="132.0" text="Performance" />
+      <Button layoutX="337.0" layoutY="213.0" mnemonicParsing="false" onAction="#onDataButtonClick" prefHeight="26.0" prefWidth="132.0" text="Data" />
+      <Button layoutX="77.0" layoutY="275.0" mnemonicParsing="false" onAction="#onFileButtonClick" prefHeight="26.0" prefWidth="132.0" text="File" />
+      <Button layoutX="337.0" layoutY="275.0" mnemonicParsing="false" onAction="#onSecurityButtonClick" prefHeight="26.0" prefWidth="132.0" text="Security" />
+      <Button layoutX="77.0" layoutY="329.0" mnemonicParsing="false" onAction="#onTaskButtonClick" prefHeight="26.0" prefWidth="132.0" text="Task" />
+      <Button layoutX="337.0" layoutY="342.0" mnemonicParsing="false" onAction="#onInformationButtonClick" prefHeight="26.0" prefWidth="132.0" text="Information" />
       <Label layoutX="199.0" layoutY="74.0" text="Dashboard">
          <font>
             <Font size="24.0" />
          </font>
       </Label>
-      <Button layoutX="468.0" layoutY="421.0" mnemonicParsing="false" onAction="#onLogOutButtonClick" text="Log Out" />
+      <Button layoutX="409.0" layoutY="415.0" mnemonicParsing="false" onAction="#onLogOutButtonClick" text="Log Out" />
+      <Line endX="35.0" endY="174.39999389648438" layoutX="233.0" layoutY="208.0" startX="35.0" startY="-59.79998779296875" />
    </children>
 </AnchorPane>

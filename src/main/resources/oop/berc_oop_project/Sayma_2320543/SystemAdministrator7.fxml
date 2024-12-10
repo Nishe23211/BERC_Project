@@ -7,20 +7,20 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.berc_oop_project.Sayma_2320543.SystemAdministrator7">
+<AnchorPane prefHeight="386.0" prefWidth="630.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.berc_oop_project.Sayma_2320543.SystemAdministrator7">
    <children>
-      <Label layoutX="26.0" layoutY="54.0" text="User Account" />
-      <Label layoutX="26.0" layoutY="101.0" text="Type of Task" />
-      <Label fx:id="DisplayText" layoutX="7.0" layoutY="260.0" prefHeight="92.0" prefWidth="474.0" text="Label" />
-      <ComboBox fx:id="useraccountComboBox" layoutX="108.0" layoutY="54.0" prefWidth="150.0" />
-      <ComboBox fx:id="taskComboBox" layoutX="108.0" layoutY="97.0" prefWidth="150.0" />
-      <TableView fx:id="taskTable" layoutX="282.0" layoutY="23.0" prefHeight="200.0" prefWidth="200.0">
+      <Label layoutX="14.0" layoutY="58.0" text="User Account" />
+      <Label layoutX="16.0" layoutY="101.0" text="Type of Task" />
+      <Label fx:id="DisplayText" layoutX="7.0" layoutY="260.0" prefHeight="92.0" prefWidth="474.0" />
+      <ComboBox fx:id="useraccountComboBox" layoutX="93.0" layoutY="54.0" prefHeight="26.0" prefWidth="165.0" />
+      <ComboBox fx:id="taskComboBox" layoutX="92.0" layoutY="97.0" prefHeight="26.0" prefWidth="166.0" />
+      <TableView fx:id="taskTable" layoutX="282.0" layoutY="23.0" prefHeight="200.0" prefWidth="274.0">
         <columns>
           <TableColumn fx:id="useraccountCol" prefWidth="99.20001220703125" text="User Account" />
-          <TableColumn fx:id="typeoftaskCol" prefWidth="100.0" text="Type of Task" />
+          <TableColumn fx:id="typeoftaskCol" prefWidth="172.79998779296875" text="Type of Task" />
         </columns>
       </TableView>
-      <Button layoutX="511.0" layoutY="28.0" mnemonicParsing="false" onAction="#onAddButtonClick" text="Add" />
+      <Button layoutX="569.0" layoutY="23.0" mnemonicParsing="false" onAction="#onAddButtonClick" text="Add" />
       <Button layoutX="490.0" layoutY="277.0" mnemonicParsing="false" onAction="#ontaskdetailsButtonClick" text="Task Details" />
    </children>
 </AnchorPane>
