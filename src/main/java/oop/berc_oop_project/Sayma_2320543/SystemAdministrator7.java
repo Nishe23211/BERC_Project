@@ -25,7 +25,7 @@ public class SystemAdministrator7 {
     @FXML
     public void initialize() {
         useraccountComboBox.getItems().addAll(" sayma232","nishe123","ikhtara543","epthi789");
-        taskComboBox.getItems().addAll("Policy Maker","Support Staff","Legal Experts","Auditor");
+        taskComboBox.getItems().addAll("Policy Maker Task","Support Staff Task","Legal Experts Task","Auditor Task");
 
         useraccountCol.setCellValueFactory(new PropertyValueFactory<>("useraccount"));
         typeoftaskCol.setCellValueFactory(new PropertyValueFactory<>("typeoftask"));
@@ -34,7 +34,16 @@ public class SystemAdministrator7 {
 
     @javafx.fxml.FXML
     public void ontaskdetailsButtonClick(ActionEvent actionEvent) {
-        DisplayText.setText("policy maker task,support staff task,legal experts task,auditor task");
+        String selectedUser = useraccountComboBox.getValue();
+        String selectedTask = taskComboBox.getValue();
+        if (selectedUser != null && selectedTask != null) {
+            DisplayText.setText("Task added " + selectedUser + " with task: " + selectedTask);
+        } else if (selectedUser == null) {
+            DisplayText.setText("Please select a user.");
+        } else {
+            DisplayText.setText("Please select a Task.");
+        }
+
 
     }
 
