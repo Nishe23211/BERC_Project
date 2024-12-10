@@ -58,17 +58,18 @@
                         <Font size="20.0" />
                      </font>
                   </Text>
-                  <ComboBox layoutX="22.0" layoutY="236.0" prefHeight="25.0" prefWidth="135.0" promptText="Filter" />
-                  <Button layoutX="170.0" layoutY="236.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="62.0" text="View" />
+                  <ComboBox layoutX="92.0" layoutY="236.0" prefHeight="25.0" prefWidth="112.0" promptText="Choose filter" />
+                  <Button layoutX="211.0" layoutY="236.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="61.0" text="Filter" />
                   <TableView layoutX="22.0" layoutY="50.0" prefHeight="169.0" prefWidth="307.0">
                      <columns>
-                        <TableColumn prefWidth="75.0" text="Name" />
-                        <TableColumn prefWidth="75.0" text="Company" />
-                        <TableColumn prefWidth="79.5" text="Individual" />
-                        <TableColumn prefWidth="76.5" text="Duration" />
+                        <TableColumn prefWidth="66.0" text="Name" />
+                        <TableColumn prefWidth="99.5" text="Energy Provider" />
+                        <TableColumn prefWidth="76.5" text="Consumer" />
+                        <TableColumn prefWidth="64.0" text="Duration" />
                      </columns>
                   </TableView>
-                  <Button layoutX="243.0" layoutY="236.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="87.0" text="Reset Filter" />
+                  <Button layoutX="279.0" layoutY="236.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="50.0" text="Reset" />
+                  <Button layoutX="22.0" layoutY="236.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="61.0" text="View" />
                </children>
             </AnchorPane>
          </items>
