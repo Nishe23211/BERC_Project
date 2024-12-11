@@ -1,24 +1,21 @@
 package oop.berc_oop_project.Nishe_2321153;
 
 public class SSDashboard extends SupportStaffDashboard {
-    private int caseid;
+    private String caseid;
     private String issuedescription;
     private String statusbox;
 
-    @Override
-    public String toString() {
-        return "SSDashboard{" +
-                "caseid=" + caseid +
-                ", issuedescription='" + issuedescription + '\'' +
-                ", statusbox='" + statusbox + '\'' +
-                '}';
+    public SSDashboard(String caseid, String issuedescription, String statusbox) {
+        this.caseid = caseid;
+        this.issuedescription = issuedescription;
+        this.statusbox = statusbox;
     }
 
-    public int getCaseid() {
+    public String getCaseid() {
         return caseid;
     }
 
-    public void setCaseid(int caseid) {
+    public void setCaseid(String caseid) {
         this.caseid = caseid;
     }
 
@@ -38,9 +35,12 @@ public class SSDashboard extends SupportStaffDashboard {
         this.statusbox = statusbox;
     }
 
-    public SSDashboard(int caseid, String issuedescription, String statusbox) {
-        this.caseid = caseid;
-        this.issuedescription = issuedescription;
-        this.statusbox = statusbox;
+    @Override
+    public String toString() {
+        return "SSDashboard{" +
+                "caseid='" + caseid + '\'' +
+                ", issuedescription='" + issuedescription + '\'' +
+                ", statusbox='" + statusbox + '\'' +
+                '}';
     }
 }

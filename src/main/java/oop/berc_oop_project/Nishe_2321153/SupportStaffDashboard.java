@@ -12,12 +12,14 @@ import oop.berc_oop_project.HelloApplication;
 
 import java.io.IOException;
 
+import static com.sun.beans.introspect.PropertyInfo.Name.description;
+
 public class SupportStaffDashboard
 {
     @FXML
-    private TableColumn<SupportStaffDashboard, Integer> caseidcolumn;
+    private TableColumn<SSDashboard, Integer> caseidcolumn;
     @FXML
-    private TableColumn<SupportStaffDashboard, String> statuscolumn;
+    private TableColumn<SSDashboard, String> statuscolumn;
     @FXML
     private ComboBox<String> statusbox;
     @FXML
@@ -25,21 +27,23 @@ public class SupportStaffDashboard
     @FXML
     private TextField casefield;
     @FXML
-    private TableView<SupportStaffDashboard> casetableview;
+    private TableView<SSDashboard> casetableview;
     @FXML
-    private TableColumn<SupportStaffDashboard, String> descriptioncolumn;
+    private TableColumn<SSDashboard, String> descriptioncolumn;
     @FXML
     private Label supportstaff;
     @FXML
     private Label dashboard;
+    @FXML
+    private Label dashboardText;
 
     @FXML
     public void initialize() {
         statusbox.getItems().addAll("Open","In Progress","Resolved", "Closed");
 
-        caseidcolumn.setCellValueFactory(new PropertyValueFactory<>("Case Id"));
-        descriptioncolumn.setCellValueFactory(new PropertyValueFactory<>("Issue Description"));
-        statuscolumn.setCellValueFactory(new PropertyValueFactory<>("Status"));
+        caseidcolumn.setCellValueFactory(new PropertyValueFactory<>("caseid"));
+        descriptioncolumn.setCellValueFactory(new PropertyValueFactory<>("issuedescription"));
+        statuscolumn.setCellValueFactory(new PropertyValueFactory<>("statusbox"));
     }
 
     @FXML
@@ -92,19 +96,20 @@ public class SupportStaffDashboard
 
     @FXML
     public void onAdd(ActionEvent actionEvent) {
-        int caseid  = Integer.parseInt(casefield.getText());
+        String caseid  = casefield.getText();
         String issuedescription = descriptionfield.getText();
         String status = statusbox.getSelectionModel().getSelectedItem();
         SSDashboard b = new SSDashboard(caseid, issuedescription, status);
-        casetableview.getItems().add(b);
-    }
 
-    @FXML
-    public void onViewCase(ActionEvent actionEvent) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("SupportStaff2.fxml"));
-        Scene scene = new Scene(fxmlLoader.load());
-        Stage stage = (Stage)(((Node) actionEvent.getSource()).getScene().getWindow());
-        stage.setScene(scene);
+        if (caseid.isEmpty() || issuedescription.isEmpty() || status == null) {
+            dashboardText.setText("Error: All fields must be filled out.");
+            return;
+        }
+        casefield.clear();
+        descriptionfield.clear();
+        statusbox.setValue(null);
+        dashboardText.setText("Case added successfully.");
+        casetableview.getItems().add(b);
     }
 
     @FXML
@@ -113,5 +118,19 @@ public class SupportStaffDashboard
         Scene scene = new Scene(fxmlLoader.load());
         Stage stage = (Stage)(((Node) actionEvent.getSource()).getScene().getWindow());
         stage.setScene(scene);
+    }
+
+    @FXML
+    public void onViewCase(ActionEvent actionEvent) throws IOException {
+        SSDashboard selectedCase = casetableview.getSelectionModel().getSelectedItem();
+
+        if (selectedCase == null) {
+            dashboardText.setText("Error: No case selected.");
+        } else {
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("SupportStaff2.fxml"));
+            Scene scene = new Scene(fxmlLoader.load());
+            Stage stage = (Stage) (((Node) actionEvent.getSource()).getScene().getWindow());
+            stage.setScene(scene);
+        }
     }
 }
