@@ -8,21 +8,24 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="338.0" prefWidth="582.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.berc_oop_project.Sayma_2320543.PolicyMaker6">
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="588.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.berc_oop_project.Sayma_2320543.PolicyMaker6">
    <children>
-      <Label layoutX="17.0" layoutY="34.0" text="User Name" />
-      <Label layoutX="21.0" layoutY="78.0" text="Password" />
-      <Label layoutX="17.0" layoutY="125.0" text="Devive Name" />
-      <TableView fx:id="deviceTable" layoutX="309.0" layoutY="25.0" prefHeight="200.0" prefWidth="226.0">
+      <Label layoutX="14.0" layoutY="23.0" text="Device Name" />
+      <Label layoutX="14.0" layoutY="65.0" text="User Name" />
+      <Label layoutX="14.0" layoutY="102.0" text="Password" />
+      <TableView fx:id="deviceTable" layoutX="311.0" layoutY="11.0" prefHeight="200.0" prefWidth="260.0">
         <columns>
-          <TableColumn fx:id="usernameCol" prefWidth="75.0" text="User Name" />
-          <TableColumn fx:id="passwordCol" prefWidth="75.0" text="Password" />
-            <TableColumn fx:id="deviceCol" prefWidth="75.0" text="Device" />
+          <TableColumn fx:id="devicenameCol" prefWidth="90.4000244140625" text="Device Name" />
+          <TableColumn fx:id="usernameCol" prefWidth="87.20001220703125" text="User Name" />
+            <TableColumn fx:id="passwordCol" prefWidth="78.39996337890625" text="Password" />
         </columns>
       </TableView>
-      <Button layoutX="479.0" layoutY="262.0" mnemonicParsing="false" onAction="#onAddButtonClick" text="Add" />
-      <TextField fx:id="usernameField" layoutX="106.0" layoutY="30.0" />
-      <TextField fx:id="passwordField" layoutX="106.0" layoutY="74.0" />
-      <ComboBox fx:id="devicenameComboBox" layoutX="105.0" layoutY="121.0" prefWidth="150.0" />
+      <Button layoutX="517.0" layoutY="227.0" mnemonicParsing="false" onAction="#onAddButtonClick" text="Add" />
+      <Button layoutX="16.0" layoutY="227.0" mnemonicParsing="false" onAction="#onRecongnizeButtonClick" text="Recongnize" />
+      <Label fx:id="DisplayText" layoutX="28.0" layoutY="293.0" prefHeight="71.0" prefWidth="530.0" />
+      <ComboBox fx:id="devicenameComboBox" layoutX="105.0" layoutY="19.0" prefWidth="150.0" />
+      <TextField fx:id="usernameField" layoutX="105.0" layoutY="61.0" />
+      <TextField fx:id="passwordField" layoutX="105.0" layoutY="98.0" />
    </children>
 </AnchorPane>
