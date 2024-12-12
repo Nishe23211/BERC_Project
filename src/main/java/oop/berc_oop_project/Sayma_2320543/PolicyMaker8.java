@@ -14,13 +14,10 @@ public class PolicyMaker8 {
     @javafx.fxml.FXML
     private TableColumn<PolicyMaker8,String> consultationCol;
     @javafx.fxml.FXML
-    private TextField newpolicyField;
-    @javafx.fxml.FXML
     private ComboBox<String> typeofconsultationComboBox;
+    @javafx.fxml.FXML
+    private ComboBox<String> newpolicyComboBox;
 
-    @Deprecated
-    public void onPublicConsultationButtonClick(ActionEvent actionEvent) {
-    }
 
     @javafx.fxml.FXML
     public void onAddButtonClick(ActionEvent actionEvent) {
