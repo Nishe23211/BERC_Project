@@ -18,5 +18,4 @@ module oop.berc_oop_project {
     exports oop.berc_oop_project.Epthi_2330813.Consumer;
     opens oop.berc_oop_project.Epthi_2330813.Consumer to javafx.fxml;
 
-
 }
