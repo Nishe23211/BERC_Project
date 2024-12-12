@@ -8,12 +8,13 @@
 
 <AnchorPane prefHeight="341.0" prefWidth="562.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.berc_oop_project.Nishe_2321153.SupportStaff2">
    <children>
-      <Label fx:id="casedetails" layoutX="206.0" layoutY="28.0" prefHeight="25.0" prefWidth="108.0" text="Case Details">
+      <Label fx:id="casedetails" layoutX="206.0" layoutY="28.0" prefHeight="25.0" prefWidth="195.0" text="Case Details">
          <font>
             <Font name="Cambria Bold" size="18.0" />
          </font>
       </Label>
       <Button layoutX="434.0" layoutY="287.0" mnemonicParsing="false" onAction="#onResolve" text="Resolve" />
       <TextArea fx:id="detailsarea" layoutX="60.0" layoutY="75.0" prefHeight="200.0" prefWidth="431.0" promptText="Problem Details" />
+      <Label fx:id="caseText" layoutX="196.0" layoutY="291.0" prefHeight="17.0" prefWidth="216.0" />
    </children>
 </AnchorPane>
