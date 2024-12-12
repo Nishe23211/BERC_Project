@@ -11,7 +11,8 @@ import javafx.stage.Stage;
 import oop.berc_oop_project.HelloApplication;
 
 import java.io.IOException;
-import java.util.ArrayList;
+
+import static com.sun.beans.introspect.PropertyInfo.Name.description;
 
 public class SupportStaffDashboard
 {
@@ -35,7 +36,6 @@ public class SupportStaffDashboard
     private Label dashboard;
     @FXML
     private Label dashboardText;
-    private ArrayList<SSDashboard> dashb = new ArrayList<>();
 
     @FXML
     public void initialize() {
@@ -132,13 +132,5 @@ public class SupportStaffDashboard
             Stage stage = (Stage) (((Node) actionEvent.getSource()).getScene().getWindow());
             stage.setScene(scene);
         }
-    }
-
-    public ArrayList<SSDashboard> getDashb() {
-        return dashb;
-    }
-
-    public void setDashb(ArrayList<SSDashboard> dashb) {
-        this.dashb = dashb;
     }
 }
