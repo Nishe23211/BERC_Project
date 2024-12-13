@@ -24,12 +24,12 @@
             <Font name="Arial" size="30.0" />
          </font>
       </Text>
-      <Text layoutX="126.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dispute Cases" textAlignment="CENTER" wrappingWidth="186.5556640625">
+      <Text layoutX="30.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dispute Cases" wrappingWidth="145.5556640625">
          <font>
             <Font size="20.0" />
          </font>
       </Text>
-      <ComboBox layoutX="141.0" layoutY="324.0" prefHeight="25.0" prefWidth="112.0" promptText="Choose Filter" />
+      <ComboBox layoutX="140.0" layoutY="324.0" prefHeight="25.0" prefWidth="113.0" promptText="Choose Filter" />
       <Button layoutX="263.0" layoutY="324.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="61.0" text="Filter" />
       <Button layoutX="334.0" layoutY="324.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="61.0" text="Reset" />
       <Button layoutX="30.0" layoutY="324.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="101.0" text="View" />
@@ -44,5 +44,6 @@
          </columns>
       </TableView>
       <Button layoutX="433.0" layoutY="218.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="146.0" text="Irrelevant" />
+      <Button layoutX="247.0" layoutY="103.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="146.0" text="Load Data" />
    </children>
 </AnchorPane>

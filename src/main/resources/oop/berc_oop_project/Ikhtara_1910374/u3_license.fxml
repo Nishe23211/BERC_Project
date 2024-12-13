@@ -25,21 +25,19 @@
                   <Font size="20.0" />
                </font>
             </Text>
-            <Button layoutX="42.0" layoutY="285.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="79.0" text="Approve" />
-            <Button layoutX="138.0" layoutY="285.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="79.0" text="Reject" />
-            <GridPane layoutX="42.0" layoutY="52.0" prefHeight="213.0" prefWidth="220.0">
+            <GridPane layoutX="42.0" layoutY="45.0" prefHeight="220.0" prefWidth="220.0">
               <columnConstraints>
                 <ColumnConstraints hgrow="SOMETIMES" maxWidth="143.5" minWidth="10.0" prefWidth="105.5" />
                 <ColumnConstraints hgrow="SOMETIMES" maxWidth="89.5" minWidth="10.0" prefWidth="89.5" />
               </columnConstraints>
               <rowConstraints>
-                <RowConstraints maxHeight="25.5" minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
-                <RowConstraints maxHeight="36.0" minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
-                <RowConstraints maxHeight="35.5" minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
-                  <RowConstraints maxHeight="31.5" minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
-                  <RowConstraints maxHeight="44.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                  <RowConstraints maxHeight="41.5" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                  <RowConstraints maxHeight="23.0" minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
                   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Applicant Name: " wrappingWidth="106.63671875">
@@ -47,12 +45,12 @@
                         <Font size="13.0" />
                      </font>
                   </Text>
-                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Contact:" wrappingWidth="77.13671875" GridPane.rowIndex="1">
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Project Name:" GridPane.rowIndex="1">
                      <font>
                         <Font size="13.0" />
                      </font>
                   </Text>
-                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Legal Status:" wrappingWidth="79.13671875" GridPane.rowIndex="2">
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Contact:" wrappingWidth="77.13671875" GridPane.rowIndex="2">
                      <font>
                         <Font size="13.0" />
                      </font>
@@ -78,12 +76,12 @@
                      </font>
                   </Text>
                   <Label text="Label" GridPane.columnIndex="1" />
-                  <Label text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                   <Label text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2" />
                   <Label text="Label" GridPane.columnIndex="1" GridPane.rowIndex="4" />
                   <Label text="Label" GridPane.columnIndex="1" GridPane.rowIndex="5" />
                   <Label text="Label" GridPane.columnIndex="1" GridPane.rowIndex="6" />
                   <Label text="Label" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <Label text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                </children>
             </GridPane>
             <Separator layoutX="262.0" layoutY="7.0" orientation="VERTICAL" prefHeight="302.0" prefWidth="3.0" />
@@ -97,8 +95,11 @@
                </font>
             </Text>
             <Button layoutX="14.0" layoutY="285.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="284.0" text="View Document" />
-            <ListView layoutX="14.0" layoutY="42.0" prefHeight="226.0" prefWidth="284.0" />
+            <ListView layoutX="14.0" layoutY="42.0" prefHeight="220.0" prefWidth="284.0" />
          </children>
       </AnchorPane>
+      <Separator layoutX="33.0" layoutY="79.0" prefHeight="0.0" prefWidth="550.0" />
+      <Button layoutX="33.0" layoutY="363.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="79.0" text="Approve" />
+      <Button layoutX="159.0" layoutY="363.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="79.0" text="Reject" />
    </children>
 </AnchorPane>
