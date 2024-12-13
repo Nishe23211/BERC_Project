@@ -34,7 +34,7 @@ public class Performance2Controller {
             energyCol.setCellValueFactory(new PropertyValueFactory<>("energyLoss"));
             revCol1.setCellValueFactory(new PropertyValueFactory<>("revenue"));
 
-            // Add sample data
+
             energyList.addAll(
                     new Energy("EnergyCom A", 15.5, 15, "Underperforming"),
                     new Energy("EnergyCom B", 8.3, 10, "Moderate"),

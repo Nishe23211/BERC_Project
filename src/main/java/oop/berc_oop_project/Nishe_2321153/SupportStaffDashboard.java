@@ -12,7 +12,6 @@ import oop.berc_oop_project.HelloApplication;
 
 import java.io.IOException;
 
-import static com.sun.beans.introspect.PropertyInfo.Name.description;
 
 public class SupportStaffDashboard
 {
