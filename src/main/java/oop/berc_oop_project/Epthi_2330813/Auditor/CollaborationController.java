@@ -12,32 +12,55 @@ import javafx.stage.Stage;
 import oop.berc_oop_project.HelloApplication;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class CollaborationController {
 
     @FXML
-    private TextField messageTF;
+    private TableView<Message> messageTV;
 
     @FXML
-    private TableView<CollaborationController> messageTV;
+    private TableColumn<Message, String> msgCol;
 
     @FXML
-    private TableColumn<CollaborationController, String > msgCol;
+    private TableColumn<Message, String> senderCol;
+
+    private List<Message> messages = new ArrayList<>();
+    @FXML
+    private TextField SenderTF;
+    @FXML
+    private TextField messageTF11;
+
 
     @FXML
-    private TableColumn<CollaborationController, String> senderCol;
+    public void initialize() {
+        msgCol.setCellValueFactory(cellData -> new javafx.beans.property.SimpleStringProperty(cellData.getValue().getMessage()));
+        senderCol.setCellValueFactory(cellData -> new javafx.beans.property.SimpleStringProperty(cellData.getValue().getSender()));
+        messageTV.getItems().setAll(messages);
+    }
+
 
     @FXML
     void sendButtonClick(ActionEvent event) {
+        String sender = SenderTF.getText();
+        String message = messageTF11.getText();
 
+        if (!sender.isEmpty() && !message.isEmpty()) {
+            Message newMessage = new Message(sender, message);
+            messages.add(newMessage);
+            messageTV.getItems().setAll(messages);
+            SenderTF.clear();
+            messageTF11.clear();
+        }
     }
 
+
     @FXML
-    public void OnbackBC(ActionEvent actionEvent)  throws IOException {
+    public void OnbackBC(ActionEvent actionEvent) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("auditdboard.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         Stage stage = (Stage) (((Node) actionEvent.getSource()).getScene().getWindow());
         stage.setScene(scene);
     }
-
 }
