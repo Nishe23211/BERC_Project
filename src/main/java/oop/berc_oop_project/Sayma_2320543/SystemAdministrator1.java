@@ -28,7 +28,7 @@ public class SystemAdministrator1 {
 
     @FXML
     public void initialize() {
-        typeComboBox.getItems().addAll("Expert Representative","Policy Maker","Auditor","Legal Expert","Representative");
+        typeComboBox.getItems().addAll("Expert Representative","Policy Maker","Auditor");
 
         typeCol.setCellValueFactory(new PropertyValueFactory<>("type"));
         user1nameCol.setCellValueFactory(new PropertyValueFactory<>("name"));
