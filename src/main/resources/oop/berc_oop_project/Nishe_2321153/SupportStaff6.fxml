@@ -1,27 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="356.0" prefWidth="517.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.berc_oop_project.Nishe_2321153.SupportStaff6">
+<AnchorPane prefHeight="460.0" prefWidth="438.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.berc_oop_project.Nishe_2321153.SupportStaff6">
    <children>
-      <Label fx:id="calendarorevent" layoutX="80.0" layoutY="40.0" text="Calendar or Events">
+      <Label fx:id="calendarorevent" layoutX="191.0" layoutY="14.0" text="Events">
          <font>
-            <Font name="System Bold" size="14.0" />
+            <Font name="Cambria Bold" size="18.0" />
          </font>
       </Label>
-      <TableView fx:id="eventtableview" layoutX="80.0" layoutY="69.0" prefHeight="200.0" prefWidth="351.0">
+      <TableView fx:id="eventtableview" layoutX="40.0" layoutY="169.0" prefHeight="200.0" prefWidth="354.0">
         <columns>
-          <TableColumn fx:id="titlecolumn" prefWidth="100.00003814697266" text="Title" />
-          <TableColumn fx:id="typecolumn" prefWidth="122.66661071777344" text="Type" />
-            <TableColumn fx:id="datecolumn" prefWidth="128.0" text="Date" />
+          <TableColumn fx:id="titlecolumn" prefWidth="100.00003814697266" text="Event Title" />
+          <TableColumn fx:id="typecolumn" prefWidth="122.66661071777344" text="Event Type" />
+            <TableColumn fx:id="datecolumn" prefWidth="128.0" text="Event Date" />
         </columns>
       </TableView>
-      <Button layoutX="334.0" layoutY="283.0" mnemonicParsing="false" onAction="#onScheduleEvent" text="Schedule Event" />
+      <Button layoutX="296.0" layoutY="387.0" mnemonicParsing="false" onAction="#onScheduleEvent" text="Schedule Event" />
+      <Label layoutX="49.0" layoutY="61.0" text="Event Title" />
+      <Label layoutX="48.0" layoutY="95.0" text="Event Type" />
+      <Label layoutX="49.0" layoutY="127.0" text="Event date" />
+      <TextField fx:id="tiitlefield" layoutX="129.0" layoutY="57.0" prefHeight="25.0" prefWidth="175.0" />
+      <ComboBox fx:id="typeCB" layoutX="129.0" layoutY="91.0" prefHeight="25.0" prefWidth="175.0" />
+      <DatePicker fx:id="doe" layoutX="129.0" layoutY="123.0" />
+      <Button layoutX="319.0" layoutY="123.0" mnemonicParsing="false" onAction="#onAdd" text="Add" />
+      <Label fx:id="eventText" layoutX="122.0" layoutY="421.0" prefHeight="22.0" prefWidth="243.0" />
    </children>
 </AnchorPane>

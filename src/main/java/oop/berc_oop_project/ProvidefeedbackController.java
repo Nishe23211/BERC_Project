@@ -1,4 +1,4 @@
-package oop.berc_oop_project.Epthi_2330813.Consumer;
+package oop.berc_oop_project;
 
 import javafx.event.ActionEvent;
 import javafx.scene.control.ComboBox;

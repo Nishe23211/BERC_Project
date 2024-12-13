@@ -13,7 +13,6 @@ import oop.berc_oop_project.HelloApplication;
 import java.io.IOException;
 
 
-
 public class SupportStaffDashboard
 {
     @FXML

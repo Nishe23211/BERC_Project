@@ -1,31 +1,48 @@
 package oop.berc_oop_project.Epthi_2330813.Auditor;
 
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
-import javafx.scene.control.ComboBox;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.cell.PropertyValueFactory;
 
 public class Resolution {
 
     @FXML
-    private TableColumn<Resolution, String > ConsCol;
+    private TableColumn<Dispute, String> ConsCol;
 
     @FXML
-    private TableColumn<Resolution, String> companyCol;
+    private TableColumn<Dispute, String> companyCol;
 
     @FXML
-    private TableColumn<Resolution, String> dateCol1;
+    private TableColumn<Dispute, String> dateCol1;
 
     @FXML
-    private TableColumn<Resolution, String> disputeCOL;
+    private TableColumn<Dispute, String> disputeCOL;
+    @FXML
+    private TableView<Dispute> resolutionTV;
 
     @FXML
-    private TableView<Resolution> resolutionTV;
+    private TableColumn<Dispute, String> statusCol;
+
+    private final ObservableList<Dispute> disputes = FXCollections.observableArrayList();
 
     @FXML
-    private TableColumn<Resolution, String> statusCol;
+    public void initialize() {
 
-    @FXML
-    private ComboBox<String> viewCB;
+        ConsCol.setCellValueFactory(new PropertyValueFactory<>("consumerName"));
+        companyCol.setCellValueFactory(new PropertyValueFactory<>("companyName"));
+        disputeCOL.setCellValueFactory(new PropertyValueFactory<>("disputeId"));
+        dateCol1.setCellValueFactory(new PropertyValueFactory<>("date"));
+        statusCol.setCellValueFactory(new PropertyValueFactory<>("status"));
 
+        disputes.addAll(
+                new Dispute("D001", "EnergyCom A", "Shakila Islam", "Resolved", "2024-12-01"),
+                new Dispute("D002", "EnergyCom B", "Ekramul ", "Pending", "2024-12-03"),
+                new Dispute("D003", "EnergyCom C", "Imamul", "Under Review", "2024-12-05")
+        );
+
+        resolutionTV.setItems(disputes);
+    }
 }

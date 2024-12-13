@@ -76,7 +76,6 @@ public class RegulatoryController {
 
         ObservableList<AlertController.Record> records = FXCollections.observableArrayList();
 
-        //  records
         records.add(new AlertController.Record("R001", "Tariff", "2024-10-01", " Got Tariff Approval "));
         records.add(new AlertController.Record("R002", "License", "2024-09-15", "Got License Issuance "));
         records.add(new AlertController.Record("R004", "Approval", "2024-08-01", "Approval pending."));
