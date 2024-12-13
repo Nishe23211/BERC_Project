@@ -8,7 +8,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="498.0" prefWidth="681.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.berc_oop_project.Epthi_2330813.Auditor.CollaborationController">
    <children>
       <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="530.0" prefWidth="745.0">
@@ -26,6 +25,7 @@
                   <Font size="18.0" />
                </font>
             </Label>
+            <Button layoutX="604.0" layoutY="41.0" mnemonicParsing="false" onAction="#OnbackBC" text="Back" />
          </children>
       </AnchorPane>
    </children>

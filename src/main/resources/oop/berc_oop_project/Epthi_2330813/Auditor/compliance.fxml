@@ -20,5 +20,6 @@
          </children>
       </AnchorPane>
       <Button layoutX="751.0" layoutY="464.0" mnemonicParsing="false" onAction="#FilterButtonClick" text="Filter" />
+      <Button layoutX="45.0" layoutY="477.0" mnemonicParsing="false" onAction="#OnbackBC" text="Back" />
    </children>
 </AnchorPane>
