@@ -1,120 +1,41 @@
 package oop.berc_oop_project.Epthi_2330813.Consumer;
 
-import javafx.event.ActionEvent;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Node;
-import javafx.scene.Scene;
-import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
-import javafx.stage.Stage;
-import oop.berc_oop_project.HelloApplication;
+import javafx.scene.control.cell.PropertyValueFactory;
 
-import java.io.IOException;
+public class DisputeController {
 
-public class DisputeController
-{
-    @javafx.fxml.FXML
-    private TableColumn datefieldTC;
-    @javafx.fxml.FXML
-    private TableView DisputeTB;
-    @javafx.fxml.FXML
-    private TableColumn complainidTC;
-    @javafx.fxml.FXML
-    private TableColumn currentstatusTC;
+    @FXML
+    private TableView<Goal3> DisputeTB;
 
-    @javafx.fxml.FXML
+    @FXML
+    private TableColumn<Goal3,String > complainidTC;
+
+    @FXML
+    private TableColumn<Goal3,String> currentstatusTC;
+
+    @FXML
+    private TableColumn<Goal3,String> datefieldTC;
+
+    private ObservableList<Goal3> disputes;
+
+    @FXML
     public void initialize() {
+        complainidTC.setCellValueFactory(new PropertyValueFactory<>("disputeId"));
+        currentstatusTC.setCellValueFactory(new PropertyValueFactory<>("date"));
+        datefieldTC.setCellValueFactory(new PropertyValueFactory<>("status"));
+
+        disputes = FXCollections.observableArrayList(
+                new Goal3("D001", "2024-11-01", "Resolved"),
+                new Goal3("D002", "2024-12-05", "Under Review"),
+                new Goal3("D003", "2024-10-15", "Pending")
+        );
+        DisputeTB.setItems(disputes);
     }
 
-    public static class DboradController {
 
-        @FXML
-        private Label setlabeltext;
-
-        @FXML
-        void onBillPaymentButtonClick(ActionEvent actionEvent) throws IOException {
-            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("billpay.fxml"));
-            Scene scene = new Scene(fxmlLoader.load());
-            Stage stage = (Stage) (((Node) actionEvent.getSource()).getScene().getWindow());
-            stage.setScene(scene);
-
-
-        }
-
-        @FXML
-        void onComplainButtonClick(ActionEvent actionEvent) throws IOException {
-            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("complain.fxml"));
-            Scene scene = new Scene(fxmlLoader.load());
-            Stage stage = (Stage) (((Node) actionEvent.getSource()).getScene().getWindow());
-            stage.setScene(scene);
-        }
-
-        @FXML
-        void onDisputestatustButtonClick(ActionEvent actionEvent) throws IOException {
-            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("dispute.fxml"));
-            Scene scene = new Scene(fxmlLoader.load());
-            Stage stage = (Stage) (((Node) actionEvent.getSource()).getScene().getWindow());
-            stage.setScene(scene);
-        }
-
-        @FXML
-        void onEnergyButtonClick(ActionEvent actionEvent) throws IOException {
-            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("energyconsum.fxml"));
-            Scene scene = new Scene(fxmlLoader.load());
-            Stage stage = (Stage) (((Node) actionEvent.getSource()).getScene().getWindow());
-            stage.setScene(scene);
-        }
-
-        @FXML
-        void onEnergysubsidyApplicationButtonClick(ActionEvent actionEvent) throws IOException {
-            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("energyapplication.fxml"));
-            Scene scene = new Scene(fxmlLoader.load());
-            Stage stage = (Stage) (((Node) actionEvent.getSource()).getScene().getWindow());
-            stage.setScene(scene);
-
-        }
-
-        @FXML
-        void onFaqSectionButtonClick(ActionEvent actionEvent) throws IOException {
-            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("faq.fxml"));
-            Scene scene = new Scene(fxmlLoader.load());
-            Stage stage = (Stage) (((Node) actionEvent.getSource()).getScene().getWindow());
-            stage.setScene(scene);
-
-        }
-
-        @FXML
-        void onPublicinformationButtonClick(ActionEvent actionEvent) throws IOException {
-            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("publicinfo.fxml"));
-            Scene scene = new Scene(fxmlLoader.load());
-            Stage stage = (Stage) (((Node) actionEvent.getSource()).getScene().getWindow());
-            stage.setScene(scene);
-        }
-
-        @FXML
-        void onTariffButtonClick(ActionEvent actionEvent) throws IOException {
-            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("tariffinfo.fxml"));
-            Scene scene = new Scene(fxmlLoader.load());
-            Stage stage = (Stage) (((Node) actionEvent.getSource()).getScene().getWindow());
-            stage.setScene(scene);
-        }
-
-        @FXML
-        void onlogoutButtonClick(ActionEvent actionEvent) throws IOException {
-            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("LogInPage.fxml"));
-            Scene scene = new Scene(fxmlLoader.load());
-            Stage stage = (Stage) (((Node) actionEvent.getSource()).getScene().getWindow());
-            stage.setScene(scene);
-
-        }
-
-        @FXML
-        public void initialize() {
-            setlabeltext.setText("Welcome to the Dashboard!");
-        }
-
-
-    }
 }
