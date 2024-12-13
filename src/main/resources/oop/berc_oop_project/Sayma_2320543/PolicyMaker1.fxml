@@ -6,7 +6,6 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="530.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.berc_oop_project.Sayma_2320543.PolicyMaker1">
    <children>
       <Label layoutX="32.0" layoutY="32.0" text="Type  of Credential" />
@@ -17,5 +16,6 @@
       <ComboBox fx:id="typeofcredentialComboBox" layoutX="149.0" layoutY="28.0" prefWidth="150.0" />
       <TextField fx:id="governmentidField" layoutX="149.0" layoutY="68.0" />
       <TextField fx:id="passwordField" layoutX="149.0" layoutY="110.0" />
+      <Button layoutX="444.0" layoutY="16.0" mnemonicParsing="false" onAction="#onBackButtonClick" text="Back" />
    </children>
 </AnchorPane>
