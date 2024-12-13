@@ -25,7 +25,7 @@
             <Font name="Arial" size="30.0" />
          </font>
       </Text>
-      <Text layoutX="84.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" text="License Aplications" textAlignment="CENTER" wrappingWidth="186.5556640625">
+      <Text layoutX="31.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" text="License Aplications" wrappingWidth="186.5556640625">
          <font>
             <Font size="20.0" />
          </font>
@@ -43,5 +43,6 @@
         </columns>
       </TableView>
       <Separator layoutX="42.0" layoutY="80.0" prefHeight="5.0" prefWidth="515.0" />
+      <Button layoutX="226.0" layoutY="106.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="112.0" text="Load Applications" />
    </children>
 </AnchorPane>

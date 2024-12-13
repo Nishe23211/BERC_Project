@@ -44,6 +44,6 @@
          </columns>
       </TableView>
       <Button layoutX="433.0" layoutY="218.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="146.0" text="Irrelevant" />
-      <Button layoutX="247.0" layoutY="103.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="146.0" text="Load Data" />
+      <Button layoutX="247.0" layoutY="103.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="146.0" text="Load Cases" />
    </children>
 </AnchorPane>
