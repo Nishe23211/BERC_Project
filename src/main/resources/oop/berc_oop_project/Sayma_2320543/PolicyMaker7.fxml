@@ -24,5 +24,6 @@
       <TextField fx:id="policyidField" layoutX="188.0" layoutY="79.0" prefHeight="26.0" prefWidth="290.0" />
       <TextField fx:id="applicationField" layoutX="189.0" layoutY="120.0" prefHeight="26.0" prefWidth="290.0" />
       <ComboBox fx:id="policyreformationfilenameComboBox" layoutX="188.0" layoutY="24.0" prefHeight="26.0" prefWidth="290.0" />
+      <Button layoutX="20.0" layoutY="395.0" mnemonicParsing="false" onAction="#onBackButtonClick" text="Back" />
    </children>
 </AnchorPane>

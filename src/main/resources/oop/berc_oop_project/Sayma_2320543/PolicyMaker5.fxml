@@ -11,5 +11,6 @@
       <ComboBox fx:id="guidesfileComboBox" layoutX="110.0" layoutY="32.0" prefHeight="26.0" prefWidth="322.0" />
       <Label fx:id="DisplayText" layoutX="134.0" layoutY="144.0" prefHeight="70.0" prefWidth="347.0" />
       <Button layoutX="53.0" layoutY="154.0" mnemonicParsing="false" onAction="#onShowFileButtonClick" text="Show File" />
+      <Button layoutX="24.0" layoutY="233.0" mnemonicParsing="false" onAction="#onBackButtonClick" text="Back" />
    </children>
 </AnchorPane>
