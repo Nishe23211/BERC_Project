@@ -8,21 +8,21 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="400.0" prefWidth="534.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.berc_oop_project.Sayma_2320543.PolicyMaker7">
+<AnchorPane prefHeight="435.0" prefWidth="620.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.berc_oop_project.Sayma_2320543.PolicyMaker7">
    <children>
-      <Button layoutX="401.0" layoutY="133.0" mnemonicParsing="false" onAction="#onAddButtonClick" text="Add" />
-      <Label layoutX="23.0" layoutY="28.0" text="Policy ID" />
-      <Label layoutX="23.0" layoutY="79.0" text="Policy Reformation File Name" />
+      <Button layoutX="518.0" layoutY="395.0" mnemonicParsing="false" onAction="#onAddButtonClick" text="Add" />
+      <Label layoutX="23.0" layoutY="83.0" text="Policy ID" />
+      <Label layoutX="23.0" layoutY="28.0" text="Policy Reformation File Name" />
       <Label layoutX="23.0" layoutY="124.0" text="Application" />
-      <TableView fx:id="policyapplicationTable" layoutX="37.0" layoutY="186.0" prefHeight="200.0" prefWidth="389.0">
+      <TableView fx:id="policyapplicationTable" layoutX="14.0" layoutY="186.0" prefHeight="200.0" prefWidth="597.0">
         <columns>
           <TableColumn fx:id="policyidCol" prefWidth="75.0" text="Policy ID" />
-          <TableColumn fx:id="policyreformationfilenameCol" prefWidth="180.79998779296875" text="Policy Reformation File Name" />
-            <TableColumn fx:id="applicationCol" prefWidth="132.79998779296875" text="Application" />
+          <TableColumn fx:id="policyreformationfilenameCol" prefWidth="255.19995880126953" text="Policy Reformation File Name" />
+            <TableColumn fx:id="applicationCol" prefWidth="267.9999694824219" text="Application" />
         </columns>
       </TableView>
-      <TextField fx:id="policyidField" layoutX="189.0" layoutY="24.0" />
-      <TextField fx:id="applicationField" layoutX="189.0" layoutY="120.0" />
-      <ComboBox fx:id="policyreformationfilenameComboBox" layoutX="188.0" layoutY="75.0" prefWidth="150.0" />
+      <TextField fx:id="policyidField" layoutX="188.0" layoutY="79.0" prefHeight="26.0" prefWidth="290.0" />
+      <TextField fx:id="applicationField" layoutX="189.0" layoutY="120.0" prefHeight="26.0" prefWidth="290.0" />
+      <ComboBox fx:id="policyreformationfilenameComboBox" layoutX="188.0" layoutY="24.0" prefHeight="26.0" prefWidth="290.0" />
    </children>
 </AnchorPane>
