@@ -1,6 +1,7 @@
 package oop.berc_oop_project;
 
 import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Scene;
@@ -25,6 +26,10 @@ public class LogInPage {
     private Stage stage;
     private Scene scene;
 
+    @FXML
+    public void initialize(){
+        typeCB.getItems().addAll("Legal Expert", "Representative");}
+
     @javafx.fxml.FXML
     public void onLogInButtonClick(ActionEvent actionEvent) {
         String username = usernameField.getText();
@@ -46,6 +51,11 @@ public class LogInPage {
                     fxmlLoader = new FXMLLoader(getClass().getResource("auditor_dashboard.fxml"));
                 } else if (userType.equals("Consumer")) {
                     fxmlLoader = new FXMLLoader(getClass().getResource("consumerboard.fxml"));
+                }else if (userType.equals("Legal Expert")) {
+                        fxmlLoader = new FXMLLoader(getClass().getResource("u3_dashboard.fxml"));
+                }else if (userType.equals("Representative")) {
+                    fxmlLoader = new FXMLLoader(getClass().getResource("u4_dashboard.fxml"));
+
                 } else {
                     settext.setText("Invalid user type selected.");
                     return;
