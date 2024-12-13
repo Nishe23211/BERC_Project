@@ -7,7 +7,7 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.berc_oop_project.Epthi_2330813.Consumer.Billpay">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.berc_oop_project.Epthi_2330813.Consumer.BillpaymentController">
    <children>
       <TableView fx:id="consumerTV" layoutX="283.0" layoutY="49.0" prefHeight="218.0" prefWidth="311.0">
         <columns>
