@@ -57,7 +57,7 @@ public class AuditdboardController {
 
     @FXML
     void performanceButtonClick(ActionEvent actionEvent)throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("perfomance.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("perfomance2.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         Stage stage = (Stage)(((Node) actionEvent.getSource()).getScene().getWindow());
         stage.setScene(scene);

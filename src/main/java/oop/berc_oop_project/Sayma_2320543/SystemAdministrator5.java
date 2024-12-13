@@ -20,6 +20,12 @@ public class SystemAdministrator5 {
 
     @FXML
     public void onUploadButtonClick(ActionEvent actionEvent) {
-        DisplayText.setText("Tariff and Pricing file,Legal Frameworks file,Technical Standards file,Environmental and Renewable Energy Policies file");
+        String selectedDocument = documentsComboBox.getValue();
+
+        if (selectedDocument != null) {
+            DisplayText.setText("Uploading " + selectedDocument + ".");
+        } else {
+            DisplayText.setText("Please select a document type to upload.");
+        }
     }
 }
