@@ -6,14 +6,13 @@
 <?import javafx.scene.layout.AnchorPane?>
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.berc_oop_project.Epthi_2330813.Consumer.EnergyapplicationController">
-   <children>
-      <Label layoutX="47.0" layoutY="44.0" text="incone details:" />
-      <Label layoutX="47.0" layoutY="77.0" text="house hold size:" />
-      <Label layoutX="47.0" layoutY="117.0" text="energy uses history:" />
-      <TextField fx:id="IncomeDetailsFX" layoutX="178.0" layoutY="40.0" />
-      <TextField fx:id="houseHOldFX" layoutX="178.0" layoutY="73.0" />
-      <TextField fx:id="energyUsesHistoryFX" layoutX="178.0" layoutY="113.0" />
-      <Button layoutX="240.0" layoutY="166.0" mnemonicParsing="false" onAction="#OnSubmitButtonClick" text="submit" />
-      <Label fx:id="displayTextFX" layoutX="57.0" layoutY="192.0" />
-   </children>
+   <Label layoutX="47.0" layoutY="44.0" text="income details:" />
+   <Label layoutX="47.0" layoutY="77.0" text="household size:" />
+   <Label layoutX="47.0" layoutY="117.0" text="energy usage history:" />
+   <TextField fx:id="incomeDetailsFX" layoutX="178.0" layoutY="40.0" />
+   <TextField fx:id="houseHoldFX" layoutX="178.0" layoutY="73.0" />
+   <TextField fx:id="energyUsageHistoryFX" layoutX="178.0" layoutY="113.0" />
+   <Button layoutX="240.0" layoutY="166.0" mnemonicParsing="false" onAction="#onSubmitButtonClick" text="Submit" />
+   <Label fx:id="displayTextFX" layoutX="57.0" layoutY="192.0" />
+   <Button layoutX="56.0" layoutY="308.0" mnemonicParsing="false" onAction="#OnbackBC" text="Back" />
 </AnchorPane>

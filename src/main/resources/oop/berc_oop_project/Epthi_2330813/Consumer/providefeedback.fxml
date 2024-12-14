@@ -8,7 +8,6 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="665.0" prefWidth="884.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.berc_oop_project.ProvidefeedbackController">
    <children>
       <Label layoutX="33.0" layoutY="24.0" />
@@ -25,5 +24,6 @@
       <ComboBox fx:id="categoryCB" layoutX="155.0" layoutY="264.0" prefWidth="150.0" />
       <Line endX="44.399993896484375" endY="385.79998779296875" layoutX="394.0" layoutY="267.0" startX="38.399993896484375" startY="-262.20001220703125" />
       <TextField fx:id="feedbackTF1" layoutX="530.0" layoutY="78.0" prefHeight="294.0" prefWidth="339.0" />
+      <Button layoutX="803.0" layoutY="603.0" mnemonicParsing="false" onAction="#OnbackBC" text="Back" />
    </children>
 </AnchorPane>
