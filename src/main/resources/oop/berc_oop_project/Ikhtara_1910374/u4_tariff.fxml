@@ -10,7 +10,6 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.berc_oop_project.Ikhtara_1910374.U4Tariff">
    <children>
       <Text layoutX="39.0" layoutY="34.0" opacity="0.5" strokeType="OUTSIDE" strokeWidth="0.0" text="BERC REPRESENTATIVES DASHBOARD" textAlignment="CENTER" wrappingWidth="580.6220703125">
@@ -22,10 +21,9 @@
       <Button layoutX="5.0" layoutY="12.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="34.0" text="&lt;--" />
       <TableView layoutX="290.0" layoutY="123.0" prefHeight="200.0" prefWidth="300.0">
         <columns>
-          <TableColumn prefWidth="65.0" text="Tariff" />
-          <TableColumn prefWidth="64.5" text="Type" />
-            <TableColumn prefWidth="67.5" text="Unit" />
-            <TableColumn prefWidth="102.0" text="Starting Date" />
+          <TableColumn prefWidth="106.0" text="Tariff" />
+          <TableColumn prefWidth="86.0" text="Type" />
+            <TableColumn prefWidth="107.0" text="Unit" />
         </columns>
       </TableView>
       <Text layoutX="373.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tariff History">
