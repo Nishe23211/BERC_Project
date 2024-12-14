@@ -56,12 +56,13 @@
             <Label fx:id="fx_useridLabel" layoutX="102.0" layoutY="107.0" text="ID label" />
             <Separator layoutX="18.0" layoutY="156.0" prefHeight="3.0" prefWidth="188.0" />
             <Separator layoutX="217.0" layoutY="33.0" orientation="VERTICAL" prefHeight="230.0" prefWidth="4.0" />
-            <Button layoutX="18.0" layoutY="167.0" mnemonicParsing="false" onAction="#onProposeProject" prefHeight="25.0" prefWidth="188.0" text="Propose New Project" />
             <ComboBox fx:id="fx_project1Combo" layoutX="16.0" layoutY="201.0" prefHeight="25.0" prefWidth="92.0" promptText="Project1" />
             <ComboBox fx:id="fx_project2Combo" layoutX="111.0" layoutY="201.0" prefHeight="25.0" prefWidth="92.0" promptText="Project2" />
          </children>
       </AnchorPane>
       <AnchorPane layoutX="10.0" layoutY="83.0" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" />
       <Button layoutX="40.0" layoutY="318.0" mnemonicParsing="false" onAction="#onProposeCollab" prefHeight="25.0" prefWidth="188.0" text="Propose Collaboration" />
+      <ComboBox fx:id="fx_goToCombo" layoutX="40.0" layoutY="245.0" prefHeight="25.0" prefWidth="121.0" promptText="Select" />
+      <Button layoutX="181.0" layoutY="245.0" mnemonicParsing="false" onAction="#onGoTo" prefHeight="25.0" prefWidth="32.0" text="Go" />
    </children>
 </AnchorPane>

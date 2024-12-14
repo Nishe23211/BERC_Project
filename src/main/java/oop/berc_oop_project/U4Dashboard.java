@@ -33,6 +33,8 @@ public class U4Dashboard {
 
     @FXML
     private Label fx_usernameLabel;
+    @FXML
+    private ComboBox fx_goToCombo;
 
     @FXML
     void onFilter(ActionEvent event) {
@@ -44,7 +46,7 @@ public class U4Dashboard {
 
     }
 
-    @FXML
+    @Deprecated
     void onProposeProject(ActionEvent event) {
 
     }
@@ -59,5 +61,8 @@ public class U4Dashboard {
 
     }
 
+    @FXML
+    public void onGoTo(ActionEvent actionEvent) {
+    }
 }
 
