@@ -31,16 +31,15 @@
                 <ColumnConstraints hgrow="SOMETIMES" maxWidth="89.5" minWidth="10.0" prefWidth="89.5" />
               </columnConstraints>
               <rowConstraints>
-                <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
-                  <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
-                <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
-                  <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
-                  <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                  <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                  <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="34.5" minHeight="10.0" prefHeight="34.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="37.5" minHeight="10.0" prefHeight="32.5" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="36.0" minHeight="10.0" prefHeight="28.5" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="34.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="39.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="38.0" minHeight="10.0" prefHeight="31.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Applicant Name: " wrappingWidth="106.63671875">
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Company Name: " wrappingWidth="106.63671875">
                      <font>
                         <Font size="13.0" />
                      </font>
@@ -50,37 +49,31 @@
                         <Font size="13.0" />
                      </font>
                   </Text>
-                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Contact:" wrappingWidth="77.13671875" GridPane.rowIndex="2">
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="License Type:" wrappingWidth="107.13671875" GridPane.rowIndex="2">
                      <font>
                         <Font size="13.0" />
                      </font>
                   </Text>
-                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="License Type:" wrappingWidth="107.13671875" GridPane.rowIndex="3">
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Capital Investment:" wrappingWidth="114.63671875" GridPane.rowIndex="3">
                      <font>
                         <Font size="13.0" />
                      </font>
                   </Text>
-                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Capital Investment:" wrappingWidth="106.63671875" GridPane.rowIndex="4">
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Requested Duration:" wrappingWidth="121.13671875" GridPane.rowIndex="4">
                      <font>
                         <Font size="13.0" />
                      </font>
                   </Text>
-                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Requested Validity Period:" wrappingWidth="106.63671875" GridPane.rowIndex="5">
-                     <font>
-                        <Font size="13.0" />
-                     </font>
-                  </Text>
-                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Date of Application:" wrappingWidth="136.63671875" GridPane.rowIndex="6">
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Date of Application:" wrappingWidth="136.63671875" GridPane.rowIndex="5">
                      <font>
                         <Font size="13.0" />
                      </font>
                   </Text>
                   <Label text="Label" GridPane.columnIndex="1" />
-                  <Label text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Label text="Label" GridPane.columnIndex="1" GridPane.rowIndex="3" />
                   <Label text="Label" GridPane.columnIndex="1" GridPane.rowIndex="4" />
                   <Label text="Label" GridPane.columnIndex="1" GridPane.rowIndex="5" />
-                  <Label text="Label" GridPane.columnIndex="1" GridPane.rowIndex="6" />
-                  <Label text="Label" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <Label text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2" />
                   <Label text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                </children>
             </GridPane>
@@ -99,7 +92,7 @@
          </children>
       </AnchorPane>
       <Separator layoutX="33.0" layoutY="79.0" prefHeight="0.0" prefWidth="550.0" />
-      <Button layoutX="33.0" layoutY="363.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="79.0" text="Approve" />
-      <Button layoutX="159.0" layoutY="363.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="79.0" text="Reject" />
+      <Button layoutX="33.0" layoutY="363.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="101.0" text="Approve" />
+      <Button layoutX="137.0" layoutY="363.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="101.0" text="Reject" />
    </children>
 </AnchorPane>
