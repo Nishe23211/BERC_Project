@@ -8,7 +8,7 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="665.0" prefWidth="884.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.berc_oop_project.ProvidefeedbackController">
+<AnchorPane prefHeight="665.0" prefWidth="884.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.berc_oop_project.Epthi_2330813.Consumer.ProvidefeedbackController">
    <children>
       <Label layoutX="33.0" layoutY="24.0" />
       <Label layoutX="24.0" layoutY="24.0" text="Complain &amp; Feedback">
