@@ -18,6 +18,7 @@ public class PublicinfoController {
 
     @FXML
     private ComboBox<String> publicinfoComboBox;
+
     private PublicInfoData publicInfoData = new PublicInfoData();
     @FXML
     private TextArea infoTF;
