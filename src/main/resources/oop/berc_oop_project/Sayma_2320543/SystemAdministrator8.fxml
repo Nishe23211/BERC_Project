@@ -8,7 +8,6 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="534.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.berc_oop_project.Sayma_2320543.SystemAdministrator8">
    <children>
       <Label layoutX="28.0" layoutY="28.0" text="Type of Information" />
@@ -22,5 +21,6 @@
       <Button layoutX="356.0" layoutY="314.0" mnemonicParsing="false" onAction="#onUpdateButtonClick" text="Update" />
       <ComboBox fx:id="typeofinformationComboBox" layoutX="181.0" layoutY="24.0" prefWidth="150.0" />
       <TextField fx:id="updateinformationField" layoutX="182.0" layoutY="81.0" />
+      <Button layoutX="445.0" layoutY="354.0" mnemonicParsing="false" onAction="#onBackButtonClick" text="Back" />
    </children>
 </AnchorPane>

@@ -11,5 +11,6 @@
       <Label fx:id="DisplayText" layoutX="17.0" layoutY="130.0" prefHeight="78.0" prefWidth="650.0" />
       <ComboBox fx:id="documentsComboBox" layoutX="126.0" layoutY="39.0" prefHeight="26.0" prefWidth="350.0" />
       <Button layoutX="504.0" layoutY="30.0" mnemonicParsing="false" onAction="#onUploadButtonClick" text="Upload" />
+      <Button layoutX="597.0" layoutY="239.0" mnemonicParsing="false" onAction="#onBackButtonClick" text="Back" />
    </children>
 </AnchorPane>

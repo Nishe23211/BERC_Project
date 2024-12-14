@@ -5,20 +5,21 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.berc_oop_project.Epthi_2330813.Auditor.Compliance">
+<AnchorPane prefHeight="524.0" prefWidth="820.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.berc_oop_project.Epthi_2330813.Auditor.ComplianceController">
    <children>
       <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="400.0" prefWidth="600.0">
          <children>
-            <TableView fx:id="reportTV" layoutX="14.0" layoutY="7.0" prefHeight="309.0" prefWidth="461.0">
+            <TableView fx:id="reportTV" layoutX="14.0" layoutY="7.0" prefHeight="424.0" prefWidth="758.0">
                <columns>
                   <TableColumn fx:id="companyCOL" prefWidth="118.40002822875977" text="Company Name" />
                   <TableColumn fx:id="compliCol" prefWidth="188.80003356933594" text="Compliance Status" />
                   <TableColumn fx:id="dateCol" prefWidth="152.7999267578125" text="Submission Date" />
+                  <TableColumn fx:id="rulesCol" prefWidth="293.6000671386719" text="Company Issue" />
                </columns>
             </TableView>
-            <Button layoutX="469.0" layoutY="347.0" mnemonicParsing="false" onAction="#FilterButtonClick" text="Filter" />
          </children>
       </AnchorPane>
+      <Button layoutX="751.0" layoutY="464.0" mnemonicParsing="false" onAction="#FilterButtonClick" text="Filter" />
+      <Button layoutX="45.0" layoutY="477.0" mnemonicParsing="false" onAction="#OnbackBC" text="Back" />
    </children>
 </AnchorPane>

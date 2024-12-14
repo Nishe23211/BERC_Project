@@ -7,7 +7,6 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="547.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.berc_oop_project.Sayma_2320543.SystemAdministrator4">
    <children>
       <Label layoutX="23.0" layoutY="27.0" text="Type of Data" />
@@ -24,5 +23,6 @@
       <ComboBox fx:id="typeofdataComboBox" layoutX="142.0" layoutY="23.0" prefWidth="150.0" />
       <ComboBox fx:id="typeofbackupComboBox" layoutX="142.0" layoutY="67.0" prefWidth="150.0" />
       <ComboBox fx:id="StorebackupComboBox" layoutX="142.0" layoutY="107.0" prefWidth="150.0" />
+      <Button layoutX="470.0" layoutY="11.0" mnemonicParsing="false" onAction="#onBackButtonClick" text="Back" />
    </children>
 </AnchorPane>

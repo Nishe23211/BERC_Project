@@ -24,5 +24,6 @@
       </TableView>
       <Button layoutX="223.0" layoutY="74.0" mnemonicParsing="false" onAction="#applyfilterButtonClick" text="Apply filter" />
       <Label fx:id="settext" layoutX="9.0" layoutY="413.0" prefHeight="51.0" prefWidth="327.0" text="Label" />
+      <Button layoutX="687.0" layoutY="439.0" mnemonicParsing="false" onAction="#OnbackBC" text="Back" />
    </children>
 </AnchorPane>

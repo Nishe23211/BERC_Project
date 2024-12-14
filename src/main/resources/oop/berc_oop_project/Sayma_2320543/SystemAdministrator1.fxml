@@ -27,6 +27,7 @@
               </columns>
             </TableView>
             <Button layoutX="312.0" layoutY="261.0" mnemonicParsing="false" onAction="#onConfirmButtonClick" text="Confirm" />
+            <Button layoutX="40.0" layoutY="313.0" mnemonicParsing="false" onAction="#onBackButtonClick" text="Back" />
          </children>
       </AnchorPane>
    </children>

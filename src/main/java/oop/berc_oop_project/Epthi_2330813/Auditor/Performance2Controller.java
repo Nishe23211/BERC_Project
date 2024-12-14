@@ -4,9 +4,16 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Scene;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.stage.Stage;
+import oop.berc_oop_project.HelloApplication;
+
+import java.io.IOException;
 
 public class Performance2Controller {
 
@@ -47,6 +54,14 @@ public class Performance2Controller {
 
     @FXML
     public void refreshButtonClick(ActionEvent actionEvent) {
+    }
+
+    @FXML
+    public void OnbackBC(ActionEvent actionEvent) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("auditdboard.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage stage = (Stage) (((Node) actionEvent.getSource()).getScene().getWindow());
+        stage.setScene(scene);
     }
 }
 
