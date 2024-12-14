@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Separator?>
 <?import javafx.scene.control.TableColumn?>
@@ -13,11 +12,11 @@
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.berc_oop_project.Ikhtara_1910374.U3EventDash">
    <children>
-      <TableView layoutX="249.0" layoutY="154.0" prefHeight="200.0" prefWidth="299.0">
+      <TableView fx:id="fx_table" layoutX="249.0" layoutY="154.0" prefHeight="200.0" prefWidth="299.0">
         <columns>
-          <TableColumn prefWidth="99.0" text="Topic" />
-          <TableColumn prefWidth="98.0" text="Venue" />
-            <TableColumn prefWidth="101.0" text="Date" />
+          <TableColumn fx:id="fx_topicTC" prefWidth="99.0" text="Topic" />
+          <TableColumn fx:id="fx_venueTC" prefWidth="98.0" text="Venue" />
+            <TableColumn fx:id="fx_dateTC" prefWidth="101.0" text="Date" />
         </columns>
       </TableView>
       <Text layoutX="293.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Public Hearing Calendar">
@@ -25,10 +24,9 @@
             <Font size="20.0" />
          </font>
       </Text>
-      <DatePicker layoutX="39.0" layoutY="248.0" promptText="Select a date" />
-      <TextField layoutX="39.0" layoutY="154.0" promptText="Topic name" />
-      <ComboBox layoutX="38.0" layoutY="200.0" prefWidth="150.0" promptText="Select Venue" />
-      <Button layoutX="38.0" layoutY="329.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="174.0" text="Add Public Hearing Event" />
+      <DatePicker fx:id="fx_date" layoutX="39.0" layoutY="248.0" promptText="Select a date" />
+      <TextField fx:id="fx_name" layoutX="39.0" layoutY="154.0" promptText="Topic name" />
+      <Button layoutX="38.0" layoutY="329.0" mnemonicParsing="false" onAction="#onAddEvent" prefHeight="25.0" prefWidth="174.0" text="Add Public Hearing Event" />
       <Text layoutX="52.0" layoutY="63.0" opacity="0.5" strokeType="OUTSIDE" strokeWidth="0.0" text="BERC LEGAL EXPERT DASHBOARD" textAlignment="CENTER">
          <font>
             <Font name="Arial" size="30.0" />
@@ -40,5 +38,8 @@
             <Font size="20.0" />
          </font>
       </Text>
+      <Separator layoutX="6.0" layoutY="77.0" prefHeight="0.0" prefWidth="582.0" />
+      <Button layoutX="14.0" layoutY="40.0" mnemonicParsing="false" onAction="#onGoBack" text="&lt;--" />
+      <TextField fx:id="fx_venue" layoutX="39.0" layoutY="200.0" promptText="Venue" />
    </children>
 </AnchorPane>

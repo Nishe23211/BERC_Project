@@ -1,5 +1,7 @@
 package oop.berc_oop_project.Ikhtara_1910374;
-import javafx.scene.control.*;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Scene;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -7,7 +9,10 @@ import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
-import oop.berc_oop_project.Project;
+import javafx.stage.Stage;
+import oop.berc_oop_project.HelloApplication;
+
+import java.io.IOException;
 
 public class U3Dashboard {
 
@@ -41,7 +46,70 @@ public class U3Dashboard {
     }
 
     @FXML
-    void onGoTo(ActionEvent event) {
+    void onGoTo(ActionEvent event) throws IOException {
+
+        String go = fx_goToCombo.getValue();
+
+        if (go == null){
+            return;
+        }
+
+        else if (go.equals("Disputes")){
+
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Ikhtara_1910374/u3_dispute.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage stage = (Stage)(((Node) event.getSource()).getScene().getWindow());
+        stage.setScene(scene);
+        }
+
+
+        else if (go.equals("Events")){
+
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Ikhtara_1910374/u3_eventDash.fxml"));
+            Scene scene = new Scene(fxmlLoader.load());
+            Stage stage = (Stage)(((Node) event.getSource()).getScene().getWindow());
+            stage.setScene(scene);}
+
+
+        else if (go.equals("License Applications")){
+
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Ikhtara_1910374/u3_licenseDash.fxml"));
+            Scene scene = new Scene(fxmlLoader.load());
+            Stage stage = (Stage)(((Node) event.getSource()).getScene().getWindow());
+            stage.setScene(scene);}
+
+
+        else if (go.equals("Reports")){
+
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Ikhtara_1910374/u3_reportDash.fxml"));
+            Scene scene = new Scene(fxmlLoader.load());
+            Stage stage = (Stage)(((Node) event.getSource()).getScene().getWindow());
+            stage.setScene(scene);}
+
+
+        else if (go.equals("Tariffs")){
+
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Ikhtara_1910374/u3_tariffDash.fxml"));
+            Scene scene = new Scene(fxmlLoader.load());
+            Stage stage = (Stage)(((Node) event.getSource()).getScene().getWindow());
+            stage.setScene(scene);}
+
+
+        else if (go.equals("Tasks")){
+
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Ikhtara_1910374/u3_taskDash.fxml"));
+            Scene scene = new Scene(fxmlLoader.load());
+            Stage stage = (Stage)(((Node) event.getSource()).getScene().getWindow());
+            stage.setScene(scene);}
+
+
+        else if (go.equals("Custom Reports")){
+
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Ikhtara_1910374/u3_customReport.fxml"));
+            Scene scene = new Scene(fxmlLoader.load());
+            Stage stage = (Stage)(((Node) event.getSource()).getScene().getWindow());
+            stage.setScene(scene);}
+
 
     }
 

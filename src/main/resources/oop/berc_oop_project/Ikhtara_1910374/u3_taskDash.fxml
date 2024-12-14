@@ -11,7 +11,6 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.berc_oop_project.Ikhtara_1910374.U3TaskDash">
    <children>
       <Text layoutX="62.0" layoutY="51.0" opacity="0.5" strokeType="OUTSIDE" strokeWidth="0.0" text="BERC LEGAL EXPERT DASHBOARD" textAlignment="CENTER">
@@ -20,17 +19,17 @@
          </font>
       </Text>
       <Separator layoutX="43.0" layoutY="72.0" prefHeight="0.0" prefWidth="550.0" />
-      <Button layoutX="14.0" layoutY="24.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="34.0" text="&lt;--" />
-      <ComboBox layoutX="48.0" layoutY="126.0" prefWidth="150.0" promptText="User" />
-      <DatePicker layoutX="48.0" layoutY="225.0" promptText="Set deadline" />
-      <Button layoutX="48.0" layoutY="300.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="104.0" text="Assign Task" />
-      <TableView layoutX="273.0" layoutY="125.0" prefHeight="200.0" prefWidth="285.0">
+      <Button layoutX="14.0" layoutY="24.0" mnemonicParsing="false" onAction="#onGoBack" prefHeight="34.0" prefWidth="34.0" text="&lt;--" />
+      <ComboBox fx:id="fx_userCombo" layoutX="48.0" layoutY="126.0" prefWidth="150.0" promptText="User" />
+      <DatePicker fx:id="fx_deadline" layoutX="48.0" layoutY="225.0" promptText="Set deadline" />
+      <Button layoutX="48.0" layoutY="300.0" mnemonicParsing="false" onAction="#onAssignTask" prefHeight="25.0" prefWidth="104.0" text="Assign Task" />
+      <TableView fx:id="fx_table" layoutX="273.0" layoutY="125.0" prefHeight="200.0" prefWidth="285.0">
         <columns>
-          <TableColumn prefWidth="94.5" text="User" />
-          <TableColumn prefWidth="90.0" text="Task" />
-            <TableColumn prefWidth="99.5" text="Deadline" />
+          <TableColumn fx:id="fx_userTC" prefWidth="94.5" text="User" />
+          <TableColumn fx:id="fx_taskTC" prefWidth="90.0" text="Task" />
+            <TableColumn fx:id="fx_deadlineTC" prefWidth="99.5" text="Deadline" />
         </columns>
       </TableView>
-      <TextField layoutX="49.0" layoutY="175.0" promptText="Task" />
+      <TextField fx:id="fx_task" layoutX="49.0" layoutY="175.0" promptText="Task" />
    </children>
 </AnchorPane>
