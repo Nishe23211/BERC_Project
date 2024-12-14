@@ -132,4 +132,12 @@ public class SupportStaffDashboard
             stage.setScene(scene);
         }
     }
+
+    @FXML
+    public void onEmployeeList(ActionEvent actionEvent) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("SupportStaff5.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage stage = (Stage)(((Node) actionEvent.getSource()).getScene().getWindow());
+        stage.setScene(scene);
+    }
 }

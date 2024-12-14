@@ -68,5 +68,10 @@
       <TextField fx:id="casefield" layoutX="284.0" layoutY="131.0" prefHeight="25.0" prefWidth="119.0" promptText="Case Id" />
       <Button layoutX="284.0" layoutY="171.0" mnemonicParsing="false" onAction="#onAdd" text="Add" />
       <Label fx:id="dashboardText" layoutX="214.0" layoutY="460.0" prefHeight="17.0" prefWidth="311.0" />
+      <Button layoutX="28.0" layoutY="426.0" mnemonicParsing="false" onAction="#onEmployeeList" prefHeight="25.0" prefWidth="219.0" text="Employee List">
+         <font>
+            <Font name="Cambria Bold" size="13.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>
