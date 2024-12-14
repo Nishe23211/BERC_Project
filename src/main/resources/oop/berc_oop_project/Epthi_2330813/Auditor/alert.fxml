@@ -5,14 +5,13 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="546.0" prefWidth="773.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.berc_oop_project.Epthi_2330813.Auditor.AlertController">
-   <children>
-      <TableView fx:id="alertTV" layoutX="18.0" layoutY="33.0" prefHeight="410.0" prefWidth="616.0">
-        <columns>
-          <TableColumn fx:id="nameCol" prefWidth="178.4000244140625" text="Company Name" />
-          <TableColumn fx:id="issueCol" prefWidth="390.4" text="Issue Type" />
-        </columns>
-      </TableView>
-      <Button layoutX="680.0" layoutY="472.0" mnemonicParsing="false" onAction="#OnbackBC" text="Back" />
-   </children>
+<AnchorPane prefHeight="546.0" prefWidth="773.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="oop.berc_oop_project.Epthi_2330813.Auditor.AlertController">
+    <TableView fx:id="alertTV" layoutX="18.0" layoutY="33.0" prefHeight="410.0" prefWidth="616.0">
+      <columns>
+          <TableColumn fx:id="nameCol" prefWidth="178.4000244140625" text="Company Name"/>
+          <TableColumn fx:id="issueCol" prefWidth="436.0000305175781" text="Issue Type"/>
+      </columns>
+    </TableView>
+    <Button layoutX="680.0" layoutY="472.0" mnemonicParsing="false" onAction="#OnbackBC" text="Back"/>
 </AnchorPane>

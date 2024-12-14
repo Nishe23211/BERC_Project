@@ -10,7 +10,6 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import oop.berc_oop_project.HelloApplication;
-
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -54,8 +53,6 @@ public class CollaborationController {
             messageTF11.clear();
         }
     }
-
-
     @FXML
     public void OnbackBC(ActionEvent actionEvent) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("auditdboard.fxml"));
