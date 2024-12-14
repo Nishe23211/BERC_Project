@@ -11,7 +11,7 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="547.0" prefWidth="648.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.berc_oop_project.Nishe_2321153.BERCOfficialsDashboard">
+<AnchorPane prefHeight="547.0" prefWidth="648.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.berc_oop_project.Nishe_2321153.BERCOfficials.BERCOfficialsDashboard">
    <children>
       <Label fx:id="BERC" layoutX="125.0" layoutY="24.0" text="BERC Officials (Regulators/Commission Members)">
          <font>

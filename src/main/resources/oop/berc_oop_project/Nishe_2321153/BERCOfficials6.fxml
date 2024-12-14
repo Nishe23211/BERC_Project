@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="491.0" prefWidth="577.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.berc_oop_project.Nishe_2321153.BERCOfficials.BERCOfficials6">
+   <children>
+      <Label layoutX="178.0" layoutY="22.0" text="Current Consultations">
+         <font>
+            <Font name="Cambria Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="67.0" text="Post Draft of regulatory">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="193.0" text="Public Feedback">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="draftText" layoutX="159.0" layoutY="451.0" prefHeight="25.0" prefWidth="315.0" />
+      <ComboBox fx:id="titleCB" layoutX="65.0" layoutY="233.0" prefWidth="150.0" />
+      <TextArea fx:id="descriptionarea" layoutX="24.0" layoutY="96.0" prefHeight="62.0" prefWidth="527.0" />
+      <TextArea fx:id="feedbacksummaryarea" layoutX="22.0" layoutY="346.0" prefHeight="62.0" prefWidth="527.0" promptText="Feedback Summary" />
+      <ListView fx:id="listview" layoutX="22.0" layoutY="268.0" prefHeight="62.0" prefWidth="527.0" />
+      <Button layoutX="19.0" layoutY="451.0" mnemonicParsing="false" onAction="#onBack" text="Back" />
+      <Button layoutX="464.0" layoutY="167.0" mnemonicParsing="false" onAction="#onUploadDraft" text="Upload Draft" />
+      <Button layoutX="486.0" layoutY="425.0" mnemonicParsing="false" onAction="#onUpdate" text="Update" />
+      <Label layoutX="22.0" layoutY="237.0" text="Title" />
+   </children>
+</AnchorPane>

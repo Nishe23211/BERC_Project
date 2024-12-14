@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="450.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.berc_oop_project.Nishe_2321153.BERCOfficials.BERCOfficials1">
+   <children>
+      <Label fx:id="securesystem" layoutX="227.0" layoutY="20.0" prefHeight="17.0" prefWidth="181.0" text="Secure system">
+         <font>
+            <Font name="Cambria Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="71.0" layoutY="75.0" text="Report Name" />
+      <Label layoutX="71.0" layoutY="107.0" text="Report Type" />
+      <Label layoutX="73.0" layoutY="143.0" text="Date" />
+      <Button layoutX="355.0" layoutY="139.0" mnemonicParsing="false" onAction="#onView" text="View" />
+      <Button layoutX="494.0" layoutY="360.0" mnemonicParsing="false" onAction="#onViewReport" text="View Report" />
+      <TextField fx:id="namefield" layoutX="153.0" layoutY="71.0" prefHeight="25.0" prefWidth="175.0" />
+      <ComboBox fx:id="typeCB" layoutX="153.0" layoutY="103.0" prefHeight="25.0" prefWidth="175.0" />
+      <DatePicker fx:id="dor" layoutX="153.0" layoutY="139.0" />
+      <TableView fx:id="securetable" layoutX="75.0" layoutY="186.0" prefHeight="200.0" prefWidth="405.0">
+        <columns>
+          <TableColumn fx:id="namecolumn" prefWidth="127.33328247070312" text="Report Name" />
+          <TableColumn fx:id="typecolumn" prefWidth="140.6666259765625" text="Report Type" />
+            <TableColumn fx:id="datecolumn" prefWidth="137.3333740234375" text="Date" />
+        </columns>
+      </TableView>
+      <Label fx:id="secureText" layoutX="160.0" layoutY="410.0" prefHeight="25.0" prefWidth="297.0" />
+      <Button layoutX="31.0" layoutY="410.0" mnemonicParsing="false" onAction="#onBack" text="Back" />
+   </children>
+</AnchorPane>

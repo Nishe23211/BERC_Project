@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="484.0" prefWidth="493.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.berc_oop_project.Nishe_2321153.SupportStaff1A">
+<AnchorPane prefHeight="484.0" prefWidth="493.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.berc_oop_project.Nishe_2321153.SupportStaff.SupportStaff1A">
    <children>
       <Label fx:id="logdetails" layoutX="42.0" layoutY="233.0" text="Log Details">
          <font>
@@ -22,5 +22,7 @@
       </Label>
       <TextArea fx:id="logtextarea" layoutX="42.0" layoutY="270.0" prefHeight="92.0" prefWidth="371.0" />
       <Button layoutX="334.0" layoutY="377.0" mnemonicParsing="false" onAction="#onUpdateLog" text="UpdateLog" />
+      <Button layoutX="22.0" layoutY="446.0" mnemonicParsing="false" onAction="#onBack" text="Back" />
+      <Label fx:id="logsText" layoutX="79.0" layoutY="416.0" prefHeight="30.0" prefWidth="347.0" />
    </children>
 </AnchorPane>

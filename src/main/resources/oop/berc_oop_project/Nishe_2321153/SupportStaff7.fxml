@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="513.0" prefWidth="623.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.berc_oop_project.Nishe_2321153.SupportStaff7">
+<AnchorPane prefHeight="513.0" prefWidth="623.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.berc_oop_project.Nishe_2321153.SupportStaff.SupportStaff7">
    <children>
       <Label fx:id="files" layoutX="291.0" layoutY="14.0" text="Files">
          <font>
@@ -46,5 +46,7 @@
       <Label layoutX="350.0" layoutY="66.0" text="File access" />
       <ComboBox fx:id="accessCB" layoutX="420.0" layoutY="62.0" prefHeight="25.0" prefWidth="101.0" />
       <Button layoutX="483.0" layoutY="101.0" mnemonicParsing="false" onAction="#onAdd" text="Add" />
+      <Button layoutX="14.0" layoutY="473.0" mnemonicParsing="false" onAction="#onBack" text="Back" />
+      <Label fx:id="fileText" layoutX="121.0" layoutY="477.0" prefHeight="30.0" prefWidth="335.0" />
    </children>
 </AnchorPane>

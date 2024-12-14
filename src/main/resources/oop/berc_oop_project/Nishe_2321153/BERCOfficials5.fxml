@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="375.0" prefWidth="434.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.berc_oop_project.Nishe_2321153.BERCOfficials5">
+<AnchorPane prefHeight="375.0" prefWidth="434.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.berc_oop_project.Nishe_2321153.BERCOfficials.BERCOfficials5">
    <children>
       <Label layoutX="47.0" layoutY="69.0" text="Alert ID" />
       <Label layoutX="48.0" layoutY="119.0" text="Type" />

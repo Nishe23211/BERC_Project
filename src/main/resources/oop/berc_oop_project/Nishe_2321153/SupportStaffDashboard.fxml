@@ -10,7 +10,7 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="500.0" prefWidth="668.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.berc_oop_project.Nishe_2321153.SupportStaffDashboard">
+<AnchorPane prefHeight="500.0" prefWidth="668.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.berc_oop_project.Nishe_2321153.SupportStaff.SupportStaffDashboard">
    <children>
       <Label fx:id="supportstaff" alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="224.0" layoutY="14.0" prefHeight="34.0" prefWidth="196.0" text="SUPPORT STAFF">
          <font>

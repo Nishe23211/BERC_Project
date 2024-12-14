@@ -36,8 +36,8 @@ public class LogInPage {
                 "Representative",
                 "SystemAdministrator",
                 "PolicyMaker",
-                "Support",
-                "Guest"
+                "SupportStaff",
+                "BERCOfficials"
         );
     }
 
@@ -73,11 +73,11 @@ public class LogInPage {
                     case "PolicyMaker":
                         fxmlLoader = new FXMLLoader(getClass().getResource("PolicyMakerDashboard.fxml"));
                         break;
-                    case "Support":
-                        fxmlLoader = new FXMLLoader(getClass().getResource("support_dashboard.fxml"));
+                    case "SupportStaff":
+                        fxmlLoader = new FXMLLoader(getClass().getResource("SupportStaffDashboard.fxml"));
                         break;
-                    case "Guest":
-                        fxmlLoader = new FXMLLoader(getClass().getResource("guest_dashboard.fxml"));
+                    case "BERCOfficials":
+                        fxmlLoader = new FXMLLoader(getClass().getResource("BERCOfficialsDashboard.fxml"));
                         break;
                     default:
                         settext.setText("Invalid user type selected.");
@@ -109,9 +109,9 @@ public class LogInPage {
             return true;
         } else if (userType.equals("PolicyMaker") && username.equals("Policy") && password.equals("manager123")) {
             return true;
-        } else if (userType.equals("Support") && username.equals("support") && password.equals("support123")) {
+        } else if (userType.equals("SupportStaff") && username.equals("Support Staff") && password.equals("support123")) {
             return true;
-        } else if (userType.equals("Guest") && username.equals("guest") && password.equals("guest123")) {
+        } else if (userType.equals("BERCOfficials") && username.equals("BERCOfficials") && password.equals("berc123")) {
             return true;
         }
         return false;
