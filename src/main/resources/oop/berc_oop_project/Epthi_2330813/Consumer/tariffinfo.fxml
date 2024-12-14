@@ -7,21 +7,21 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.berc_oop_project.Epthi_2330813.Consumer.TariffinfoController">
+<AnchorPane prefHeight="601.0" prefWidth="754.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.berc_oop_project.Epthi_2330813.Consumer.TariffinfoController">
    <children>
       <Label layoutX="26.0" layoutY="35.0" prefHeight="26.0" prefWidth="137.0" text="Tariff Information">
          <font>
             <Font size="16.0" />
          </font>
       </Label>
-      <TableView fx:id="tariffTV" layoutX="185.0" layoutY="79.0" prefHeight="274.0" prefWidth="385.0">
+      <TableView fx:id="tariffTV" layoutX="224.0" layoutY="124.0" prefHeight="405.0" prefWidth="514.0">
         <columns>
           <TableColumn fx:id="tariffCol" prefWidth="75.0" text="Tariff Type" />
-          <TableColumn fx:id="rateCol" prefWidth="100.800048828125" text="Currrent Rate" />
-            <TableColumn fx:id="prevrateCol" prefWidth="106.39996337890625" text="Previous Rate" />
-            <TableColumn fx:id="edateCol" prefWidth="103.199951171875" text="Effective Date" />
+          <TableColumn fx:id="rateCol" prefWidth="135.199951171875" text="Currrent Rate" />
+            <TableColumn fx:id="prevrateCol" prefWidth="137.5999755859375" text="Previous Rate" />
+            <TableColumn fx:id="edateCol" prefWidth="166.4000244140625" text="Effective Date" />
         </columns>
       </TableView>
-      <Button layoutX="14.0" layoutY="353.0" mnemonicParsing="false" onAction="#OnbackBC" text="Back" />
+      <Button layoutX="14.0" layoutY="553.0" mnemonicParsing="false" onAction="#OnbackBC" text="Back" />
    </children>
 </AnchorPane>
