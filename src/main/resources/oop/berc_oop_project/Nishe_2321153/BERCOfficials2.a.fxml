@@ -28,5 +28,6 @@
       <Button layoutX="388.0" layoutY="310.0" mnemonicParsing="false" onAction="#onApprove" text="Approve" />
       <Button layoutX="470.0" layoutY="310.0" mnemonicParsing="false" onAction="#onReject" text="Reject" />
       <Button layoutX="31.0" layoutY="348.0" mnemonicParsing="false" onAction="#onBack" text="Back" />
+      <Label fx:id="applicantText" layoutX="174.0" layoutY="364.0" prefHeight="25.0" prefWidth="228.0" />
    </children>
 </AnchorPane>
