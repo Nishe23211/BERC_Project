@@ -10,12 +10,11 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="667.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.berc_oop_project.Nishe_2321153.BERCOfficials8">
    <children>
-      <Label fx:id="setupnewdiscussionboard" layoutX="22.0" layoutY="56.0" text="Set Up New Discussion Board">
+      <Label fx:id="setupnewdiscussionboard" layoutX="14.0" layoutY="76.0" text="Set Up New Discussion Board">
          <font>
-            <Font size="18.0" />
+            <Font size="14.0" />
          </font>
       </Label>
       <Label layoutX="22.0" layoutY="124.0" text="Title" />
@@ -24,22 +23,32 @@
       <TextField fx:id="titlefield" layoutX="88.0" layoutY="120.0" prefHeight="25.0" prefWidth="200.0" />
       <TextArea fx:id="descriptionarea" layoutX="88.0" layoutY="167.0" prefHeight="37.0" prefWidth="200.0" />
       <TextArea fx:id="guidlinesarea" layoutX="88.0" layoutY="220.0" prefHeight="40.0" prefWidth="200.0" />
-      <Button layoutX="33.0" layoutY="341.0" mnemonicParsing="false" onAction="#onCancel" text="Cancel" />
+      <Button layoutX="33.0" layoutY="341.0" mnemonicParsing="false" onAction="#onBack" text="Back" />
       <Button layoutX="198.0" layoutY="297.0" mnemonicParsing="false" onAction="#onCreateBoard" text="Create Board" />
-      <Label fx:id="discussionboard" layoutX="354.0" layoutY="53.0" text="Discussion Board">
+      <Label fx:id="discussionboard" layoutX="347.0" layoutY="76.0" text="Discussion Board">
          <font>
-            <Font size="18.0" />
+            <Font size="14.0" />
          </font>
       </Label>
-      <TableView fx:id="discussiontable" layoutX="348.0" layoutY="86.0" prefHeight="200.0" prefWidth="301.0">
+      <TableView fx:id="discussiontable" layoutX="347.0" layoutY="100.0" prefHeight="200.0" prefWidth="301.0">
         <columns>
           <TableColumn fx:id="topicidcolumn" prefWidth="92.0" text="Topic Id" />
           <TableColumn fx:id="titlecolumn" prefWidth="97.33328247070312" text="Topic Title" />
-            <TableColumn fx:id="commentcolumn" prefWidth="111.33331298828125" text="Comment Count" />
+            <TableColumn fx:id="commentcolumn" prefWidth="111.33331298828125" text="Guidelines" />
         </columns>
       </TableView>
-      <Button layoutX="456.0" layoutY="297.0" mnemonicParsing="false" onAction="#onReviewComment" text="Review Comment" />
-      <Button layoutX="577.0" layoutY="297.0" mnemonicParsing="false" onAction="#onPostTopic" text="Post Topic" />
-      <Line endX="-99.99996948242188" endY="256.0" layoutX="415.0" layoutY="62.0" startX="-100.0" />
+      <Button layoutX="444.0" layoutY="309.0" mnemonicParsing="false" onAction="#onReviewComment" text="Review Comment" />
+      <Button layoutX="577.0" layoutY="309.0" mnemonicParsing="false" onAction="#onPostTopic" text="Post Topic" />
+      <Line endX="-99.99996948242188" endY="256.0" layoutX="420.0" layoutY="72.0" startX="-100.0" />
+      <Label layoutX="221.0" layoutY="14.0" text="Management Area">
+         <font>
+            <Font name="Cambria Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="ManagementText" layoutX="243.0" layoutY="356.0" prefHeight="20.0" prefWidth="249.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

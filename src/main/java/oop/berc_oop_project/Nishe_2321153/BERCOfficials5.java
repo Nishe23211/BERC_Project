@@ -12,6 +12,7 @@ import javafx.stage.Stage;
 import oop.berc_oop_project.HelloApplication;
 
 import java.io.IOException;
+import java.time.LocalDate;
 
 public class BERCOfficials5 {
 
@@ -25,25 +26,35 @@ public class BERCOfficials5 {
     private Label alertdetails;
     @javafx.fxml.FXML
     private TextField alertidfield;
+    @javafx.fxml.FXML
+    private Label alertText;
 
     @javafx.fxml.FXML
-    public void onBack(ActionEvent actionEvent) {
+    public void onBack(ActionEvent actionEvent) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("BERCOfficialsDashboard.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage stage = (Stage)(((Node) actionEvent.getSource()).getScene().getWindow());
+        stage.setScene(scene);
     }
-
     @javafx.fxml.FXML
     public void onSave(ActionEvent actionEvent) {
-    }
+        String alertId = alertidfield.getText();
+        String alertType = alerttypefield.getText();
+        LocalDate alertDate = Dateofalert.getValue();
+        String content = contentarea.getText();
 
+        if (alertId.isEmpty() || alertType.isEmpty() || alertDate == null || content.isEmpty()) {
+            alertText.setText("All fields must be filled.");
+            alertText.setStyle("-fx-text-fill: red;");
+        } else {
+            alertText.setText("Alert saved successfully.");
+            alertText.setStyle("-fx-text-fill: green;");
+        }
+    }
     @javafx.fxml.FXML
-    public void onSetTask(ActionEvent actionEvent) {
-    }
-
-    @Deprecated
-    public void onCancel(ActionEvent actionEvent) {
-    }
-
-    @Deprecated
-    public void onAssignTo(ActionEvent actionEvent) throws IOException {
+    public void onSetTask(ActionEvent actionEvent) throws IOException {
+        alertText.setText("Task has been set for the alert.");
+        alertText.setStyle("-fx-text-fill: blue;");
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("BERCOfficials5.a.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         Stage stage = (Stage)(((Node) actionEvent.getSource()).getScene().getWindow());

@@ -20,14 +20,12 @@
          </font>
       </Text>
       <Separator layoutY="65.0" prefHeight="16.0" prefWidth="600.0" />
-      <ComboBox layoutX="340.0" layoutY="318.0" prefHeight="25.0" prefWidth="112.0" promptText="Choose filter" />
+      <ComboBox layoutX="340.0" layoutY="318.0" prefHeight="25.0" prefWidth="112.0" promptText="Company" />
       <Button layoutX="459.0" layoutY="318.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="61.0" text="Filter" />
       <TableView layoutX="270.0" layoutY="132.0" prefHeight="169.0" prefWidth="307.0">
          <columns>
-            <TableColumn prefWidth="66.0" text="Name" />
-            <TableColumn prefWidth="99.5" text="Energy Provider" />
-            <TableColumn prefWidth="76.5" text="Consumer" />
-            <TableColumn prefWidth="64.0" text="Duration" />
+            <TableColumn prefWidth="154.5" text="Name" />
+            <TableColumn prefWidth="151.5" text="Company" />
          </columns>
       </TableView>
       <Button layoutX="527.0" layoutY="318.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="50.0" text="Reset" />
@@ -37,7 +35,7 @@
             <Font size="20.0" />
          </font>
       </Text>
-      <AnchorPane layoutX="25.0" layoutY="83.0" minHeight="0.0" minWidth="0.0" prefHeight="213.0" prefWidth="218.0">
+      <AnchorPane layoutX="25.0" layoutY="83.0" minHeight="0.0" minWidth="0.0" prefHeight="141.0" prefWidth="218.0">
          <children>
             <Text layoutX="46.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Profile Overview">
                <font>
@@ -57,15 +55,13 @@
             <Label layoutX="102.0" layoutY="72.0" text="Name label" />
             <Label layoutX="102.0" layoutY="107.0" text="ID label" />
             <Separator layoutX="18.0" layoutY="156.0" prefHeight="3.0" prefWidth="188.0" />
-            <ComboBox layoutX="43.0" layoutY="235.0" prefWidth="150.0" promptText="Select" />
-            <Text layoutX="85.0" layoutY="191.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Go to...">
-               <font>
-                  <Font size="20.0" />
-               </font>
-            </Text>
             <Separator layoutX="217.0" layoutY="33.0" orientation="VERTICAL" prefHeight="230.0" prefWidth="4.0" />
+            <Button layoutX="18.0" layoutY="167.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="188.0" text="Propose New Project" />
+            <ComboBox layoutX="16.0" layoutY="201.0" prefHeight="25.0" prefWidth="92.0" promptText="Project1" />
+            <ComboBox layoutX="111.0" layoutY="201.0" prefHeight="25.0" prefWidth="92.0" promptText="Project2" />
          </children>
       </AnchorPane>
       <AnchorPane layoutX="10.0" layoutY="83.0" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" />
+      <Button layoutX="40.0" layoutY="318.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="188.0" text="Propose Collaboration" />
    </children>
 </AnchorPane>

@@ -26,5 +26,6 @@
       <DatePicker fx:id="duedate" layoutX="128.0" layoutY="169.0" />
       <Button layoutX="48.0" layoutY="263.0" mnemonicParsing="false" onAction="#onCancel" text="Cancel" />
       <Button layoutX="253.0" layoutY="263.0" mnemonicParsing="false" onAction="#onAssignTask" text="Assign Task" />
+      <Label fx:id="assignText" layoutX="99.0" layoutY="305.0" prefHeight="17.0" prefWidth="279.0" />
    </children>
 </AnchorPane>

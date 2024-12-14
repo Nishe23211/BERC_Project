@@ -50,7 +50,7 @@
          </children>
       </AnchorPane>
       <AnchorPane layoutY="81.0" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" />
-      <ComboBox layoutX="319.0" layoutY="315.0" prefHeight="25.0" prefWidth="141.0" promptText="Company" />
+      <ComboBox layoutX="331.0" layoutY="315.0" prefHeight="25.0" prefWidth="121.0" promptText="Company" />
       <Button layoutX="460.0" layoutY="315.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="50.0" text="Filter" />
       <TableView layoutX="261.0" layoutY="129.0" prefHeight="169.0" prefWidth="307.0">
          <columns>
@@ -59,7 +59,7 @@
          </columns>
       </TableView>
       <Button layoutX="518.0" layoutY="315.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="50.0" text="Reset" />
-      <Button layoutX="261.0" layoutY="315.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="50.0" text="View" />
+      <Button layoutX="261.0" layoutY="315.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="62.0" text="View" />
       <Text layoutX="426.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Current Projects">
          <font>
             <Font size="20.0" />

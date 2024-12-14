@@ -26,5 +26,6 @@
       <Button layoutX="333.0" layoutY="269.0" mnemonicParsing="false" onAction="#onSave" text="Save" />
       <Button layoutX="263.0" layoutY="269.0" mnemonicParsing="false" onAction="#onSetTask" text="Set Task" />
       <Button layoutX="14.0" layoutY="334.0" mnemonicParsing="false" onAction="#onBack" text="Back" />
+      <Label fx:id="alertText" layoutX="124.0" layoutY="325.0" prefHeight="17.0" prefWidth="249.0" />
    </children>
 </AnchorPane>

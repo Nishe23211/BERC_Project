@@ -4,10 +4,8 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Scene;
-import javafx.scene.control.DatePicker;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 import oop.berc_oop_project.HelloApplication;
 
@@ -16,27 +14,56 @@ import java.time.LocalDate;
 
 public class BERCOfficials4 {
     @javafx.fxml.FXML
-    private TableColumn<BERCOfficials4, String> filenamecolumn;
+    private TableColumn<FileRecord, String> filenamecolumn;
     @javafx.fxml.FXML
     private TextField caseidfield;
     @javafx.fxml.FXML
-    private TableColumn<BERCOfficials4, Integer> fileidcolumn;
+    private TableColumn<FileRecord, String> fileidcolumn;
     @javafx.fxml.FXML
     private DatePicker dofile;
     @javafx.fxml.FXML
-    private TableView<BERCOfficials4> filetable;
+    private TableView<FileRecord> filetable;
     @javafx.fxml.FXML
-    private TableColumn<BERCOfficials4, LocalDate> datecolumn;
+    private TableColumn<FileRecord, LocalDate> datecolumn;
+    @javafx.fxml.FXML
+    private TextField namefield;
+    @javafx.fxml.FXML
+    private Label caseText;
+    public void initialize() {
+        fileidcolumn.setCellValueFactory(new PropertyValueFactory<>("fileid"));
+        filenamecolumn.setCellValueFactory(new PropertyValueFactory<>("filename"));
+        datecolumn.setCellValueFactory(new PropertyValueFactory<>("date"));
+    }
 
     @javafx.fxml.FXML
     public void onSearch(ActionEvent actionEvent) {
+        String fileid = caseidfield.getText();
+        String filename = namefield.getText();
+        LocalDate datee = dofile.getValue();
+        FileRecord f = new FileRecord(fileid,filename,datee);
+
+        if (fileid.isEmpty() || filename.isEmpty() || datee == null) {
+            caseText.setText("Error: All fields must be filled out.");
+            return;
+        }
+        caseidfield.clear();
+        namefield.clear();
+        dofile.setValue(null);
+        filetable.getItems().add(f);
     }
 
     @javafx.fxml.FXML
     public void onOpenFile(ActionEvent actionEvent) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("BERCOfficials4.a.fxml"));
-        Scene scene = new Scene(fxmlLoader.load());
-        Stage stage = (Stage)(((Node) actionEvent.getSource()).getScene().getWindow());
-        stage.setScene(scene);
+        FileRecord files = filetable.getSelectionModel().getSelectedItem();
+
+        if (files == null) {
+            caseText.setText("Error: No case selected.");
+        } else {
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("SupportStaff4.a.fxml"));
+            Scene scene = new Scene(fxmlLoader.load());
+            Stage stage = (Stage) (((Node) actionEvent.getSource()).getScene().getWindow());
+            stage.setScene(scene);
+        }
     }
+
 }
