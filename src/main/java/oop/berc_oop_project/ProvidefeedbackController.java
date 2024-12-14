@@ -24,4 +24,8 @@ public class ProvidefeedbackController
     @javafx.fxml.FXML
     public void onprovideButtonClick(ActionEvent actionEvent) {
     }
+
+    @javafx.fxml.FXML
+    public void OnbackBC(ActionEvent actionEvent) {
+    }
 }

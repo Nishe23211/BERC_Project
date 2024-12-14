@@ -1,29 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="516.0" prefWidth="651.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.berc_oop_project.Nishe_2321153.BERCOfficials7">
+<AnchorPane prefHeight="541.0" prefWidth="651.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.berc_oop_project.Nishe_2321153.BERCOfficials7">
    <children>
-      <Label layoutX="205.0" layoutY="14.0" text="Compliance Report Details">
+      <Label layoutX="242.0" layoutY="14.0" text="Compliance Reports">
          <font>
             <Font name="Cambria Bold" size="18.0" />
          </font>
       </Label>
-      <TableView fx:id="reporttable" layoutX="60.0" layoutY="50.0" prefHeight="140.0" prefWidth="535.0">
+      <TableView fx:id="reporttable" layoutX="233.0" layoutY="50.0" prefHeight="140.0" prefWidth="361.0">
         <columns>
-          <TableColumn fx:id="reportidcolumn" prefWidth="168.66668319702148" text="Report ID" />
-          <TableColumn fx:id="reporttypecolumn" prefWidth="186.66664123535156" text="Report Type" />
-            <TableColumn fx:id="reportdatacolumn" prefWidth="178.66665649414062" text="Report Data" />
+          <TableColumn fx:id="reportidcolumn" prefWidth="116.66664123535156" text="Report ID" />
+          <TableColumn fx:id="reporttypecolumn" prefWidth="117.3333740234375" text="Report Type" />
+            <TableColumn fx:id="reportdatacolumn" prefWidth="123.99990844726562" text="Report Data" />
         </columns>
       </TableView>
-      <TextArea fx:id="detailsarea" layoutX="60.0" layoutY="209.0" prefHeight="69.0" prefWidth="535.0" promptText="Report Details" />
-      <Button layoutX="426.0" layoutY="290.0" mnemonicParsing="false" onAction="#onDocumentNonCompliance" text="Document Non-Compliance" />
+      <TextArea fx:id="detailsarea" layoutX="60.0" layoutY="232.0" prefHeight="69.0" prefWidth="535.0" promptText="Report Details" />
+      <Button layoutX="429.0" layoutY="308.0" mnemonicParsing="false" onAction="#onDocumentNonCompliance" text="Document Non-Compliance" />
       <Label fx:id="documentnoncompliance" layoutX="60.0" layoutY="340.0" text="Document Non-Compliance">
          <font>
             <Font name="System Bold" size="14.0" />
@@ -31,5 +33,11 @@
       </Label>
       <TextArea fx:id="noncompliancedetailsarea" layoutX="60.0" layoutY="372.0" prefHeight="97.0" prefWidth="535.0" promptText="Non Compliance Details" />
       <Button layoutX="554.0" layoutY="476.0" mnemonicParsing="false" onAction="#onSave" text="Save" />
+      <TextField fx:id="idfield" layoutX="54.0" layoutY="59.0" promptText="Report ID" />
+      <ComboBox fx:id="typeCB" layoutX="54.0" layoutY="95.0" prefWidth="150.0" promptText="Report type" />
+      <ComboBox fx:id="dataCB" layoutX="54.0" layoutY="135.0" prefWidth="150.0" promptText="Report Data" />
+      <Button layoutX="163.0" layoutY="177.0" mnemonicParsing="false" onAction="#onAdd" text="Add" />
+      <Button layoutX="554.0" layoutY="198.0" mnemonicParsing="false" onAction="#onView" text="View" />
+      <Label fx:id="reportsText" layoutX="197.0" layoutY="501.0" prefHeight="25.0" prefWidth="244.0" />
    </children>
 </AnchorPane>

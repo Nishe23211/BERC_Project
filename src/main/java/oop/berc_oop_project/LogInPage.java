@@ -36,16 +36,12 @@ public class LogInPage {
         String password = passwordFiled.getText();
         String userType = typeCB.getValue();
 
-        // Perform basic validation
         if (username.isEmpty() || password.isEmpty() || userType == null) {
             settext.setText("All fields are required.");
             return;
         }
-
-        // Check credentials (Dummy validation for demonstration)
         if (validateCredentials(username, password, userType)) {
             try {
-                // Load the appropriate dashboard based on user type
                 FXMLLoader fxmlLoader;
                 if (userType.equals("Auditor")) {
                     fxmlLoader = new FXMLLoader(getClass().getResource("auditor_dashboard.fxml"));
@@ -60,8 +56,6 @@ public class LogInPage {
                     settext.setText("Invalid user type selected.");
                     return;
                 }
-
-                // Switch scene
                 scene = new Scene(fxmlLoader.load());
                 stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
                 stage.setScene(scene);
@@ -76,7 +70,6 @@ public class LogInPage {
     }
 
     private boolean validateCredentials(String username, String password, String userType) {
-        // Replace with actual credential validation logic (e.g., database query)
         if (userType.equals("Auditor") && username.equals("auditor") && password.equals("pass123")) {
             return true;
         } else if (userType.equals("Consumer") && username.equals("consumer") && password.equals("pass123")) {

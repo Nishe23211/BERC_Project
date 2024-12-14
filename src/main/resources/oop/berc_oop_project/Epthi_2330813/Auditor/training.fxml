@@ -3,30 +3,29 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="578.0" prefWidth="818.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.berc_oop_project.Epthi_2330813.Auditor.TrainingController">
-   <children>
-      <Label layoutX="24.0" layoutY="14.0" text="Training Simulation ">
-         <font>
-            <Font size="18.0" />
-         </font>
-      </Label>
-      <Label layoutX="28.0" layoutY="61.0" text="Traing Scenarios">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </Label>
-      <ComboBox layoutX="143.0" layoutY="57.0" prefWidth="150.0" />
-      <Label layoutX="341.0" layoutY="10.0" prefHeight="482.0" prefWidth="467.0" text="report" />
-      <TextField fx:id="reviewTF" layoutX="38.0" layoutY="202.0" prefHeight="198.0" prefWidth="238.0" />
-      <Line endX="159.39996337890625" endY="-381.0" layoutX="165.0" layoutY="381.0" startX="159.39996337890625" startY="198.29290771484375" />
-      <Label layoutX="33.0" layoutY="171.0" text="Review" />
-      <Label fx:id="settext" layoutX="38.0" layoutY="454.0" prefHeight="74.0" prefWidth="238.0" text="Label" />
-      <Button layoutX="224.0" layoutY="409.0" mnemonicParsing="false" onAction="#onsubmitButtonClick" text="Submit" />
-      <Button layoutX="691.0" layoutY="528.0" mnemonicParsing="false" onAction="#OnbackBC" prefHeight="26.0" prefWidth="102.0" text="Back" />
-   </children>
+   <Label layoutX="24.0" layoutY="14.0" text="Training Simulation ">
+      <font>
+         <Font size="18.0" />
+      </font>
+   </Label>
+   <Label layoutX="28.0" layoutY="61.0" text="Training Scenarios">
+      <font>
+         <Font size="14.0" />
+      </font>
+   </Label>
+   <ComboBox fx:id="scenariosComboBox" layoutX="143.0" layoutY="57.0" onAction="#onScenarioSelected" prefWidth="150.0" />
+   <TextArea fx:id="mockReportArea" layoutX="341.0" layoutY="10.0" prefHeight="482.0" prefWidth="467.0" wrapText="true" />
+   <TextField fx:id="reviewTF" layoutX="38.0" layoutY="202.0" prefHeight="198.0" prefWidth="238.0" />
+   <Line endX="159.39996337890625" endY="-381.0" layoutX="165.0" layoutY="381.0" startX="159.39996337890625" startY="198.29290771484375" />
+   <Label layoutX="33.0" layoutY="171.0" text="Review" />
+   <Label fx:id="feedbackLabel" layoutX="38.0" layoutY="454.0" prefHeight="74.0" prefWidth="238.0" text="Label" />
+   <Button layoutX="224.0" layoutY="409.0" mnemonicParsing="false" onAction="#onsubmitButtonClick" text="Submit" />
+   <Button layoutX="691.0" layoutY="528.0" mnemonicParsing="false" onAction="#OnbackBC" prefHeight="26.0" prefWidth="102.0" text="Back" />
 </AnchorPane>
