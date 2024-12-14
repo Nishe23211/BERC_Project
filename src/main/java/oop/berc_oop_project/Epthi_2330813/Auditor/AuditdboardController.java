@@ -1,4 +1,4 @@
-package oop.berc_oop_project;
+package oop.berc_oop_project.Epthi_2330813.Auditor;
 
 
 import javafx.event.ActionEvent;
@@ -8,6 +8,7 @@ import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
+import oop.berc_oop_project.HelloApplication;
 
 import java.io.IOException;
 

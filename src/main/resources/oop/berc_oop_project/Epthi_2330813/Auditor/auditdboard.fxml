@@ -6,7 +6,7 @@
 <?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="452.0" prefWidth="665.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="oop.berc_oop_project.AuditdboardController">
+            fx:controller="oop.berc_oop_project.Epthi_2330813.Auditor.AuditdboardController">
    <AnchorPane layoutX="-8.0" layoutY="-1.0" prefHeight="482.0" prefWidth="698.0">
       <Label layoutX="33.0" layoutY="24.0" prefHeight="42.0" prefWidth="137.0" text="Dashboard">
          <font>
