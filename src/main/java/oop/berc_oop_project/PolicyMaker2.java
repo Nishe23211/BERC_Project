@@ -1,14 +1,15 @@
-package oop.berc_oop_project.Sayma_2320543;
+package oop.berc_oop_project;
 
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Scene;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
-import oop.berc_oop_project.HelloApplication;
 
 import java.io.IOException;
 
@@ -18,18 +19,29 @@ public class PolicyMaker2 {
     @javafx.fxml.FXML
     private TextField resetpasswordField;
     @javafx.fxml.FXML
-    private TableColumn<PolicyMaker2,Integer> otpcodeCol;
+    private TableColumn<String,String> otpcodeCol;
     @javafx.fxml.FXML
     private TextField entercodeField;
     @javafx.fxml.FXML
-    private TableView<PolicyMaker2> otpcodeTable;
+    private TableView<String> otpcodeTable;
+
+
+
+
+
 
     @javafx.fxml.FXML
     public void onSentOtpCodeButtonClick(ActionEvent actionEvent) {
+
     }
+
+
+
 
     @javafx.fxml.FXML
     public void onAddButtonClick(ActionEvent actionEvent) {
+
+
     }
 
     @javafx.fxml.FXML
@@ -39,4 +51,10 @@ public class PolicyMaker2 {
         Stage stage = (Stage)(((Node) actionEvent.getSource()).getScene().getWindow());
         stage.setScene(scene);
     }
+
 }
+
+
+
+
+

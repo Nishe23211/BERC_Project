@@ -7,7 +7,7 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="452.0" prefWidth="522.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.berc_oop_project.Sayma_2320543.PolicyMaker2">
+<AnchorPane prefHeight="452.0" prefWidth="522.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.berc_oop_project.PolicyMaker2">
    <children>
       <Label layoutX="24.0" layoutY="42.0" text="New Password" />
       <Label layoutX="21.0" layoutY="96.0" text="Reset Password" />

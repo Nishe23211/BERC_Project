@@ -14,13 +14,13 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class LogInPage {
-    @javafx.fxml.FXML
+    @FXML
     private TextField usernameField;
-    @javafx.fxml.FXML
+    @FXML
     private Label settext;
-    @javafx.fxml.FXML
+    @FXML
     private PasswordField passwordFiled;
-    @javafx.fxml.FXML
+    @FXML
     private ComboBox<String> typeCB;
 
     private Stage stage;
@@ -28,9 +28,20 @@ public class LogInPage {
 
     @FXML
     public void initialize(){
-        typeCB.getItems().addAll("Legal Expert", "Representative");}
+        // Add 8 user types to ComboBox
+        typeCB.getItems().addAll(
+                "Auditor",
+                "Consumer",
+                "Legal Expert",
+                "Representative",
+                "SystemAdministrator",
+                "PolicyMaker",
+                "Support",
+                "Guest"
+        );
+    }
 
-    @javafx.fxml.FXML
+    @FXML
     public void onLogInButtonClick(ActionEvent actionEvent) {
         String username = usernameField.getText();
         String password = passwordFiled.getText();
@@ -43,18 +54,34 @@ public class LogInPage {
         if (validateCredentials(username, password, userType)) {
             try {
                 FXMLLoader fxmlLoader;
-                if (userType.equals("Auditor")) {
-                    fxmlLoader = new FXMLLoader(getClass().getResource("auditor_dashboard.fxml"));
-                } else if (userType.equals("Consumer")) {
-                    fxmlLoader = new FXMLLoader(getClass().getResource("consumerboard.fxml"));
-                }else if (userType.equals("Legal Expert")) {
-                        fxmlLoader = new FXMLLoader(getClass().getResource("u3_dashboard.fxml"));
-                }else if (userType.equals("Representative")) {
-                    fxmlLoader = new FXMLLoader(getClass().getResource("u4_dashboard.fxml"));
-
-                } else {
-                    settext.setText("Invalid user type selected.");
-                    return;
+                switch (userType) {
+                    case "Auditor":
+                        fxmlLoader = new FXMLLoader(getClass().getResource("auditdboard.fxml"));
+                        break;
+                    case "Consumer":
+                        fxmlLoader = new FXMLLoader(getClass().getResource("consumer.fxml"));
+                        break;
+                    case "Legal Expert":
+                        fxmlLoader = new FXMLLoader(getClass().getResource("legal_expert_dashboard.fxml"));
+                        break;
+                    case "Representative":
+                        fxmlLoader = new FXMLLoader(getClass().getResource("representative_dashboard.fxml"));
+                        break;
+                    case "SystemAdministrator":
+                        fxmlLoader = new FXMLLoader(getClass().getResource("SystemAdministratorDashboard.fxml"));
+                        break;
+                    case "PolicyMaker":
+                        fxmlLoader = new FXMLLoader(getClass().getResource("PolicyMakerDashboard.fxml"));
+                        break;
+                    case "Support":
+                        fxmlLoader = new FXMLLoader(getClass().getResource("support_dashboard.fxml"));
+                        break;
+                    case "Guest":
+                        fxmlLoader = new FXMLLoader(getClass().getResource("guest_dashboard.fxml"));
+                        break;
+                    default:
+                        settext.setText("Invalid user type selected.");
+                        return;
                 }
                 scene = new Scene(fxmlLoader.load());
                 stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
@@ -73,6 +100,18 @@ public class LogInPage {
         if (userType.equals("Auditor") && username.equals("auditor") && password.equals("pass123")) {
             return true;
         } else if (userType.equals("Consumer") && username.equals("consumer") && password.equals("pass123")) {
+            return true;
+        } else if (userType.equals("Legal Expert") && username.equals("legal") && password.equals("pass123")) {
+            return true;
+        } else if (userType.equals("Representative") && username.equals("representative") && password.equals("pass123")) {
+            return true;
+        } else if (userType.equals("SystemAdministrator") && username.equals("system") && password.equals("admin123")) {
+            return true;
+        } else if (userType.equals("PolicyMaker") && username.equals("Policy") && password.equals("manager123")) {
+            return true;
+        } else if (userType.equals("Support") && username.equals("support") && password.equals("support123")) {
+            return true;
+        } else if (userType.equals("Guest") && username.equals("guest") && password.equals("guest123")) {
             return true;
         }
         return false;
