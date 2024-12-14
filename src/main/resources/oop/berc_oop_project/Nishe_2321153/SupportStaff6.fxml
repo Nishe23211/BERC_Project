@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="460.0" prefWidth="438.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.berc_oop_project.Nishe_2321153.SupportStaff6">
+<AnchorPane prefHeight="460.0" prefWidth="438.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.berc_oop_project.Nishe_2321153.SupportStaff.SupportStaff6">
    <children>
       <Label fx:id="calendarorevent" layoutX="191.0" layoutY="14.0" text="Events">
          <font>
@@ -33,5 +33,6 @@
       <DatePicker fx:id="doe" layoutX="129.0" layoutY="123.0" />
       <Button layoutX="319.0" layoutY="123.0" mnemonicParsing="false" onAction="#onAdd" text="Add" />
       <Label fx:id="eventText" layoutX="122.0" layoutY="421.0" prefHeight="22.0" prefWidth="243.0" />
+      <Button layoutX="21.0" layoutY="419.0" mnemonicParsing="false" onAction="#onBack" text="Back" />
    </children>
 </AnchorPane>

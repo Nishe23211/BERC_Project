@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="422.0" prefWidth="479.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.berc_oop_project.Nishe_2321153.BERCOfficials4">
+<AnchorPane prefHeight="422.0" prefWidth="479.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.berc_oop_project.Nishe_2321153.BERCOfficials.BERCOfficials4">
    <children>
       <Label layoutX="160.0" layoutY="14.0" text="Hearing and Case Files">
          <font>
@@ -32,5 +32,6 @@
       <Label layoutX="51.0" layoutY="130.0" text="Date" />
       <TextField fx:id="namefield" layoutX="120.0" layoutY="89.0" />
       <Label fx:id="caseText" layoutX="149.0" layoutY="385.0" prefHeight="22.0" prefWidth="203.0" />
+      <Button layoutX="18.0" layoutY="383.0" mnemonicParsing="false" onAction="#onBack" text="Back" />
    </children>
 </AnchorPane>

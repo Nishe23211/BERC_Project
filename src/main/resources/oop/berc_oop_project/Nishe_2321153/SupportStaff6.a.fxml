@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="288.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.berc_oop_project.Nishe_2321153.SupportStaff6A">
+<AnchorPane prefHeight="288.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.berc_oop_project.Nishe_2321153.SupportStaff.SupportStaff6A">
    <children>
       <Label fx:id="addattendees" layoutX="25.0" layoutY="62.0" text="Attendees">
          <font>
@@ -27,5 +27,6 @@
       <Button layoutX="277.0" layoutY="58.0" mnemonicParsing="false" onAction="#onAdd" text="Add" />
       <TextField fx:id="attendeesfield" layoutX="97.0" layoutY="58.0" prefHeight="25.0" prefWidth="161.0" />
       <Button layoutX="152.0" layoutY="219.0" mnemonicParsing="false" onAction="#onDescription" text="Go To Description" />
+      <Button layoutX="14.0" layoutY="248.0" mnemonicParsing="false" onAction="#onBack" text="Back" />
    </children>
 </AnchorPane>
