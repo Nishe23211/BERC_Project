@@ -33,7 +33,6 @@
       <ComboBox layoutX="141.0" layoutY="324.0" prefHeight="25.0" prefWidth="112.0" promptText="Report Type" />
       <Button layoutX="263.0" layoutY="324.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="61.0" text="Filter" />
       <Button layoutX="336.0" layoutY="324.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="61.0" text="Reset" />
-      <Button layoutX="19.0" layoutY="324.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="112.0" text="View" />
       <Separator layoutX="413.0" layoutY="100.0" orientation="VERTICAL" prefHeight="262.0" prefWidth="8.0" />
       <TextField layoutX="433.0" layoutY="217.0" prefHeight="59.0" prefWidth="146.0" promptText="Flag violations" />
       <TableView layoutX="20.0" layoutY="141.0" prefHeight="166.0" prefWidth="377.0">
@@ -45,5 +44,6 @@
       </TableView>
       <Button layoutX="285.0" layoutY="102.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="112.0" text="Load Reports" />
       <Separator layoutX="13.0" layoutY="64.0" prefHeight="6.0" prefWidth="569.0" />
+      <ComboBox layoutX="20.0" layoutY="324.0" prefHeight="25.0" prefWidth="112.0" promptText="Project" />
    </children>
 </AnchorPane>
